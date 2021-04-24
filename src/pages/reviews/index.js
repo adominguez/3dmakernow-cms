@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
+import ReviewRoll from '../../components/ReviewRoll'
 
 export default class ReviewIndexPage extends React.Component {
   render() {
@@ -28,7 +28,7 @@ export default class ReviewIndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <BlogRoll />
+              <ReviewRoll />
             </div>
           </div>
         </section>

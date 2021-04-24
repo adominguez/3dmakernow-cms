@@ -90,7 +90,7 @@ BlogPost.propTypes = {
 export default BlogPost
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query ReviewPageByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -99,6 +99,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        name
       }
     }
   }
