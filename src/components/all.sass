@@ -10,8 +10,26 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
+.flex
+  display: flex
+
+.justify-center
+  justify-content: center
+
+.justify-between
+  justify-content: space-between
+
+.flex-1
+  flex: 1
+
+.full-width
+  width: 100%
+
+.p-4
+  padding: 1rem
+
 .navbar .navbar-menu
-  box-shadow:none !important
+  box-shadow:none
 
 .content .taglist
   list-style: none
@@ -122,7 +140,6 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
-
 @import "~bulma"
 
 
@@ -130,6 +147,10 @@ $menu-label-color: $white-ter
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
+  .navbar .navbar-menu
+    box-shadow: 0 8px 8px rgba(15, 15, 15, 0.3);
+    position: absolute;
+    width: 100%;
 
 +mobile
   .blog-list-item header
@@ -138,3 +159,7 @@ $menu-label-color: $white-ter
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+  .navbar .navbar-menu
+    box-shadow: 0 8px 8px rgba(15, 15, 15, 0.3);
+    position: absolute;
+    width: 100%;
