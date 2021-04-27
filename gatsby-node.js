@@ -2,6 +2,15 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const fs = require('fs-extra');
+
+const getName = (slug) => {
+  return slug.split('/').splice(-2, 1)[0].replace(/-/g, ' ');
+}
+
+const getType = (slug) => {
+  return slug.split('/').length === 3 ? 'page' : slug.split('/').splice(1, 1)[0]
+}
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -30,9 +39,17 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges
+    const searcher = [];
 
     posts.forEach((edge) => {
       const id = edge.node.id
+      if(edge.node.fields.slug !== '/') {
+        searcher.push({
+          name: getName(edge.node.fields.slug),
+          type: getType(edge.node.fields.slug),
+          url: edge.node.fields.slug,
+        })
+      }
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
@@ -45,6 +62,10 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
+
+    const searcherFile = 'src/utils/searcher.js'
+    const updatedSearcherContent = `export const itemsToSearch = ${JSON.stringify(searcher)};`;
+    fs.writeFileSync(searcherFile, updatedSearcherContent);
 
     // Tag pages:
     let tags = []
