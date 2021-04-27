@@ -5,11 +5,12 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import CookieConsent from "react-cookie-consent";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <div style={{display: 'flex', flexDirection: 'column', width: '100%', height: '100vh'}}>
       <Helmet>
         <html lang="es" />
         <title>{title}</title>
@@ -49,8 +50,18 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
-      <Footer />
+      <div style={{flex: 1, overflowY: 'auto', overflowX: 'hidden'}}>
+        <div>{children}</div>
+        <Footer />
+      </div>
+      <CookieConsent
+        enableDeclineButton
+        location="bottom"
+        buttonText="aceptar"
+        declineButtonText="Rechazar"
+        cookieName="google-analytics">
+        Doy mi consentimiento, pero cambiame los textos
+      </CookieConsent>
     </div>
   )
 }
