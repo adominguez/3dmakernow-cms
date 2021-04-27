@@ -1,0 +1,17 @@
+.slider-range .ui-state-default:focus, .slider-range .ui-state-default:hover {
+	background-color: #D64000;
+}
+
+.slick-prev {
+	z-index: 5;
+	left: 5px!important;
+}
+
+.slick-next {
+	z-index: 5;
+	right: 5px!important;
+}
+
+.slick-next:before, .slick-prev:before {
+	color: #D64000;
+}
