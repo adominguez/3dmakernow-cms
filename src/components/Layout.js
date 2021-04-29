@@ -122,9 +122,18 @@ const TemplateWrapper = ({ children }) => {
       </main>
       <CookieConsent
         enableDeclineButton
-        location="bottom"
         buttonText="aceptar"
         declineButtonText="Rechazar"
+        location="none"
+        overlay
+        style={{
+          backgroundColor: '#49b2a1',
+          width: '400px',
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          left: 'auto'
+        }}
         cookieName="google-analytics">
         Doy mi consentimiento, pero cambiame los textos
       </CookieConsent>
