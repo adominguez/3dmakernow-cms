@@ -1,16 +1,73 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import './all.sass'
+import Header from '../components/Header'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import CookieConsent from "react-cookie-consent";
+import { itemsToSearch } from "../utils/searcher.js";
+import { actualUrlpath } from "../utils/utils.js";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
+  const [layoutOpened, toggleLayout] = useState(false);
+  const [searchOpened, toggleSearch] = useState(false);
+  const [menuOpened, toggleMenu] = useState(false);
+  const [isScrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener("keydown", escFunction, false);
+    setLocalStorage();
+
+    return () => {
+      document.removeEventListener("keydown", escFunction, false);
+    };
+  }, []);
+
+  const escFunction = (event) => {
+    if (event.keyCode === 27) {
+      layoutClicked();
+    }
+  }
+
+  const setLocalStorage = () => {
+    const item = itemsToSearch.find(item => item.url === actualUrlpath());
+    const cacheData = JSON.parse(localStorage.getItem('lastPageVisited')) || [];
+    if (item && !cacheData.find(page => page.url === item.url)) {
+      const cacheDataTransformed = cacheData.map(item => ({ ...item, active: false }));
+      const sessionData = cacheDataTransformed.concat({ ...item, active: true });
+      localStorage.setItem('lastPageVisited', JSON.stringify(sessionData));
+    }
+  }
+
+  const menuClicked = () => {
+    toggleMenu(!menuOpened);
+    toggleLayout(!layoutOpened);
+  }
+
+  const layoutClicked = () => {
+    toggleLayout(false);
+    toggleMenu(false);
+    toggleSearch(false);
+  }
+
+  const focusSearch = () => {
+    toggleMenu(false);
+    toggleLayout(true);
+    toggleSearch(true);
+  }
+
+  const scrollLayout = (evt) => {
+    const { scrollTop } = evt.currentTarget;
+    if(scrollTop > 10) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  }
+
   return (
-    <div style={{display: 'flex', flexDirection: 'column', width: '100%', height: '100vh'}}>
+    <div className={`flex flex-col h-screen 'bg-backgroundSite`}>
       <Helmet>
         <html lang="es" />
         <title>{title}</title>
@@ -49,11 +106,20 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
-      <div style={{flex: 1, overflowY: 'auto', overflowX: 'hidden'}}>
-        <div>{children}</div>
+
+      {
+        layoutOpened ?
+          <div className="absolute top-0 bottom-0 left-0 right-0 z-10 w-full h-screen bg-gray-900 bg-opacity-50" onClick={layoutClicked}></div> : ''
+      }
+      <Header toggleMenu={menuClicked} menuOpened={menuOpened} focusSearch={focusSearch} cancelSearch={layoutClicked} searchOpened={searchOpened} isScrolling={isScrolling} />
+      <main className={`overflow-y-auto overflow-x-hidden flex-1`} onScroll={scrollLayout}>
+        <section className={`principal-container flex-col`}>
+          <div className="flex flex-col justify-center w-full">
+            {children}
+          </div>
+        </section>
         <Footer />
-      </div>
+      </main>
       <CookieConsent
         enableDeclineButton
         location="bottom"
