@@ -8,6 +8,7 @@ featuredpost: true
 featuredimage: /img/impresora-3d-ender-3.png
 ratings: "4.5"
 tags:
-  - impresora3
+  - impresora3D
+  - home
 ---
 Super contenido
