@@ -9,5 +9,6 @@ featuredimage: /img/artillery-genius.png
 ratings: "4.8"
 tags:
   - impresora3D
+  - home
 ---
 contenido
