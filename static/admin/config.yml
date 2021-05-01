@@ -38,7 +38,9 @@ collections:
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Post destacado", name: "featuredpost", widget: "boolean", required: false}
+      - {label: "Usar en el slider de inicio", name: "useInHomeSlider", widget: "boolean", required: false}
       - {label: "Imagen destacada", name: "featuredimage", widget: image}
+      - {label: "valoración", name: "ratings", widget: "string"}
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
