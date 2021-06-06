@@ -5,20 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
-
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import "../components/slick.css"
-
-const settings = {
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 5000,
-  pauseOnHover: true
-}
+import SliderProductsList from '../components/SliderProductsList'
 
 export const IndexPageTemplate = ({
   image,
@@ -78,26 +65,7 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div> */}
-    <Slider {...settings} >
-      <div className="p-4 bg-red-500">
-        <h3>1</h3>
-      </div>
-      <div className="p-4 bg-orange-500">
-        <h3>2</h3>
-      </div>
-      <div className="p-4 bg-green-500">
-        <h3>3</h3>
-      </div>
-      <div className="p-4 bg-violet-500">
-        <h3>4</h3>
-      </div>
-      <div className="p-4 bg-yellow-500">
-        <h3>5</h3>
-      </div>
-      <div className="p-4 bg-gray-500">
-        <h3>6</h3>
-      </div>
-    </Slider>
+    <SliderProductsList />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
