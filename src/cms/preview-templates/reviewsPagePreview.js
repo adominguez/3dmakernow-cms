@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ReviewPageTemplate } from '../../templates/review-page'
+import CMS from 'netlify-cms-app'
+
+CMS.registerPreviewStyle('../../css/index.css');
 
 const ReviewPagePreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(['data', 'tags'])
