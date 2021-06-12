@@ -63,7 +63,6 @@ const SearchInput = ({ onfocusInput, onCancelSearch, opened }) => {
   }
 
   const renderListItem = (item, index) => {
-    debugger
     return (
       <li key={index} className={`${index !== 0 ? 'border-t-2' : ''} border-gray-200 border-solid`}>
         <Link onKeyUp={arrowPressKey} to={item.url.slice(0, 1) === '/' ? item.url : `/${item.url}`} className="flex p-3 hover:bg-gray-200 focus:bg-gray-200">
