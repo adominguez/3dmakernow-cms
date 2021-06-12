@@ -33,6 +33,7 @@ collections:
     create: true
     fields:
       - {label: "Plantilla", name: "templateKey", widget: "select", options: ["review-page"]}
+      - {label: Listado de productos, name: productsList, widget: productsList}
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Nombre del producto", name: "name", widget: "string"}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}

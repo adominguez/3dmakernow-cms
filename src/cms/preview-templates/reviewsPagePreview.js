@@ -6,13 +6,14 @@ import CMS from 'netlify-cms-app'
 CMS.registerPreviewStyle('../../css/index.css');
 
 const ReviewPagePreview = ({ entry, widgetFor }) => {
-  const tags = entry.getIn(['data', 'tags'])
+  const tags = entry.getIn(['data', 'tags']);
   return (
     <ReviewPageTemplate
       content={widgetFor('body')}
       description={entry.getIn(['data', 'description'])}
       tags={tags && tags.toJS()}
       title={entry.getIn(['data', 'title'])}
+      productsList={entry.getIn(['data', 'productsList'])}
     />
   )
 }

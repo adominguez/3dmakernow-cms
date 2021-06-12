@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import ProductsList from '../components/productsList';
 
 export const ReviewPageTemplate = ({
   content,
@@ -13,19 +14,20 @@ export const ReviewPageTemplate = ({
   tags,
   title,
   name,
+  productsList,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
   return (
     <section className="section">
       {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1>
               {title}
             </h1>
+            {ProductsList?.length && <ProductsList {...productsList} />}
             <h2>{name}</h2>
             <p>{description}</p>
             <PostContent content={content} />
@@ -58,7 +60,6 @@ ReviewPageTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-
   return (
     <Layout>
       <ReviewPageTemplate
@@ -68,6 +69,7 @@ const BlogPost = ({ data }) => {
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
+            <h3>{post.frontmatter.slides || post.frontmatter.url}</h3>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
