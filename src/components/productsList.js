@@ -1,5 +1,4 @@
 import React from 'react'
-import TransformText from './TransformText';
 import ProductActionPrice from './ProductActionPrice';
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
