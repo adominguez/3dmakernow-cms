@@ -106,18 +106,20 @@ export const pageQuery = graphql`
         description
         tags
         name
-        type
         productsList {
-          ASIN
-          TotalReviews
-          Title
-          Subtitle
-          Rating
-          Price
-          ListPrice
-          IsPrimeEligible
-          ImageUrl
-          DetailPageURL
+          type
+          productsList {
+            ASIN
+            TotalReviews
+            Title
+            Subtitle
+            Rating
+            Price
+            ListPrice
+            IsPrimeEligible
+            ImageUrl
+            DetailPageURL
+          }
         }
       }
     }
