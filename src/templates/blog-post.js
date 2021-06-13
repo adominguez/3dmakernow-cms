@@ -6,16 +6,17 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const BlogPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
-}) => {
+export const BlogPostTemplate = (props) => {
+  const {
+    content,
+    contentComponent,
+    description,
+    tags,
+    name,
+    helmet,
+  } = props;
   const PostContent = contentComponent || Content
-
+  debugger;
   return (
     <section className="section">
       {helmet || ''}
@@ -23,7 +24,7 @@ export const BlogPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
+              {name}
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
@@ -55,8 +56,9 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({ data }) => {
+  debugger
   const { markdownRemark: post } = data
-
+  const { title, description, name } = post.frontmatter;
   return (
     <Layout>
       <BlogPostTemplate
@@ -64,16 +66,16 @@ const BlogPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
+          <Helmet titleTemplate={title}>
+            <title>{title}</title>
             <meta
               name="description"
-              content={`${post.frontmatter.description}`}
+              content={description}
             />
           </Helmet>
         }
         tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
+        title={title}
       />
     </Layout>
   )
@@ -94,9 +96,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        title
-        description
         tags
+        name
+        description
+        title
       }
     }
   }

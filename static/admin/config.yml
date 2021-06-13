@@ -19,6 +19,7 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: Seo de la página, name: seopage, widget: seoPage }
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
       - {label: "Descripción", name: "description", widget: "text"}
@@ -32,7 +33,7 @@ collections:
     folder: "src/pages/reviews"
     create: true
     fields:
-      - {label: "Plantilla", name: "templateKey", widget: "select", options: ["review-page"]}
+      - {label: Template Key, name: templateKey, widget: hidden, default: review-page}
       - {label: Listado de productos, name: productsList, widget: productsList}
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Nombre del producto", name: "name", widget: "string"}

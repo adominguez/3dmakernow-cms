@@ -8,12 +8,14 @@ import ReviewPageTemplate from './preview-templates/reviewsPagePreview';
 import ProductPagePreview from './preview-templates/ProductPagePreview';
 import IndexPagePreview from './preview-templates/IndexPagePreview';
 import { ProductsListControl } from "./widgets/ProductsList";
+import { SeoPageControl } from './widgets/SeoPage';
 import ProductsList from "../components/productsList";
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
 CMS.registerWidget("productsList", ProductsListControl, ProductsList);
+CMS.registerWidget("seoPage", SeoPageControl);
 
 CMS.registerPreviewTemplate('index', IndexPagePreview);
 CMS.registerPreviewTemplate('about', AboutPagePreview);
