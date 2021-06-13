@@ -15,8 +15,10 @@ export const ReviewPageTemplate = (props) => {
     tags,
     title,
     name,
-    productsList,
-    type,
+    productsList: {
+      productsList,
+      type
+    },
     helmet,
   } = props;
   const PostContent = contentComponent || Content;
@@ -29,7 +31,7 @@ export const ReviewPageTemplate = (props) => {
             <h1>
               {title}
             </h1>
-            {ProductsList?.length && <ProductsList productsList={productsList?.productsList || productsList.productsList} type={productsList?.type || type} />}
+            {productsList?.length && <ProductsList productsList={productsList} type={type} />}
             <h2>{name}</h2>
             <p>{description}</p>
             <PostContent content={content} />
