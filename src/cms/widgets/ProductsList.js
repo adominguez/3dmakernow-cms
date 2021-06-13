@@ -4,7 +4,8 @@ import SearcherProductsList from '../../components/SearcherProductsList';
 import { wrapper } from './styles.js';
 import { Helmet } from 'react-helmet'
 
-export const ProductsListControl = ({ onChange }) => {
+export const ProductsListControl = (props) => {
+  const { onChange } = props;
   const widgets = CMS.getWidgets('input');
   const [keyword, setKeyword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -15,9 +16,18 @@ export const ProductsListControl = ({ onChange }) => {
   const InputWidget = widgets.find(item => item.name === 'string').control;
 
   useEffect(() => {
+    const productsListValue = props?.value?.get('productsList');
+    const products = productsListValue && JSON.parse(`[${productsListValue._tail.array.toString().replaceAll('Map ', '')}]`);
+    if(products?.length) {
+      setProductsList(products);
+      setProductsSelected(products);
+    }
+    if(props?.value?.get('type')) {
+      changeType(props?.value?.get('type'));
+    }
     setChange({
-      parsedType: type,
-      parsedProducts: productsList
+      parsedType: props?.value?.get('type') || type,
+      parsedProducts: products || productsList
     })
   }, [])
 

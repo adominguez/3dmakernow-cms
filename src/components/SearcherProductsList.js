@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../components/slick.css";
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+import ProductsStars from '../components/ProductsStar';
 
 const settings = {
   infinite: false,
@@ -77,25 +78,25 @@ const SearcherProductsList = ({ loadingProducts, products = [], setProductsSelec
         productsSelected?.length ?
           <Slider {...settings} >
             {productsSelected.map(({ ASIN, ImageUrl, Title }) => (
-                <div key={ASIN} className="p-2">
-                  <div className="border rounded-sm">
-                      <div className="relative featured-thumbnail">
-                        <button className="absolute p-2 bg-red-100 rounded-3xl right-2 top-2" onClick={() => setProductsSelected(productsSelected.filter(product => product.ASIN !== ASIN))}>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#ef4444">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                          </svg>
-                        </button>
-                        <PreviewCompatibleImage
-                          imageInfo={{
-                            image: ImageUrl,
-                            alt: Title,
-                          }}
-                        />
-                      </div>
-                    <h3 className="truncate-2-lines">{Title}</h3>
+              <div key={ASIN} className="p-2">
+                <div className="border rounded-sm">
+                  <div className="relative featured-thumbnail">
+                    <button className="absolute p-2 bg-red-100 rounded-3xl right-2 top-2" onClick={() => setProductsSelected(productsSelected.filter(product => product.ASIN !== ASIN))}>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#ef4444">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                      </svg>
+                    </button>
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: ImageUrl,
+                        alt: Title,
+                      }}
+                    />
                   </div>
+                  <h3 className="truncate-2-lines">{Title}</h3>
                 </div>
-              ))}
+              </div>
+            ))}
           </Slider>
           : null
       }
@@ -114,31 +115,33 @@ const SearcherProductsList = ({ loadingProducts, products = [], setProductsSelec
       <ul className="flex flex-wrap px-4">
         {
           products?.length && !loadingProducts
-            ? products.map(({ ASIN, ImageUrl, Title, Price, TotalReviews, Rating }) => (
-              <li key={ASIN} className="w-full p-2 xl:w-1/3 md:w-1/2">
-                <label htmlFor="products" className={`relative block w-full h-full border-2 rounded-md ${isProductSelected(ASIN) ? 'border-secondary-500' : 'border-transparent'}`}>
-                  <input type="checkbox" name="products" value={ASIN} className="absolute w-full h-full opacity-0 cursor-pointer" checked={isProductSelected(ASIN)} onChange={toggleSelectProduct} />
-                  {
-                    isProductSelected(ASIN)
-                      ? <div className="absolute w-6 h-6 right-2 bottom-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00897b">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+            ? products.map(item => {
+              const { ASIN, ImageUrl, Title, Rating, TotalReviews, Price } = item;
+              return (
+                <li key={ASIN} className="w-full p-2 xl:w-1/3 md:w-1/2">
+                  <label htmlFor="products" className={`relative block w-full h-full border-2 rounded-md ${isProductSelected(ASIN) ? 'border-secondary-500' : 'border-transparent'}`}>
+                    <input type="checkbox" name="products" value={ASIN} className="absolute w-full h-full opacity-0 cursor-pointer" checked={isProductSelected(ASIN)} onChange={toggleSelectProduct} />
+                    {
+                      isProductSelected(ASIN)
+                        ? <div className="absolute w-6 h-6 right-2 bottom-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00897b">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        : ''
+                    }
+                    <div className="flex flex-col">
+                      <img src={ImageUrl} className="flex-shrink-0 object-cover object-center rounded-lg" />
+                      <div className="px-2 overflow-auto">
+                        <div className="text-gray-700 truncate-2-lines">{Title}</div>
+                        <span className="pr-4 text-2xl text-center text-primary-500">{Price}</span>
+                        <ProductsStars amazonRate={Rating} amazonRatings={TotalReviews} />
                       </div>
-                      : ''
-                  }
-                  <div className="flex">
-                    <img src={ImageUrl} />
-                    <div>
-                      <div className="truncate-2-lines">{Title}</div>
-                      <div className="">{Price}</div>
-                      <div className="">{TotalReviews}</div>
-                      <div className="">{Rating}</div>
                     </div>
-                  </div>
-                </label>
-              </li>
-            ))
+                  </label>
+                </li>
+              )
+            })
             : ''
         }
       </ul>

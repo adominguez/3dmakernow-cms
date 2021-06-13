@@ -7,17 +7,19 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import ProductsList from '../components/productsList';
 
-export const ReviewPageTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  name,
-  productsList,
-  helmet,
-}) => {
-  const PostContent = contentComponent || Content
+export const ReviewPageTemplate = (props) => {
+  const {
+    content,
+    contentComponent,
+    description,
+    tags,
+    title,
+    name,
+    productsList,
+    type,
+    helmet,
+  } = props;
+  const PostContent = contentComponent || Content;
   return (
     <section className="section">
       {helmet || ''}
@@ -27,7 +29,7 @@ export const ReviewPageTemplate = ({
             <h1>
               {title}
             </h1>
-            {ProductsList?.length && <ProductsList {...productsList} />}
+            {ProductsList?.length && <ProductsList productsList={productsList?.productsList || productsList.productsList} type={productsList?.type || type} />}
             <h2>{name}</h2>
             <p>{description}</p>
             <PostContent content={content} />
@@ -63,6 +65,8 @@ const BlogPost = ({ data }) => {
   return (
     <Layout>
       <ReviewPageTemplate
+        productsList={post.frontmatter.productsList}
+        type={post.frontmatter.type}
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
@@ -102,6 +106,19 @@ export const pageQuery = graphql`
         description
         tags
         name
+        type
+        productsList {
+          ASIN
+          TotalReviews
+          Title
+          Subtitle
+          Rating
+          Price
+          ListPrice
+          IsPrimeEligible
+          ImageUrl
+          DetailPageURL
+        }
       }
     }
   }
