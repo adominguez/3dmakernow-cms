@@ -15,12 +15,10 @@ export const ReviewPageTemplate = (props) => {
     tags,
     title,
     name,
-    productsList: {
-      productsList,
-      type
-    },
+    productsList,
     helmet,
   } = props;
+  const { productsList: products, type } = productsList || {};
   const PostContent = contentComponent || Content;
   return (
     <section className="section">
@@ -31,7 +29,7 @@ export const ReviewPageTemplate = (props) => {
             <h1>
               {title}
             </h1>
-            {productsList?.length && <ProductsList productsList={productsList} type={type} />}
+            {products?.length && <ProductsList productsList={products} type={type} />}
             <h2>{name}</h2>
             <p>{description}</p>
             <PostContent content={content} />
