@@ -131,7 +131,7 @@ const SearcherProductsList = ({ loadingProducts, products = [], setProductsSelec
                         : ''
                     }
                     <div className="flex flex-col">
-                      <img src={ImageUrl} className="flex-shrink-0 object-cover object-center rounded-lg" />
+                      <img src={ImageUrl} alt={Title} className="flex-shrink-0 object-cover object-center rounded-lg" />
                       <div className="px-2 overflow-auto">
                         <div className="text-gray-700 truncate-2-lines">{Title}</div>
                         <span className="pr-4 text-2xl text-center text-primary-500">{Price}</span>

@@ -39,11 +39,11 @@ const settings = {
 
 const ProductsList = ({ productsList = [], type = 'grid' }) => {
 
-  const renderContent = (item, index) => {
-    const { DetailPageURL, ImageUrl, Price, Title, Subtitle } = item;
+  const renderContent = item => {
+    const { DetailPageURL, ImageUrl, Title } = item;
     return (
       <a href={DetailPageURL} target="_blank" rel="nofollow noopener noreferrer" className={`flex p-2 ${type === 'carousel' ? 'flex-wrap justify-around' : ''} ${type === 'list' ? 'border-0 hover:bg-primary-100' : 'border rounded-md'} hover:border-primary-800 hover:cursor-pointer focus:outline-none focus:bg-primary-100 focus:border-primary-800`}>
-        <img src={ImageUrl} loading="lazy" className="flex-shrink-0 object-cover object-center rounded-lg" />
+        <img src={ImageUrl} loading="lazy" alt={Title} className="flex-shrink-0 object-cover object-center rounded-lg" />
         <div className="px-2 overflow-auto">
           <div className="text-gray-700 truncate-2-lines">{Title}</div>
           <ProductActionPrice product={item} />

@@ -34,7 +34,7 @@ export const ProductsListControl = (props) => {
   const setChange = ({ parsedType, parsedProducts }) => {
     onChange({
       type: parsedType || type,
-      productsList: parsedProducts?.length && parsedProducts || productsSelected?.length && productsSelected || productsList?.length && productsList,
+      productsList: (parsedProducts?.length && parsedProducts) || (productsSelected?.length && productsSelected) || (productsList?.length && productsList),
     });
   }
 
