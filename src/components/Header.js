@@ -8,7 +8,7 @@ import SearchInput from './SearchInput'
 const Navbar = ({ focusSearch, cancelSearch, searchOpened, menuOpened, toggleMenu, isScrolling }) => {
 
   return (
-    <header className={`bg-white principal-container flex justify-center w-full ${menuOpened ? 'z-20' : ''} ${isScrolling ? 'shadow-lg' : ''}`}>
+    <header className={`bg-white principal-container flex justify-center w-full ${menuOpened ? 'z-20' : 'z-10'} ${isScrolling ? 'shadow-lg' : ''}`}>
       <div className={`justify-between w-full flex md:p-4 relative`}>
         <Link to="/" className={`leading-none text-2xl sm:block sm:text-center no-underline outline-none text-white hover:text-secondary-500 focus:text-secondary-500 w-16 md:w-60 p-2 md:p-0`}>
           <picture className="w-30">
