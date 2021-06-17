@@ -9,10 +9,12 @@ featuredimage: /img/impresora-3d-ender-3.png
 <div class="w-full flex justify-center bg-primary-500">
     <div class="w-4/5 flex justify-between">
         <div class="flex justify-center items-center">
-            <h1 class="text-white">Titular</h1>
+            <h1 class="text-white text-3xl">Obtén calidad en tus impresiones a un precio inigualible</h1>
         </div>
         <div class="flex justify-center items-center">
-            <h1 class="text-white">Imagen</h1>
-        </div>
+
+![](/img/calidad-y-precio.png)
+
+\    </div>
     </div>
 </div>
