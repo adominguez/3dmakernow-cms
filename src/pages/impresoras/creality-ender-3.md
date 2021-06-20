@@ -24,6 +24,7 @@ featuredimage: /img/impresora-3d-ender-3.png
 ![](/img/impresora-3d-ender-3.png)
         </div>
     </div>
+
 </div>
 <div class="flex justify-center w-full border-b-2">
     <div class="flex flex-col justify-between w-full md:w-4/5 md:flex-row">
@@ -31,7 +32,7 @@ featuredimage: /img/impresora-3d-ender-3.png
             <div class="w-full p-2">
                 <span class="p-2 text-center"><span class="block text-xl font-extralight md:text-2xl lg:text-3xl">¿Qué vas a encontrar aquí?</span>
 
-<img src="/img/printy-animation-02.png" width="300" />
+<img src="https://cocky-yalow-a9e1a8.netlify.app/img/printy-animation-02.png" width="300" />
             </div>
         </div>
         <div class="flex items-center justify-center flex-1">
