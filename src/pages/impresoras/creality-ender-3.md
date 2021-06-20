@@ -25,13 +25,13 @@ featuredimage: /img/impresora-3d-ender-3.png
         </div>
     </div>
 </div>
-<div class="flex justify-center w-full border-b-2 bg-gray-800 text-white">
+<div class="flex justify-center w-full border-b-2">
     <div class="flex flex-col justify-between w-full md:w-4/5 md:flex-row">
         <div class="flex justify-center flex-1">
             <div class="w-full p-2">
                 <span class="p-2 text-center"><span class="block text-xl font-extralight md:text-2xl lg:text-3xl">¿Qué vas a encontrar aquí?</span>
 
-![](/img/printy-animation-02.png)
+<img src="/img/printy-animation-02.png" width="300" />
             </div>
         </div>
         <div class="flex items-center justify-center flex-1">
