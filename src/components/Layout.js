@@ -113,12 +113,7 @@ const TemplateWrapper = ({ children }) => {
       }
       <Header toggleMenu={menuClicked} menuOpened={menuOpened} focusSearch={focusSearch} cancelSearch={layoutClicked} searchOpened={searchOpened} isScrolling={isScrolling} />
       <main className={`overflow-y-auto overflow-x-hidden flex-1`} onScroll={scrollLayout}>
-        <section className={`principal-container flex-col`}>
-          <div className="flex flex-col justify-center w-full">
-            {children}
-          </div>
-        </section>
-        <Footer />
+        {children}
       </main>
       <CookieConsent
         enableDeclineButton

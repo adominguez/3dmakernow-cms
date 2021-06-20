@@ -28,6 +28,21 @@ collections:
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "impresoras"
+    label: "impresoras"
+    folder: "src/pages/impresoras"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "printer-page"}
+      - {label: "Nombre de la impresora", name: "title", required: true, widget: "string"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
+      - {label: "Título SEO", name: "seoTitle", widget: "string", required: true, hint: "campo de texto", pattern: ['^.{1,70}$', "este campo debe de tener un máximo de 70 caracteres"]}
+      - {label: "Descripción SEO", name: "seoDescription", widget: "text", required: true, hint: "campo de texto", pattern: ['^.{1,150}$', "este campo debe de tener un máximo de 150 caracteres"]}
+      - {label: "Post destacado", name: "featuredpost", widget: "boolean", required: false}
+      - {label: "Imagen destacada", name: "featuredimage", widget: image}
+      - {label: "Contenido", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
   - name: "reviews"
     label: "Review"
     folder: "src/pages/reviews"
