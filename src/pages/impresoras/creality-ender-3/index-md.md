@@ -35,13 +35,13 @@ featuredimage: https://cocky-yalow-a9e1a8.netlify.app/img/impresora-3d-ender-3.p
         <div class="flex justify-center flex-1">
             <div class="flex flex-col items-center justify-center w-full p-2">
                 <span class="block p-2 text-xl text-center font-extralight md:text-2xl lg:text-3xl">¿Qué vas a encontrar aquí?</span>
-                <img class="md:block" src="https://cocky-yalow-a9e1a8.netlify.app/img/printy-animation-02.png" width="300" />
+                <img class="hidden md:block" src="https://cocky-yalow-a9e1a8.netlify.app/img/printy-animation-02.png" width="300" />
             </div>
         </div>
-        <div class="flex items-center flex-1">
+        <div class="flex items-center p-3 md:p-0 flex-1">
             <ul class="text-lg">
-                <li><a href="">☑ texto 1</a></li>
-                <li><a href="">☑ texto 1</a></li>
+                <li><a class="hover:text-primary-500 focus:text-primary-500" href="">☑ texto 1</a></li>
+                <li><a class="hover:text-primary-500 focus:text-primary-500" href="">☑ texto 1</a></li>
             </ul>
         </div>
    </div>
@@ -49,6 +49,13 @@ featuredimage: https://cocky-yalow-a9e1a8.netlify.app/img/impresora-3d-ender-3.p
 <div class="flex justify-center w-full p-2">
     <div class="flex flex-col w-full md:w-4/5">
         <h2 class="block text-3xl text-primary-500 md:text-4xl lg:text-5xl">Un título</h2>
+        <p class="p-2 text-lg font-light text-blueGray-600">¿Estás buscando una impresora 3D que no sea muy cara y que realice unas impresiones muy buenas? <b class="font-bold">Su facilidad de montaje, la calidad que ofrece a la hora de imprimir piezas en 3D y su fácil manejo y uso</b>, ya sea en la nivelación de la cama o al cambiar de material, convierten a esta impresora en una de las más vendidas en el mundo.</p>
+        <p class="p-2 text-lg font-light text-blueGray-600">Si a todo esto, además, añadimos que tiene un precio realmente asequible, <b class="font-bold">podemos estar hablando de que es la impresora perfecta para comenzar en la impresión 3D</b>, o incluso para montar un pequeño negocio de impresión 3D.</p>
+   </div>
+</div>
+<div class="flex justify-center w-full p-2">
+    <div class="flex flex-col w-full md:w-4/5">
+        <h2 class="block text-3xl text-primary-500 md:text-4xl lg:text-5xl">Otro título</h2>
         <p class="p-2 text-lg font-light text-blueGray-600">¿Estás buscando una impresora 3D que no sea muy cara y que realice unas impresiones muy buenas? <b class="font-bold">Su facilidad de montaje, la calidad que ofrece a la hora de imprimir piezas en 3D y su fácil manejo y uso</b>, ya sea en la nivelación de la cama o al cambiar de material, convierten a esta impresora en una de las más vendidas en el mundo.</p>
         <p class="p-2 text-lg font-light text-blueGray-600">Si a todo esto, además, añadimos que tiene un precio realmente asequible, <b class="font-bold">podemos estar hablando de que es la impresora perfecta para comenzar en la impresión 3D</b>, o incluso para montar un pequeño negocio de impresión 3D.</p>
    </div>
