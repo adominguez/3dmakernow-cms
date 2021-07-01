@@ -31,7 +31,7 @@ collections:
   - name: "impresoras"
     label: "impresoras"
     folder: "src/pages/impresoras"
-    path: src/pages/impresoras/{{slug}}/index.md
+    path: "{{slug}}/index.md"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "printer-page"}
