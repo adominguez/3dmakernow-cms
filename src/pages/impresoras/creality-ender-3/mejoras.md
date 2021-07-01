@@ -1,6 +1,6 @@
 ---
-templateKey: printer-page
-title: Creality Ender 3 mejoras
+templateKey: aditional-printer-page
+title: mejoras
 date: 2021-06-16T17:50:31.856Z
 seoTitle: Las mejoras de la ender 3
 seoDescription: Una super descripción para las mejoras
