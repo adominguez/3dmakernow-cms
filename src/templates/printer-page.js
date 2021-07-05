@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import Submenu from '../components/Submenu'
 
 export const PrinterPageTemplate = (props) => {
   const {
@@ -17,7 +16,6 @@ export const PrinterPageTemplate = (props) => {
   
   return (
     <>
-      <Submenu title={title} />
       <section className="flex justify-center w-full">
         {helmet || ''}
         <PostContent className="w-full" content={content} />
