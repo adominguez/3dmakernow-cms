@@ -24,14 +24,14 @@ AditionalPrinterPageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   title: PropTypes.string,
-  seoTitle: PropTypes.string,
-  seoDescription: PropTypes.string,
+  metaTitle: PropTypes.string,
+  metaDescription: PropTypes.string,
   helmet: PropTypes.object,
 }
 
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data
-  const { title, seoTitle, seoDescription } = post.frontmatter;
+  const { title, metaTitle, metaDescription } = post.frontmatter;
   return (
     <Layout>
       <AditionalPrinterPageTemplate
@@ -39,11 +39,11 @@ const PrinterPage = ({ data }) => {
         contentComponent={HTMLContent}
         description={"Descripción a cambiar"}
         helmet={
-          <Helmet titleTemplate={seoTitle}>
-            <title>{seoTitle}</title>
+          <Helmet titleTemplate={metaTitle}>
+            <title>{metaTitle}</title>
             <meta
               name="description"
-              content={seoDescription}
+              content={metaDescription}
             />
           </Helmet>
         }
@@ -71,8 +71,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         tags
         title,
-        seoDescription,
-        seoTitle
+        metaDescription,
+        metaTitle
       }
     }
   }

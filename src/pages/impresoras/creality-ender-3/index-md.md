@@ -2,8 +2,8 @@
 templateKey: printer-page
 title: Creality Ender 3
 date: 2021-07-01T17:29:35.910Z
-seoTitle: Este es el título SEO
-seoDescription: Esta es la descripción SEO
+metaTitle: Este es el título SEO
+metaDescription: Esta es la descripción SEO
 featuredimage: https://cocky-yalow-a9e1a8.netlify.app/img/impresora-3d-ender-3.png
 ---
 <div class="flex justify-center w-full border-b-2">

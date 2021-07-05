@@ -2,8 +2,8 @@
 templateKey: printer-page
 title: Artillery genius
 date: 2021-06-16T17:50:31.856Z
-seoTitle: La mejor impresora 3D que puedes comprar en estos momentos
-seoDescription: Una super descripción para el artículo
+metaTitle: La mejor impresora 3D que puedes comprar en estos momentos
+metaDescription: Una super descripción para el artículo
 featuredimage: /img/impresora-3d-ender-3.png
 ---
 <div class="flex justify-center w-full border-b-2">

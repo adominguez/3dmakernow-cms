@@ -2,8 +2,8 @@
 templateKey: aditional-printer-page
 title: mejoras
 date: 2021-06-16T17:50:31.856Z
-seoTitle: Las mejoras de la ender 3
-seoDescription: Una super descripción para las mejoras
+metaTitle: Las mejoras de la ender 3
+metaDescription: Una super descripción para las mejoras
 featuredimage: /img/impresora-3d-ender-3.png
 ---
 <div class="flex justify-center w-full border-b-2">
