@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import { products, printersTypes, filamentsTypes, filamentsColor, resinsColor, accesorios, postprocesados, printyText } from '../utils/utils'
+import { products, printersTypes, filamentsTypes, filamentsColor, resinsColor, accesorios, postprocesados, printyText, windowGlobal } from '../utils/utils'
 
 const SearcherCombo = ({ }) => {
   const [product, setProduct] = useState(products[0]);
@@ -136,7 +136,7 @@ const SearcherCombo = ({ }) => {
   }
 
   const getUrl = () => {
-    const path = window.location.pathname === '/' ? '' : '../';
+    const path = windowGlobal.location.pathname === '/' ? '' : '../';
     return `${path}qp?s=${base64Encode(transformProduct().toLowerCase())}`;
   }
 

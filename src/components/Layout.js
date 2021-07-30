@@ -6,7 +6,7 @@ import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import CookieConsent from "react-cookie-consent";
 import { itemsToSearch } from "../utils/searcher.js";
-import { actualUrlpath, errorMessages } from "../utils/utils.js";
+import { actualUrlpath, errorMessages, windowGlobal } from "../utils/utils.js";
 import ErrorMessage from './ErrorMessage';
 import logoMovil from '../img/logo-movil.svg'
 
@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children }) => {
     document.addEventListener("keydown", escFunction, false);
     setLocalStorage();
 
-    window.addEventListener("load", handleLoading);
+    windowGlobal.addEventListener("load", handleLoading);
 
     return () => {
       document.removeEventListener("keydown", escFunction, false);
@@ -145,7 +145,7 @@ const TemplateWrapper = ({ children }) => {
               {children}
             </main>
             {
-              !window.navigator.onLine ?
+              !windowGlobal.navigator.onLine ?
                 <div className="absolute bg-white border border-red-700 rounded-md max-w-max bottom-2 right-6">
                   <ErrorMessage textError={errorMessages.noInternetConnection} />
                 </div>

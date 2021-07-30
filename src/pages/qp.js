@@ -3,12 +3,12 @@ import Layout from '../components/Layout';
 import SearcherCombo from '../components/SearcherCombo';
 import ProductsList from '../components/productsList';
 import ErrorMessage from '../components/ErrorMessage';
-import { errorMessages } from '../utils/utils';
+import { errorMessages, windowGlobal } from '../utils/utils';
 import LoadingSpinner from '../components/LoadingSpinner';
 
 
 const QuickProduct = () => {
-  const {search} = window.location;
+  const {search} = windowGlobal.location;
   const [productsList, setProductsList] = useState(undefined);
   const [searching, setSearching] = useState(false);
   const [searchingError, setSearchingError] = useState(false);
@@ -72,7 +72,7 @@ const QuickProduct = () => {
           }
           {
             searchingError ?
-              <ErrorMessage textError={!window.navigator.onLine ? errorMessages.noInternetConnection : errorMessages.searchProductError} />
+              <ErrorMessage textError={!windowGlobal.navigator.onLine ? errorMessages.noInternetConnection : errorMessages.searchProductError} />
             : null
           }
           {productsList ?
