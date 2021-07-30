@@ -29,13 +29,6 @@ const ProductsStars = ({ amazonRate, amazonRatings, totalNumberOfStars = 5, hide
   )
 }
 
-ProductsStars.propTypes = {
-  amazonRate: PropTypes.number,
-  amazonRatings: PropTypes.number,
-  hideAmazonRatings: PropTypes.bool,
-  hideAmazonRate: PropTypes.bool,
-}
-
 ProductsStars.defaultProps = {
   hideAmazonRatings: false,
   hideAmazonRate: false,
