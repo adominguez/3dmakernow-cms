@@ -8,7 +8,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 
 
 const QuickProduct = () => {
-  const {search} = windowGlobal.location;
+  const {search} = (windowGlobal || {}).location;
   const [productsList, setProductsList] = useState(undefined);
   const [searching, setSearching] = useState(false);
   const [searchingError, setSearchingError] = useState(false);
@@ -72,7 +72,7 @@ const QuickProduct = () => {
           }
           {
             searchingError ?
-              <ErrorMessage textError={!windowGlobal.navigator.onLine ? errorMessages.noInternetConnection : errorMessages.searchProductError} />
+              <ErrorMessage textError={!windowGlobal?.navigator?.onLine ? errorMessages.noInternetConnection : errorMessages.searchProductError} />
             : null
           }
           {productsList ?

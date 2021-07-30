@@ -136,7 +136,7 @@ const SearcherCombo = ({ }) => {
   }
 
   const getUrl = () => {
-    const path = windowGlobal.location.pathname === '/' ? '' : '../';
+    const path = windowGlobal?.location?.pathname === '/' ? '' : '../';
     return `${path}qp?s=${base64Encode(transformProduct().toLowerCase())}`;
   }
 
