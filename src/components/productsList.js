@@ -42,7 +42,7 @@ const ProductsList = ({ productsList = [], type = 'grid' }) => {
   const renderContent = item => {
     const { DetailPageURL, ImageUrl, Title } = item;
     return (
-      <a href={DetailPageURL} target="_blank" rel="nofollow noopener noreferrer" className={`flex p-2 ${type === 'carousel' ? 'flex-wrap justify-around' : ''} ${type === 'list' ? 'border-0 hover:bg-primary-100' : 'border rounded-md'} hover:border-primary-800 hover:cursor-pointer focus:outline-none focus:bg-primary-100 focus:border-primary-800`}>
+      <a href={DetailPageURL} target="_blank" rel="nofollow noopener noreferrer" className={`flex p-4 ${type === 'carousel' ? 'flex-wrap justify-around' : ''} ${type === 'list' ? 'border-0 hover:bg-primary-100' : 'border rounded-md'} hover:border-primary-800 hover:cursor-pointer focus:outline-none focus:bg-primary-100 focus:border-primary-800`}>
         <img src={ImageUrl} loading="lazy" alt={Title} className="flex-shrink-0 object-cover object-center rounded-lg" />
         <div className="px-2 overflow-auto">
           <div className="text-gray-700 truncate-2-lines">{Title}</div>
@@ -64,7 +64,7 @@ const ProductsList = ({ productsList = [], type = 'grid' }) => {
   const renderCarouselItem = (item, index) => {
     const { ASIN } = item;
     return (
-      <div key={ASIN} className="p-2 hola">
+      <div key={ASIN} className="p-2">
         {renderContent(item, index)}
       </div>
     )

@@ -78,21 +78,21 @@ export const ProductsListControl = (props) => {
         <div className="flex">
           <label htmlFor="type" className={`relative p-1 m-2 flex items-center border border-blueGray-300 rounded-md ${isTypeSelected('grid') ? 'bg-white' : 'bg-blueGray-200 opacity-50'}`}>
             <input type="radio" name="type" value="grid" className="absolute w-full h-full opacity-0 hover:cursor-pointer" checked={isTypeSelected('grid')} onChange={() => changeType('grid')} />
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
             </svg>
             Grid
           </label>
           <label htmlFor="type" className={`relative p-1 m-2 flex items-center border border-blueGray-300 rounded-md ${isTypeSelected('carousel') ? 'bg-white' : 'bg-blueGray-200 opacity-50'}`}>
             <input type="radio" name="type" value="carousel" className="absolute w-full h-full opacity-0 hover:cursor-pointer" checked={isTypeSelected('carousel')} onChange={() => changeType('carousel')} />
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
             </svg>
             Carrusel
           </label>
           <label htmlFor="type" className={`relative p-1 m-2 flex items-center border border-blueGray-300 rounded-md ${isTypeSelected('list') ? 'bg-white' : 'bg-blueGray-200 opacity-50'}`}>
             <input type="radio" name="type" value="list" className="absolute w-full h-full opacity-0 hover:cursor-pointer" checked={isTypeSelected('list')} onChange={() => changeType('list')} />
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
             </svg>
             Listado
