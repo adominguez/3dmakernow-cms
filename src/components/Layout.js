@@ -7,7 +7,7 @@ import { withPrefix } from 'gatsby'
 import CookieConsent from "react-cookie-consent";
 import { itemsToSearch } from "../utils/searcher.js";
 import { actualUrlpath, errorMessages } from "../utils/utils.js";
-import ErrorMessage from './errorMessage';
+import ErrorMessage from './ErrorMessage';
 import logoMovil from '../img/logo-movil.svg'
 
 const TemplateWrapper = ({ children }) => {
