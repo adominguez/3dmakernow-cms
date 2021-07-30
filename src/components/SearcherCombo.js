@@ -130,7 +130,7 @@ const SearcherCombo = ({ }) => {
    * Encoding a string to base64
    */
   const base64Encode = (str) => {
-    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (match, p1) => {
+    return typeof btoa !== 'undefined' && btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (match, p1) => {
       return String.fromCharCode('0x' + p1);
     }));
   }
