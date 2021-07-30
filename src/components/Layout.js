@@ -6,7 +6,8 @@ import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import CookieConsent from "react-cookie-consent";
 import { itemsToSearch } from "../utils/searcher.js";
-import { actualUrlpath } from "../utils/utils.js";
+import { actualUrlpath, errorMessages } from "../utils/utils.js";
+import ErrorMessage from './errorMessage'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -115,6 +116,13 @@ const TemplateWrapper = ({ children }) => {
       <main className={`overflow-y-auto overflow-x-hidden flex-1`} onScroll={scrollLayout}>
         {children}
       </main>
+      {
+        !window.navigator.onLine ?
+        <div className="absolute bg-white border border-red-700 rounded-md max-w-max bottom-2 right-6">
+          <ErrorMessage textError={errorMessages.noInternetConnection} />
+        </div>
+        : null
+      }
       <CookieConsent
         enableDeclineButton
         buttonText="aceptar"
