@@ -119,7 +119,7 @@ const TemplateWrapper = ({ children }) => {
             {children}
           </main>
           {
-            !onLine ?
+            typeof onLine !== 'undefined' && !onLine ?
               <div className="absolute bg-white border border-red-700 rounded-md max-w-max bottom-2 right-6">
                 <ErrorMessage textError={errorMessages.noInternetConnection} />
               </div>

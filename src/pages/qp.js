@@ -73,7 +73,7 @@ const QuickProduct = () => {
           }
           {
             searchingError ?
-              <ErrorMessage textError={!onLine ? errorMessages.noInternetConnection : errorMessages.searchProductError} />
+              <ErrorMessage textError={typeof onLine !== 'undefined' && !onLine ? errorMessages.noInternetConnection : errorMessages.searchProductError} />
             : null
           }
           {productsList ?
