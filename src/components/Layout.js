@@ -12,7 +12,6 @@ import logoMovil from '../img/logo-movil.svg'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
-  const [isLoading, setIsLoading] = useState(true);
   const [layoutOpened, toggleLayout] = useState(false);
   const [searchOpened, toggleSearch] = useState(false);
   const [menuOpened, toggleMenu] = useState(false);
@@ -22,16 +21,10 @@ const TemplateWrapper = ({ children }) => {
     document.addEventListener("keydown", escFunction, false);
     setLocalStorage();
 
-    windowGlobal.addEventListener("load", handleLoading);
-
     return () => {
       document.removeEventListener("keydown", escFunction, false);
     };
   }, []);
-
-  const handleLoading = () => {
-    setIsLoading(false);
-  };
 
   const escFunction = (event) => {
     if (event.keyCode === 27) {
@@ -115,61 +108,40 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      {
-        isLoading ?
-          <div style={{
-            position: 'absolute',
-            width: '100%',
-            height: '100%',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            overflow: 'hidden',
-            zIndex: 100,
-            backgroundColor: '#fff',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-            <img src={logoMovil} alt="3DMakerNow" />
-          </div>
-          :
-          <>
-            {
-              layoutOpened ?
-                <div className="absolute top-0 bottom-0 left-0 right-0 z-10 w-full h-screen bg-gray-900 bg-opacity-50" onClick={layoutClicked}></div> : ''
-            }
-            <Header toggleMenu={menuClicked} menuOpened={menuOpened} focusSearch={focusSearch} cancelSearch={layoutClicked} searchOpened={searchOpened} isScrolling={isScrolling} />
-            <main className={`overflow-y-auto overflow-x-hidden flex-1`} onScroll={scrollLayout}>
-              {children}
-            </main>
-            {
-              !windowGlobal.navigator.onLine ?
-                <div className="absolute bg-white border border-red-700 rounded-md max-w-max bottom-2 right-6">
-                  <ErrorMessage textError={errorMessages.noInternetConnection} />
-                </div>
-                : null
-            }
-            <CookieConsent
-              enableDeclineButton
-              buttonText="aceptar"
-              declineButtonText="Rechazar"
-              location="none"
-              overlay
-              style={{
-                backgroundColor: '#49b2a1',
-                width: '400px',
-                position: 'fixed',
-                bottom: '20px',
-                right: '20px',
-                left: 'auto'
-              }}
-              cookieName="google-analytics">
-              Doy mi consentimiento, pero cambiame los textos
-            </CookieConsent>
-          </>
-      }
+        <>
+          {
+            layoutOpened ?
+              <div className="absolute top-0 bottom-0 left-0 right-0 z-10 w-full h-screen bg-gray-900 bg-opacity-50" onClick={layoutClicked}></div> : ''
+          }
+          <Header toggleMenu={menuClicked} menuOpened={menuOpened} focusSearch={focusSearch} cancelSearch={layoutClicked} searchOpened={searchOpened} isScrolling={isScrolling} />
+          <main className={`overflow-y-auto overflow-x-hidden flex-1`} onScroll={scrollLayout}>
+            {children}
+          </main>
+          {
+            !windowGlobal?.navigator?.onLine ?
+              <div className="absolute bg-white border border-red-700 rounded-md max-w-max bottom-2 right-6">
+                <ErrorMessage textError={errorMessages.noInternetConnection} />
+              </div>
+              : null
+          }
+          <CookieConsent
+            enableDeclineButton
+            buttonText="aceptar"
+            declineButtonText="Rechazar"
+            location="none"
+            overlay
+            style={{
+              backgroundColor: '#49b2a1',
+              width: '400px',
+              position: 'fixed',
+              bottom: '20px',
+              right: '20px',
+              left: 'auto'
+            }}
+            cookieName="google-analytics">
+            Doy mi consentimiento, pero cambiame los textos
+          </CookieConsent>
+        </>
     </div>
   )
 }

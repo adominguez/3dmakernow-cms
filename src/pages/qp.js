@@ -8,7 +8,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 
 
 const QuickProduct = () => {
-  const {search} = (windowGlobal || {}).location;
+  const {search} = windowGlobal && windowGlobal?.location;
   const [productsList, setProductsList] = useState(undefined);
   const [searching, setSearching] = useState(false);
   const [searchingError, setSearchingError] = useState(false);
