@@ -146,3 +146,11 @@ export const orderProducts = [
     "Precio más caros primero",
     "Más vendidos"
 ]
+
+export const errorMessages = {
+    "errorTitle": "Uppps, algo no funciona bien",
+    "noResults": "No se han encontrado resultados",
+    "noInternetConnection": "No hay conexión a Internet",
+    "noProducts": "No hay productos para mostrar para los parámetros seleccionados, cambia los parámetros y vuelve a intentarlo de nuevo",
+    "searchProductError": "No se pudo conectar con la web. Por favor, recarga la página de nuevo o trata de realizar una nueva búsqueda."
+}
