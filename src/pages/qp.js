@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useState }  from 'react';
 import Layout from '../components/Layout';
 import SearcherCombo from '../components/SearcherCombo';
 import ProductsList from '../components/productsList';
-import ErrorMessage from '../components/errorMessage';
+import ErrorMessage from '../components/ErrorMessage';
 import { errorMessages } from '../utils/utils';
 import LoadingSpinner from '../components/LoadingSpinner';
 
