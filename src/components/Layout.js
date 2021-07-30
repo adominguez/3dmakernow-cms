@@ -11,6 +11,7 @@ import ErrorMessage from './ErrorMessage';
 import logoMovil from '../img/logo-movil.svg'
 
 const TemplateWrapper = ({ children }) => {
+  const { onLine } = windowGlobal && windowGlobal?.navigator;
   const { title, description } = useSiteMetadata()
   const [layoutOpened, toggleLayout] = useState(false);
   const [searchOpened, toggleSearch] = useState(false);
@@ -118,7 +119,7 @@ const TemplateWrapper = ({ children }) => {
             {children}
           </main>
           {
-            !windowGlobal?.navigator?.onLine ?
+            !onLine ?
               <div className="absolute bg-white border border-red-700 rounded-md max-w-max bottom-2 right-6">
                 <ErrorMessage textError={errorMessages.noInternetConnection} />
               </div>
