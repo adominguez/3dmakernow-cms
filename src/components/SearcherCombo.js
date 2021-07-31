@@ -4,15 +4,48 @@ import PropTypes from "prop-types";
 import { products, printersTypes, filamentsTypes, filamentsColor, resinsColor, accesorios, postprocesados, printyText } from '../utils/utils'
 
 const SearcherCombo = ({ }) => {
-  const [product, setProduct] = useState(products[0]);
-  const [printerType, setPrinterType] = useState(printersTypes[0]);
-  const [filamentType, setFilamentType] = useState(filamentsTypes[0]);
-  const [filamentColor, setFilamentColor] = useState(filamentsColor[0]);
-  const [resinColor, setResinColor] = useState(resinsColor[0]);
-  const [accesorio, setAccesorio] = useState(accesorios[0]);
-  const [postprocesado, setPostprocesado] = useState(postprocesados[0]);
+  const { sessionProduct, sessionPrinterType, sessionFilamentColor, sessionFilamentType, sessionPostprocesado, sessionAccesorio, sessionResinColor } = JSON.parse(sessionStorage.getItem('searcherCombo')) || {}
+  const [product, setProduct] = useState(sessionProduct || products[0]);
+  const [printerType, setPrinterType] = useState(sessionPrinterType || printersTypes[0]);
+  const [filamentType, setFilamentType] = useState(sessionFilamentType || filamentsTypes[0]);
+  const [filamentColor, setFilamentColor] = useState(sessionFilamentColor || filamentsColor[0]);
+  const [resinColor, setResinColor] = useState(sessionResinColor || resinsColor[0]);
+  const [accesorio, setAccesorio] = useState(sessionAccesorio || accesorios[0]);
+  const [postprocesado, setPostprocesado] = useState(sessionPostprocesado || postprocesados[0]);
+
   useEffect(() => {
-  }, []);
+    if(product === products[0]) {
+      sessionStorage.setItem('searcherCombo', JSON.stringify({
+        sessionProduct: product,
+        sessionPrinterType: printerType
+      }));
+    }
+    if(product === products[1]) {
+      sessionStorage.setItem('searcherCombo', JSON.stringify({
+        sessionProduct: product,
+        sessionFilamentType: filamentType,
+        sessionFilamentColor: filamentColor
+      }));
+    }
+    if(product === products[2]) {
+      sessionStorage.setItem('searcherCombo', JSON.stringify({
+        sessionProduct: product,
+        sessionResinColor: resinColor
+      }));
+    }
+    if(product === products[3]){
+      sessionStorage.setItem('searcherCombo', JSON.stringify({
+        sessionProduct: product,
+        sessionAccesorio: accesorio
+      }));
+    }
+    if(product === products[4]){
+      sessionStorage.setItem('searcherCombo', JSON.stringify({
+        sessionProduct: product,
+        sessionPostprocesado: postprocesado
+      }));
+    }
+  }, [product, printerType, filamentType, filamentColor, resinColor, accesorio, postprocesado]);
 
   const searcherForm = () => {
     return (
