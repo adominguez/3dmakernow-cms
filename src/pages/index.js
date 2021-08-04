@@ -3,8 +3,11 @@ import Layout from '../components/Layout'
 import SearcherCombo from '../components/SearcherCombo'
 
 const Home = () => (
-  <Layout>
-    <SearcherCombo />
+  <Layout
+    metatitle="Este es un título chulo para la página de inicio"
+    metadescription="Esta es una descripción chula para la página de inicio">
+    <SearcherCombo useAsTitle />
+
   </Layout>
 )
 

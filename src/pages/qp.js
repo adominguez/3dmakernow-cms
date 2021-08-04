@@ -61,7 +61,7 @@ const QuickProduct = () => {
 
   return (
     <Layout>
-      <SearcherCombo />
+      <SearcherCombo useAsTitle />
       <div className="flex justify-center w-full">
         <div className="flex flex-col justify-between w-full md:w-4/5 md:flex-row text-blueGray-300">
           {

@@ -3,7 +3,7 @@ import { Link, withPrefix } from "gatsby";
 import PropTypes from "prop-types";
 import { products, printersTypes, filamentsTypes, filamentsColor, resinsColor, accesorios, postprocesados, printyText } from '../utils/utils'
 
-const SearcherCombo = ({ }) => {
+const SearcherCombo = ({ useAsTitle }) => {
   const { sessionProduct, sessionPrinterType, sessionFilamentColor, sessionFilamentType, sessionPostprocesado, sessionAccesorio, sessionResinColor } = JSON.parse(sessionStorage.getItem('searcherCombo')) || {}
   const [product, setProduct] = useState(sessionProduct || products[0]);
   const [printerType, setPrinterType] = useState(sessionPrinterType || printersTypes[0]);
@@ -177,9 +177,16 @@ const SearcherCombo = ({ }) => {
       <div className="flex flex-col justify-between w-full md:w-4/5 md:flex-row text-blueGray-300">
         <div className="flex justify-center flex-1">
           <div className="w-full p-2">
-            <h1 className="p-2 text-center">
-              <span className="block text-2xl text-primary-500 md:text-3xl lg:text-4xl">Todo lo que necesitas para imprimir en 3D está a tu alcance</span> <span className="block text-xl font-extralight md:text-2xl lg:text-3xl">Encuentra lo que buscas de una forma sencilla, fácil y rápida.</span>
-            </h1>
+            {
+              useAsTitle ?
+                <h1 className="p-2 text-center">
+                  <span className="block text-2xl text-primary-500 md:text-3xl lg:text-4xl">Todo lo que buscas para imprimir en 3D está a tu alcance</span> <span className="block text-xl font-extralight md:text-2xl lg:text-3xl">Encuentra lo que necesitas de una forma sencilla, fácil y rápida.</span>
+                </h1>
+              : 
+              <h2 className="p-2 text-center">
+                <span className="block text-2xl text-primary-500 md:text-3xl lg:text-4xl">Todo lo que buscas para imprimir en 3D está a tu alcance</span> <span className="block text-xl font-extralight md:text-2xl lg:text-3xl">Encuentra lo que necesitas de una forma sencilla, fácil y rápida.</span>
+              </h2>
+            }
             <div className="flex flex-col p-2">
               {searcherForm()}
               {product === "Impresoras 3D" ? printerForm() : null}
