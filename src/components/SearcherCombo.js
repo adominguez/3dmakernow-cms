@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { products, printersTypes, filamentsTypes, filamentsColor, resinsColor, accesorios, postprocesados, printyText } from '../utils/utils'
 
 const SearcherCombo = ({ useAsTitle }) => {
-  const { sessionProduct, sessionPrinterType, sessionFilamentColor, sessionFilamentType, sessionPostprocesado, sessionAccesorio, sessionResinColor } = JSON.parse(sessionStorage.getItem('searcherCombo')) || {}
+  const { sessionProduct, sessionPrinterType, sessionFilamentColor, sessionFilamentType, sessionPostprocesado, sessionAccesorio, sessionResinColor } = typeof sessionStorage !== 'undefined' && sessionStorage ? JSON.parse(sessionStorage.getItem('searcherCombo')) : {}
   const [product, setProduct] = useState(sessionProduct || products[0]);
   const [printerType, setPrinterType] = useState(sessionPrinterType || printersTypes[0]);
   const [filamentType, setFilamentType] = useState(sessionFilamentType || filamentsTypes[0]);
