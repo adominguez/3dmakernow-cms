@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import SearcherCombo from '../components/SearcherCombo'
 import CategoriesList from '../components/CategoriesList';
-import ReviewRoll from '../components/ReviewRoll'
+import PrinterRoll from '../components/PrinterRoll'
 
 const initialCategories = [
   {
@@ -142,7 +142,7 @@ const Home = () => {
       <div className="flex flex-col justify-between w-full md:w-4/5 text-blueGray-500">
         <h2 className="p-2 text-2xl font-light text-center md:font-extralight lg:text-3xl text-primary-500">Últimas reviews de impresoras 3D</h2>
         <p className="block text-xl text-center font-extralight md:font-thin lg:text-2xl text-blueGray-400">¿Quieres conocer más en profundidad alguna impresora? Aquí puedes ver las últimas reviews de impresoras</p>
-        <ReviewRoll maxProducts={8} />
+        <PrinterRoll maxProducts={8} />
       </div>
     </section>
   </Layout>)
