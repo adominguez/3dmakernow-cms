@@ -121,6 +121,5 @@ title: Mejor impresora 3D Artillery Genius
 name: Artillery genius
 date: 2021-06-13T15:20:55.770Z
 description: Esta es la mejor impresora 3D que se puede encontrar actualmente.
-useInHomeSlider: true
 ---
 <p class="text-red-500">Contenido sobre la Artillery</p>
