@@ -179,13 +179,19 @@ const SearcherCombo = ({ useAsTitle }) => {
           <div className="w-full p-2">
             {
               useAsTitle ?
-                <h1 className="p-2 text-center">
-                  <span className="block text-2xl text-primary-500 md:text-3xl lg:text-4xl">Todo lo que buscas para imprimir en 3D está a tu alcance</span> <span className="block text-xl font-extralight md:text-2xl lg:text-3xl">Encuentra lo que necesitas de una forma sencilla, fácil y rápida.</span>
-                </h1>
-              : 
-              <h2 className="p-2 text-center">
-                <span className="block text-2xl text-primary-500 md:text-3xl lg:text-4xl">Todo lo que buscas para imprimir en 3D está a tu alcance</span> <span className="block text-xl font-extralight md:text-2xl lg:text-3xl">Encuentra lo que necesitas de una forma sencilla, fácil y rápida.</span>
-              </h2>
+                <>
+                  <h1 className="block p-2 text-2xl text-center text-primary-500 md:text-3xl lg:text-4xl">
+                    Todo lo que buscas para imprimir en 3D está a tu alcance
+                  </h1>
+                  <h2 className="block text-xl text-center font-extralight md:text-2xl lg:text-3xl">Encuentra lo que necesitas de una forma sencilla, fácil y rápida.</h2>
+                </>
+              :
+              <>
+                <h2 className="block p-2 text-2xl text-center text-primary-500 md:text-3xl lg:text-4xl">
+                  Todo lo que buscas para imprimir en 3D está a tu alcance
+                </h2>
+                <h3 className="block text-xl text-center font-extralight md:text-2xl lg:text-3xl">Encuentra lo que necesitas de una forma sencilla, fácil y rápida.</h3>
+              </>
             }
             <div className="flex flex-col p-2">
               {searcherForm()}
