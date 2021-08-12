@@ -32,8 +32,8 @@ collections:
     label: "impresoras"
     folder: "src/pages/impresoras"
     path: "{{slug}}/index.md"
-    media_folder: ''
-    public_folder: ''
+    media_folder: '/static/img'
+    public_folder: '/static/img'
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "printer-page"}
