@@ -38,17 +38,18 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "printer-page"}
       - {label: "Nombre de la impresora", name: "title", required: true, widget: "string"}
-      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
-      - {label: "Título SEO", name: "metaTitle", widget: "string", required: true, hint: "campo de texto", pattern: ['^.{1,70}$', "este campo debe de tener un máximo de 70 caracteres"]}
-      - {label: "Descripción SEO", name: "metaDescription", widget: "text", required: true, hint: "campo de texto", pattern: ['^.{1,150}$', "este campo debe de tener un máximo de 150 caracteres"]}
+      - {label: "Título de la página", name: "pageTitle", required: true, widget: "string"}
       - label: "Imágenes de producto"
         name: "productsImages"
         widget: "list"
         fields:
           - { label: "Imagen", name: "src", widget: "image", required:true }
           - { label: "Alt Texto", name: "alt", widget: "string", required:true }
-      - {label: "Imagen destacada", name: "featuredimage", widget: image}
       - {label: "Contenido", name: "body", widget: "markdown"}
+      - {label: "Imagen destacada", name: "featuredimage", widget: image}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
+      - {label: "Título SEO", name: "metaTitle", widget: "string", required: true, hint: "campo de texto", pattern: ['^.{1,70}$', "este campo debe de tener un máximo de 70 caracteres"]}
+      - {label: "Descripción SEO", name: "metaDescription", widget: "text", required: true, hint: "campo de texto", pattern: ['^.{1,150}$', "este campo debe de tener un máximo de 150 caracteres"]}
       - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "reviews"
