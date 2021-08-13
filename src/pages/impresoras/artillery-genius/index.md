@@ -1,10 +1,20 @@
 ---
 templateKey: printer-page
 title: Artillery genius
+pageTitle: título de la página h1
+productsImages:
+  - src: /static/img/guia-inicio-impresion-3d-desktop.png
+    alt: texto alt
+  - src: /static/img/filamento-flexible-desktop.png
+    alt: texto alt 2
+  - src: /static/img/impresora-3d-gran-formato-desktop.png
+    alt: texto alt 3
+  - src: /static/img/kit-impresora-3d-desktop.png
+    alt: texto alt 4
+featuredimage: /img/impresora-3d-ender-3.png
 date: 2021-06-16T17:50:31.856Z
 metaTitle: La mejor impresora 3D que puedes comprar en estos momentos
 metaDescription: Una super descripción para el artículo
-featuredimage: /img/impresora-3d-ender-3.png
 ---
 <div class="flex justify-center w-full border-b-2">
     <div class="flex flex-col justify-between w-full md:w-4/5 md:flex-row">
