@@ -4,7 +4,9 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Submenu from '../components/Submenu'
-import ProductDetailValoration from '../components/ProductDetailValoration'
+import ProductDetailValoration from '../components/ProductDetailValoration';
+import CustomSection from '../components/CustomSection'
+
 
 export const PrinterPageTemplate = (props) => {
   const {
@@ -16,7 +18,8 @@ export const PrinterPageTemplate = (props) => {
     initialValuation,
     amazonLink,
     aliexpressLink,
-    customLinks
+    customLinks,
+    customSections
   } = props;
   const PostContent = contentComponent || Content
   
@@ -24,6 +27,13 @@ export const PrinterPageTemplate = (props) => {
     <>
       <Submenu title={title} />
       <ProductDetailValoration pageTitle={pageTitle} initialValuation={initialValuation} productsImages={productsImages} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
+      {
+        customSections && customSections.length ?
+          customSections.map(({sectionContent, title, showBorder}) => (
+            <CustomSection title={title} sectionContent={sectionContent} showBorder={showBorder} />
+          ))
+        : null
+      }
       <section className="flex justify-center w-full">
         <PostContent className="w-full" content={content} />
       </section>

@@ -54,6 +54,13 @@ collections:
         fields:
           - { label: "Imagen", name: "src", widget: "image", required:true }
           - { label: "Alt Texto", name: "alt", widget: "string", required:true }
+      - label: "Creación de secciones"
+        name: "customSections"
+        widget: "list"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - {label: "Contenido de la sección", name: "sectionContent", required: true, widget: "markdown"}
+          - {label: "Mostrar borde inferior", name: "showBorder", widget: "boolean", default: false}
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Imagen destacada", name: "featuredimage", widget: image}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}

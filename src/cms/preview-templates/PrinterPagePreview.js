@@ -13,7 +13,8 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
   const initialValuation = entry.getIn(['data', 'initialValuation']);
   const amazonLink = entry.getIn(['data', 'amazonLink']);
   const aliexpressLink = entry.getIn(['data', 'aliexpressLink']);
-  const customLinks = entry.getIn([ 'data'] ).toJS().customLinks
+  const customLinks = entry.getIn([ 'data'] ).toJS().customLinks;
+  const customSections = entry.getIn([ 'data'] ).toJS().customSections;
   return (
     <PrinterPageTemplate
       content={widgetFor('body')}
@@ -26,6 +27,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       amazonLink={amazonLink}
       aliexpressLink={aliexpressLink}
       customLinks={customLinks}
+      customSections={customSections}
     />
   )
 }
