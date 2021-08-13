@@ -10,7 +10,7 @@ import { actualUrlpath, errorMessages, windowGlobal } from "../utils/utils.js";
 import ErrorMessage from './ErrorMessage';
 import logoMovil from '../img/logo-movil.svg'
 
-const TemplateWrapper = ({ children, metatitle, metadescription }) => {
+const TemplateWrapper = ({ children, metaTitle, metaDescription }) => {
   const { onLine } = windowGlobal && windowGlobal?.navigator;
   const { title, description } = useSiteMetadata()
   const [layoutOpened, toggleLayout] = useState(false);
@@ -73,8 +73,8 @@ const TemplateWrapper = ({ children, metatitle, metadescription }) => {
     <div className={`flex flex-col h-screen 'bg-backgroundSite`}>
       <Helmet>
         <html lang="es" />
-        <title>{metatitle || title}</title>
-        <meta name="description" content={metadescription || description} />
+        <title>{metaTitle || title}</title>
+        <meta name="description" content={metaDescription || description} />
 
         <link
           rel="apple-touch-icon"
@@ -102,7 +102,7 @@ const TemplateWrapper = ({ children, metatitle, metadescription }) => {
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={metatitle || title} />
+        <meta property="og:title" content={metaTitle || title} />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"

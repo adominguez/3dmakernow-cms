@@ -1,25 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Submenu from '../components/Submenu'
+import ProductDetailValoration from '../components/ProductDetailValoration'
 
 export const PrinterPageTemplate = (props) => {
   const {
     content,
     contentComponent,
-    helmet,
-    title
+    pageTitle,
+    productsImages,
+    title,
+    initialValuation,
+    amazonLink,
+    aliexpressLink,
+    customLinks
   } = props;
   const PostContent = contentComponent || Content
   
   return (
     <>
       <Submenu title={title} />
+      <ProductDetailValoration pageTitle={pageTitle} initialValuation={initialValuation} productsImages={productsImages} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
       <section className="flex justify-center w-full">
-        {helmet || ''}
         <PostContent className="w-full" content={content} />
       </section>
     </>
@@ -29,31 +34,23 @@ export const PrinterPageTemplate = (props) => {
 PrinterPageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  title: PropTypes.string,
-  metaTitle: PropTypes.string,
-  metaDescription: PropTypes.string,
-  helmet: PropTypes.object,
+  pageTitle: PropTypes.string,
+  productsImages: PropTypes.array,
 }
 
 const PrinterPage = ({ data }) => {
-  const { markdownRemark: post } = data
-  const { title, metaTitle, metaDescription } = post.frontmatter;
+  const { markdownRemark: post } = data;
+  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage } = post.frontmatter;
+  debugger
   return (
-    <Layout>
+    <Layout metaTitle={metaTitle} metaDescription={metaDescription}>
       <PrinterPageTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={"Descripción a cambiar"}
-        helmet={
-          <Helmet titleTemplate={metaTitle}>
-            <title>{metaTitle}</title>
-            <meta
-              name="description"
-              content={metaDescription}
-            />
-          </Helmet>
-        }
         tags={post.frontmatter.tags}
+        pageTitle={pageTitle}
+        productsImages={productsImages}
         title={title}
       />
     </Layout>
@@ -74,10 +71,31 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        title
+        templateKey
         date(formatString: "MMMM DD, YYYY")
-        tags
-        title,
-        metaDescription,
+        featuredpost
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 120, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          absolutePath
+        }
+        metaDescription
+        description
+        pageTitle
+        productsImages {
+          alt
+          src {
+            childImageSharp {
+              fluid(maxWidth: 500, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
         metaTitle
       }
     }

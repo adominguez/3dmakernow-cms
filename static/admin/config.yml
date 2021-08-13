@@ -38,7 +38,16 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "printer-page"}
       - {label: "Nombre de la impresora", name: "title", required: true, widget: "string"}
-      - {label: "Título de la página", name: "pageTitle", required: true, widget: "string"}
+      - {label: "Título de la página (h1)", name: "pageTitle", required: true, widget: "string"}
+      - {label: "Enlace de Amazon", name: "amazonLink", widget: "string"}
+      - {label: "Enlace de Aliexpress", name: "aliexpressLink", widget: "string"}
+      - label: "Enlaces personalizados"
+        name: "customLinks"
+        widget: "list"
+        fields:
+          - { label: "Tienda", name: "store", widget: "string", required:true }
+          - { label: "link", name: "link", widget: "string", required:true }
+      - {label: "Valoración inicial", name: "initialValuation", required: true, widget: "markdown"}
       - label: "Imágenes de producto"
         name: "productsImages"
         widget: "list"

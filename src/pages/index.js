@@ -92,7 +92,7 @@ const Home = () => {
     metatitle="Este es un título chulo para la página de inicio"
     metadescription="Esta es una descripción chula para la página de inicio">
     <SearcherCombo useAsTitle />
-    <section id="searcherCombo" className="flex justify-center w-full p-8 border-b bg-blueGray-200 border-blueGray-300">
+    <section className="flex justify-center w-full p-8 border-b bg-blueGray-200 border-blueGray-300">
       <div className="flex flex-col justify-between w-full md:w-4/5 text-blueGray-500">
         <h2 className="p-2 text-2xl font-light text-center md:font-extralight lg:text-3xl text-primary-500">
           La impresora 3D perfecta para cada Maker
