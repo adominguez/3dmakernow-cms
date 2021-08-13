@@ -3,7 +3,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const ImageGalery = ({ images }) => {
 
-  const [image, setImage] = useState(images.length ? images[0] : null);
+  const [image, setImage] = useState(images && images.length ? images[0] : null);
 
   const isImageSelected = (src) => {
     return image.src === src;

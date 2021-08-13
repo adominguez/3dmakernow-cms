@@ -15,7 +15,11 @@ const ProductDetailValoration = ({ pageTitle, productsImages, initialValuation, 
     <section className="flex justify-center w-full border-b bg-blueGray-200 border-blueGray-300">
       <div className="flex flex-col justify-between w-full md:flex-row md:w-4/5 text-blueGray-500">
         <div className="flex flex-col justify-center flex-1">
-          <ImageGalery images={images} />
+          {
+            images && images.length ?
+              <ImageGalery images={images} />
+            : null
+          }
         </div>
         <div className="flex flex-col flex-1 p-4">
           <h1 className="p-2 text-2xl font-light text-center lg:text-3xl text-primary-500">
