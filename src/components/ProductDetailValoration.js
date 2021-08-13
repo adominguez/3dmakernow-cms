@@ -6,7 +6,7 @@ import { capitalize } from '../utils/utils';
 
 const ProductDetailValoration = ({ pageTitle, productsImages, initialValuation, amazonLink, aliexpressLink, customLinks }) => {
 
-  const images = productsImages.filter(item => item !== 'undefined').map(image => ({
+  const images = productsImages?.filter(item => item !== 'undefined').map(image => ({
     src: image?.src?.childImageSharp?.fluid?.src || image?.src.replace('/static', ''),
     alt: image?.alt
   }))
