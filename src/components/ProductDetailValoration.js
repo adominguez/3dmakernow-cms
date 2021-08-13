@@ -25,7 +25,7 @@ const ProductDetailValoration = ({ pageTitle, productsImages, initialValuation, 
           <h1 className="p-2 text-2xl font-light text-center lg:text-3xl text-primary-500">
             {capitalize(pageTitle)}
           </h1>
-          <HTMLContent className="flex-1 my-2 text-base font-light lg:text-lg" content={initialValuation} />
+          <HTMLContent className="flex-1 my-2 text-lg font-light" content={initialValuation} />
           <div className="flex flex-wrap justify-center">
             {
               amazonLink ?

@@ -29,8 +29,8 @@ export const PrinterPageTemplate = (props) => {
       <ProductDetailValoration pageTitle={pageTitle} initialValuation={initialValuation} productsImages={productsImages} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
       {
         customSections && customSections.length ?
-          customSections.map(({sectionContent, title, showBorder}) => (
-            <CustomSection title={title} sectionContent={sectionContent} showBorder={showBorder} />
+          customSections.map(({sectionContent, title, showBorder, backgroundColor}) => (
+            <CustomSection title={title} sectionContent={sectionContent} showBorder={showBorder} backgroundColor={backgroundColor} />
           ))
         : null
       }
@@ -50,7 +50,7 @@ PrinterPageTemplate.propTypes = {
 
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage } = post.frontmatter;
+  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks } = post.frontmatter;
   debugger
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription}>
@@ -62,6 +62,11 @@ const PrinterPage = ({ data }) => {
         pageTitle={pageTitle}
         productsImages={productsImages}
         title={title}
+        initialValuation={initialValuation}
+        amazonLink={amazonLink}
+        aliexpressLink={aliexpressLink}
+        customLinks={customLinks}
+        customSections={customSections}
       />
     </Layout>
   )
@@ -85,6 +90,15 @@ export const pageQuery = graphql`
         templateKey
         date(formatString: "MMMM DD, YYYY")
         featuredpost
+        customLinks {
+          link
+          store
+        }
+        customSections {
+          sectionContent
+          showBorder
+          title
+        }
         featuredimage {
           childImageSharp {
             fluid(maxWidth: 120, quality: 100) {
@@ -107,6 +121,9 @@ export const pageQuery = graphql`
           }
         }
         metaTitle
+        amazonLink
+        aliexpressLink
+        initialValuation
       }
     }
   }

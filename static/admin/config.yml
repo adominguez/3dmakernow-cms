@@ -58,6 +58,11 @@ collections:
         name: "customSections"
         widget: "list"
         fields:
+          - label: "Color de fondo"
+            name: "backgroundColor"
+            widget: "select"
+            options: ["Claro", "Medio", "Oscuro"]
+            default: "Claro"
           - { label: "Título", name: "title", widget: "string" }
           - {label: "Contenido de la sección", name: "sectionContent", required: true, widget: "markdown"}
           - {label: "Mostrar borde inferior", name: "showBorder", widget: "boolean", default: false}
