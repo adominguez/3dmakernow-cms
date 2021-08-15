@@ -16,6 +16,10 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
   const customLinks = entry.getIn([ 'data'] ).toJS().customLinks;
   const customSections = entry.getIn([ 'data'] ).toJS().customSections;
   const properties = entry.getIn([ 'data'] ).toJS().properties;
+  const whereBuy = entry.getIn([ 'data'] ).toJS().whereBuy;
+  const featuredimage = entry.getIn([ 'data'] ).toJS().featuredimage;
+  const advantagesDisadvantajes = entry.getIn([ 'data'] ).toJS().advantagesDisadvantajes;
+
   return (
     <PrinterPageTemplate
       content={widgetFor('body')}
@@ -30,6 +34,9 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       customLinks={customLinks}
       customSections={customSections}
       properties={properties}
+      whereBuy={whereBuy}
+      featuredimage={featuredimage}
+      advantagesDisadvantajes={advantagesDisadvantajes}
     />
   )
 }

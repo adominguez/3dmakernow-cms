@@ -6,8 +6,10 @@ import Content, { HTMLContent } from '../components/Content'
 import Submenu from '../components/Submenu'
 import ProductDetailValoration from '../components/ProductDetailValoration';
 import CustomSection from '../components/CustomSection'
+import ProductDetailImage from '../components/ProductDetailImage'
 import FeatureTabs from '../components/FeatureTabs'
 import {convertedKeyProperties} from '../utils/utils'
+import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes'
 
 
 export const PrinterPageTemplate = (props) => {
@@ -22,7 +24,10 @@ export const PrinterPageTemplate = (props) => {
     aliexpressLink,
     customLinks,
     customSections,
-    properties
+    properties,
+    whereBuy,
+    featuredimage,
+    advantagesDisadvantajes
   } = props;
   const PostContent = contentComponent || Content
   
@@ -42,6 +47,20 @@ export const PrinterPageTemplate = (props) => {
           <FeatureTabs properties={properties} />
         : null
       }
+      {
+        convertedKeyProperties(whereBuy) && convertedKeyProperties(whereBuy).length ?
+          <CustomSection title={whereBuy.title || '¿Dónde comprar?'} sectionContent={whereBuy.sectionContent} backgroundColor="Claro">
+            <ProductDetailImage featuredimage={featuredimage} title={title} whereBuy={whereBuy} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
+          </CustomSection>
+        : null
+      }
+      {
+        convertedKeyProperties(advantagesDisadvantajes) && convertedKeyProperties(advantagesDisadvantajes).length ?
+          <CustomSection title={advantagesDisadvantajes.title || 'Ventajas y desventajas'} sectionContent={advantagesDisadvantajes.sectionContent} backgroundColor="Oscuro">
+            <AdvantagesDisadvantajes advantagesDisadvantajes={advantagesDisadvantajes} />
+          </CustomSection>
+        : null
+      }
       <section className="flex justify-center w-full">
         <PostContent className="w-full" content={content} />
       </section>
@@ -58,7 +77,7 @@ PrinterPageTemplate.propTypes = {
 
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties } = post.frontmatter;
+  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties, whereBuy, advantagesDisadvantajes } = post.frontmatter;
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription}>
       <PrinterPageTemplate
@@ -75,6 +94,9 @@ const PrinterPage = ({ data }) => {
         customLinks={customLinks}
         customSections={customSections}
         properties={properties}
+        whereBuy={whereBuy}
+        featuredimage={featuredimage}
+        advantagesDisadvantajes={advantagesDisadvantajes}
       />
     </Layout>
   )

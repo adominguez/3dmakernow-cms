@@ -13,4 +13,16 @@ b, strong {
     @apply font-bold;
 }
 
+.custom-section p{
+    @apply my-2;
+}
+
+.feature-tabs li{
+    @apply flex items-center leading-8 border-b;
+}
+
+.feature-tabs li:last-of-type{
+    @apply border-none;
+}
+
 @tailwind utilities;

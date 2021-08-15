@@ -31,7 +31,7 @@ const CustomSection = ({sectionContent, title, showBorder, backgroundColor='Clar
         }
         {
           sectionContent ?
-            <HTMLContent className="flex-1 my-2 text-lg font-light" content={sectionContent} />
+            <HTMLContent className="flex-1 my-2 text-lg font-light custom-section" content={sectionContent} />
           : null
         }
         {children}

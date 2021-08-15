@@ -168,7 +168,7 @@ const Tab = ({ properties, activeTab = 'feature' }) => {
       {properties && data.map((item, key) => {
         return item[0] === 'content' ?
           <div>
-            <HTMLContent className="flex flex-col w-full md:flex-row" content={properties.content} />
+            <HTMLContent className="flex flex-col w-full feature-tabs md:flex-row" content={properties.content} />
           </div>
         : 
         properties[item[0]] ? <div key={key} className={`leading-8 border-b flex items-center`}>

@@ -38,6 +38,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "printer-page"}
       - {label: "Nombre de la impresora", name: "title", required: true, widget: "string"}
+      - {label: "Imagen destacada", name: "featuredimage", widget: image}
       - {label: "Título de la página (h1)", name: "pageTitle", required: true, widget: "string"}
       - {label: "Enlace de Amazon", name: "amazonLink", widget: "string"}
       - {label: "Enlace de Aliexpress", name: "aliexpressLink", widget: "string"}
@@ -70,8 +71,8 @@ collections:
         name: "properties"
         widget: "object"
         fields:
-          - {label: "Título", name: "title", widget: "string"}
-          - {label: "Contenido inicial", name: "sectionContent", widget: "markdown"}
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Contenido inicial", name: "sectionContent", widget: "markdown", required: false}
           - label: "Características"
             name: "feature"
             widget: "object"
@@ -121,9 +122,45 @@ collections:
             widget: "object"
             collapsed: true
             fields: 
-              - {label: "Contenido", name: "content", widget: "markdown"}
+              - {label: "Contenido", name: "content", widget: "markdown"}   
+      - label: "¿Dónde comprar?"
+        name: "whereBuy"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - {label: "Texto de donde comprar", name: "whereBuyText", widget: "markdown", required: false}
+      - label: "Ventajas y desventajas"
+        name: "advantagesDisadvantajes"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Ventajas"
+            name: "advantages"
+            widget: "list"
+            fields:
+              - { label: "texto", name: "text", widget: "markdown" }
+          - label: "Desventajas"
+            name: "disadvantages"
+            widget: "list"
+            fields:
+              - { label: "texto", name: "text", widget: "markdown" }
+      - label: "Impresiones realizadas con la impresora 3D"
+        name: "prints"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Imágenes de impresiones"
+            name: "printImage"
+            widget: "list"
+            fields:
+              - { label: "imagen", name: "image", widget: "image" }
       - {label: "Contenido", name: "body", widget: "markdown"}
-      - {label: "Imagen destacada", name: "featuredimage", widget: image}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
       - {label: "Título SEO", name: "metaTitle", widget: "string", required: true, hint: "campo de texto", pattern: ['^.{1,70}$', "este campo debe de tener un máximo de 70 caracteres"]}
       - {label: "Descripción SEO", name: "metaDescription", widget: "text", required: true, hint: "campo de texto", pattern: ['^.{1,150}$', "este campo debe de tener un máximo de 150 caracteres"]}
