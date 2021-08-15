@@ -34,6 +34,7 @@ customSections:
       desprendan mejor de la cama caliente, evitando de esta manera tener que
       utilizar espátulas o herramientas que puedan arañar la superficie de la
       cama.</p>
+    backgroundColor: Claro
   - showBorder: false
     title: Volumen de impresión grande
     sectionContent: >-
@@ -42,6 +43,72 @@ customSections:
       0,8 para poder imprimir piezas grandes en un menor tiempo.</p>
 
       <p>Aquí puedes encontrar un set de boquillas apropiadas para esta impresora:</p>
+    backgroundColor: Claro
+properties:
+  title: Características técnicas de la impresora 3D Longer LK5 Pro
+  sectionContent: Lo cierto es que aunque la marca Longer no es muy conocida, sus
+    productos tienen buena calidad. En la Longer LK5 Pro te encuentras con
+    <b>una buena relación entre diseño, volumen y mecánica</b> para conseguir
+    unos resultados óptimos de impresión.
+  feature:
+    extrusorTemperature: 250ºC
+    filamentDiameter: 1,73
+    bedLevel: Manual
+    nozzleDiameterList: 0,4
+    materials: TODELETE
+    technology: FDM
+    printerSpeed: 180 mm/s sugerido(40/60 mm/s)
+    extrusor: Extrusor Bowden MK8
+    BedTemperature: TODELETE
+    printerVolume: 300x300x400 mm
+    extrusorNumber: "1"
+    layerResolution: TODELETE
+    axisPrecision: TODELETE
+  software:
+    slicer: Cura, Repetier-Host, Simplify3D
+    inputFormat: STL, OBJ, G-Code
+    firmware: Marlin
+    conectivity: USB, tarjeta TF
+    display: Pantalla táctil
+  electricity:
+    input: 100V-240V 600W
+    voltage: TODELETE
+  unboxing:
+    printerSize: 580x540x663mm
+    printerWeight: 13,5 kg
+    unboxingSize: 662x588x193mm
+    unboxingWeight: TODELETE
+  content:
+    content: >-
+      <div class="flex-1">
+
+      <ul>
+
+      <li class="leading-8 border-b flex items-center">Manual</li>
+
+      <li class="leading-8 border-b flex items-center">Set de herramientas y tornillería</li>
+
+      <li class="leading-8 border-b flex items-center">Cable de alimentación luz</li>
+
+      <li class="leading-8 border-b flex items-center">Lector de tarjetas</li>
+
+      <li class="leading-8 border-b flex items-center">Tarjeta Micro SD</li>
+
+      <li class="leading-8 border-b flex items-center">Espátula</li>
+
+      <li class="leading-8 border-b flex items-center">Sensor de filamento</li>
+
+      <li class="leading-8 border-b flex items-center">Pla para testear</li>
+
+      </ul>
+
+      </div>
+
+      <div class="flex-1 flex items-center justify-center">
+
+      <img src="img/longer-lk5-unboxing.png" alt="Contenido del paquete" />
+
+      </div>
 featuredimage: /static/img/longer-lk5-pro-0.png
 date: 2021-08-13T19:08:20.434Z
 metaTitle: "Impresora 3D Longer LK5: Imprimiendo a lo grande"
@@ -49,4 +116,4 @@ metaDescription: ¿Quieres hacer grandes impresiones 3D? Conoce en esta review l
   impresora 3D Longer LK5 Pro con gran volumen de impresión y buena
   calidad-precio.
 ---
-Contenido a cambiar
+TODELETE
