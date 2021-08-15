@@ -1,6 +1,7 @@
 ---
 templateKey: printer-page
 title: Longer LK5 Pro
+featuredimage: /static/img/longer-lk5-pro-0.png
 pageTitle: Impresora 3D Longer LK5 Pro. Grandes impresiones a bajo precio.
 amazonLink: https://amzn.to/3jFMPmS
 aliexpressLink: https://s.click.aliexpress.com/e/_ADu9gq
@@ -109,7 +110,60 @@ properties:
       <img src="/img/longer-lk5-unboxing.png" alt="Contenido del paquete" />
 
       </div>
-featuredimage: /static/img/longer-lk5-pro-0.png
+whereBuy:
+  title: Comprar Longer LK5 pro
+  sectionContent: <b>Si quieres comprar la impresora Longer LK5 pro, podrás
+    hacerlo en la propia web de Longer, Amazon o Aliexpress.</b>
+  whereBuyText: >
+    <p>Puedes adquirir tu Longer LK5 pro en la web de Longer, la opción más
+    asequible de todas y, para España, con gastos de envío gratis.</p>
+
+
+    <p>Si eres usuario de Amazon, esta impresora también la vende la propia marca Longer. Como siempre con la seguridad que ofrece Amazon en devolución, envío y garantía.</p>
+
+
+    <p>Pero también, al ser una marca fundada en China, Longer tiene su tienda en Aliexpress donde la puedes encontrar a un precio muy bueno.</p>
+
+
+    <p>En cualquiera de los casos, gracias a que tiene almacenes en Europa (Alemania) es fácil que la recibas en poco tiempo en tu casa (a mí me tardó menos de una semana).</p>
+advantagesDisadvantajes:
+  title: Ventajas y desventajas de la Longer LK5 Pro
+  sectionContent: <p>Está claro que Longer LK5 Pro es una impresora 3D robusta y
+    firme a un precio muy competitivo. Te dejo con algunas ventajas y
+    desventajas de esta impresora que seguro que te ayudan a decidir si esta
+    impresora es para ti:</p>
+  advantages:
+    - text: La Longer LK5 Pro tiene una gran estabilidad gracias a su diseño y
+        consigue impresiones de muy buena calidad.
+    - text: Una gran ventaja que tiene es que en caso de interrupción o pérdida de
+        energía eléctrica se guarda el trabajo hasta lo último que realizó y,
+        una vez que se normaliza la situación, reanuda de forma automática la
+        impresión 3D.
+    - text: Como he comentado antes la Longer LK5 Pro hace muy poco ruido, incluso
+        cuando está al máximo rendimiento. Eso te permitirá tenerla en
+        funcionamiento en todo momento sin que te moleste a la hora de trabajar
+        o dormir.
+    - text: Aunque aún no lo he comprobado, la placa base es Open Source (código
+        abierto), lo que facilita que poco a poco puedas añadir mejoras a la
+        impresora como un BLTouch para auto nivelar o mejorar la placa base con
+        un Marlin 2.X.
+    - text: Esta impresora 3D viene preensambla, su montaje es muy sencillo y se hace
+        en poco tiempo. Para ello trae todo lo necesario, incluido un manual de
+        instrucciones breve y muy claro.
+  disadvantages:
+    - text: No tiene autonivelación, aunque gracias a su pantalla táctil la nivelación
+        manual es cómoda.
+    - text: La entrada de filamento es algo incómoda. La situación del soporte para el
+        filamento puede ser algo engorrosa y el acceso para el filamento puede
+        resultar complicado hasta que te acostumbras.
+    - text: Se echa en falta un segundo motor para el eje Z que le ayude a conseguir
+        mejores resultados en piezas muy altas.
+    - text: La conexión es mediante Puerto USB tipo B o tarjeta Micro SD, se echa en
+        falta la comodidad de un USB.
+    - text: Si quieres imprimir piezas de gran volumen, puede que te requiera algo de
+        esfuerzo conseguir óptimos resultados. Recuerda que para grandes piezas
+        tendrás que tener en cuenta detalles como el relleno, la temperatura, la
+        velocidad, la base de la cama, el eje Z…
 date: 2021-08-13T19:08:20.434Z
 metaTitle: "Impresora 3D Longer LK5: Imprimiendo a lo grande"
 metaDescription: ¿Quieres hacer grandes impresiones 3D? Conoce en esta review la
