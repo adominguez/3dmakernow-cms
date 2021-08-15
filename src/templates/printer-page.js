@@ -6,6 +6,8 @@ import Content, { HTMLContent } from '../components/Content'
 import Submenu from '../components/Submenu'
 import ProductDetailValoration from '../components/ProductDetailValoration';
 import CustomSection from '../components/CustomSection'
+import FeatureTabs from '../components/FeatureTabs'
+import {convertedKeyProperties} from '../utils/utils'
 
 
 export const PrinterPageTemplate = (props) => {
@@ -19,7 +21,8 @@ export const PrinterPageTemplate = (props) => {
     amazonLink,
     aliexpressLink,
     customLinks,
-    customSections
+    customSections,
+    properties
   } = props;
   const PostContent = contentComponent || Content
   
@@ -32,6 +35,11 @@ export const PrinterPageTemplate = (props) => {
           customSections.map(({sectionContent, title, showBorder, backgroundColor}) => (
             <CustomSection title={title} sectionContent={sectionContent} showBorder={showBorder} backgroundColor={backgroundColor} />
           ))
+        : null
+      }
+      {
+        convertedKeyProperties(properties) && convertedKeyProperties(properties).length ?
+          <FeatureTabs properties={properties} />
         : null
       }
       <section className="flex justify-center w-full">

@@ -2,12 +2,12 @@ import React from "react";
 import ImageGalery from "./ImageGalery";
 import { HTMLContent } from '../components/Content'
 import { Link } from "gatsby";
-import { capitalize } from '../utils/utils';
+import { capitalize, replaceImgUrl } from '../utils/utils';
 
 const ProductDetailValoration = ({ pageTitle, productsImages, initialValuation, amazonLink, aliexpressLink, customLinks }) => {
 
   const images = productsImages?.filter(item => item !== 'undefined').map(image => ({
-    src: image?.src?.childImageSharp?.fluid?.src || image?.src?.replace('/static', ''),
+    src: image?.src?.childImageSharp?.fluid?.src || replaceImgUrl(image?.src),
     alt: image?.alt
   }))
 

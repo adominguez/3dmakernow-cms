@@ -17,7 +17,7 @@ const colors = {
   }
 }
 
-const CustomSection = ({sectionContent, title, showBorder, backgroundColor='Claro' }) => {
+const CustomSection = ({sectionContent, title, showBorder, backgroundColor='Claro', children }) => {
 
   return (
     <section className={`flex justify-center w-full ${colors[backgroundColor].backgroundColor} ${showBorder ? 'border-blueGray-300 border-b' : null}`}>
@@ -29,7 +29,12 @@ const CustomSection = ({sectionContent, title, showBorder, backgroundColor='Clar
             </h2>
           : null
         }
-        <HTMLContent className="flex-1 my-2 text-lg font-light" content={sectionContent} />
+        {
+          sectionContent ?
+            <HTMLContent className="flex-1 my-2 text-lg font-light" content={sectionContent} />
+          : null
+        }
+        {children}
       </div>
     </section>
   )

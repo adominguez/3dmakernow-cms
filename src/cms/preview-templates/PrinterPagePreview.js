@@ -15,6 +15,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
   const aliexpressLink = entry.getIn(['data', 'aliexpressLink']);
   const customLinks = entry.getIn([ 'data'] ).toJS().customLinks;
   const customSections = entry.getIn([ 'data'] ).toJS().customSections;
+  const properties = entry.getIn([ 'data'] ).toJS().properties;
   return (
     <PrinterPageTemplate
       content={widgetFor('body')}
@@ -28,6 +29,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       aliexpressLink={aliexpressLink}
       customLinks={customLinks}
       customSections={customSections}
+      properties={properties}
     />
   )
 }

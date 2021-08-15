@@ -66,6 +66,62 @@ collections:
           - { label: "Título", name: "title", widget: "string" }
           - {label: "Contenido de la sección", name: "sectionContent", required: true, widget: "markdown"}
           - {label: "Mostrar borde inferior", name: "showBorder", widget: "boolean", default: false}
+      - label: "Propiedades"
+        name: "properties"
+        widget: "object"
+        fields:
+          - {label: "Título", name: "title", widget: "string"}
+          - {label: "Contenido inicial", name: "sectionContent", widget: "markdown"}
+          - label: "Características"
+            name: "feature"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - {label: "Tecnología", name: "technology", widget: "select", default: "FDM", options: ["FDM", "Resina"]}
+              - {label: "Volumen de impresión", name: "printerVolume", widget: "string"}
+              - {label: "Resolución de capa", name: "layerResolution", widget: "string"}
+              - {label: "Precisión en los ejes", name: "axisPrecision", widget: "string"}
+              - {label: "Número de extrusores", name: "extrusorNumber", widget: "string"}
+              - {label: "Extrusor", name: "extrusor", widget: "string"}
+              - {label: "Diámetro de filamento", name: "filamentDiameter", widget: "string"}
+              - {label: "Diámetro del nozzle", name: "nozzleDiameterList", widget: "string"}
+              - {label: "Nivelación de la cama", name: "bedLevel", widget: "select", default: "Manual", options: ["Manual", "autonivelación"]}
+              - {label: "Velocidad de impresión", name: "printerSpeed", widget: "string"}
+              - {label: "Temperatura máxima del hotend", name: "extrusorTemperature", widget: "string"}
+              - {label: "Temperatura máxima de la cama", name: "BedTemperature", widget: "string"}
+              - {label: "Materiales soportados", name: "materials", widget: "string"}
+          - label: "Software"
+            name: "software"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - {label: "Slicer", name: "slicer", widget: "string"}
+              - {label: "Formatos de entrada", name: "inputFormat", widget: "string"}
+              - {label: "Firmware", name: "firmware", widget: "string"}
+              - {label: "Display", name: "display", widget: "string"}
+              - {label: "Conectividad", name: "conectivity", widget: "string"}
+          - label: "Electricidad"
+            name: "electricity"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - {label: "Capacidad de entrada", name: "input", widget: "string"}
+              - {label: "Voltaje", name: "voltage", widget: "string"}
+          - label: "Unboxing"
+            name: "unboxing"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - {label: "Dimensiones de la impresora", name: "printerSize", widget: "string"}
+              - {label: "Peso de la impresora", name: "printerWeight", widget: "string"}
+              - {label: "Dimensiones del paquete", name: "unboxingSize", widget: "string"}
+              - {label: "Peso del paquete", name: "unboxingWeight", widget: "string"}
+          - label: "Contenido"
+            name: "content"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - {label: "Contenido", name: "content", widget: "markdown"}
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Imagen destacada", name: "featuredimage", widget: image}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
