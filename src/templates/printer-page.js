@@ -32,8 +32,8 @@ export const PrinterPageTemplate = (props) => {
       <ProductDetailValoration pageTitle={pageTitle} initialValuation={initialValuation} productsImages={productsImages} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
       {
         customSections && customSections.length ?
-          customSections.map(({sectionContent, title, showBorder, backgroundColor}) => (
-            <CustomSection title={title} sectionContent={sectionContent} showBorder={showBorder} backgroundColor={backgroundColor} />
+          customSections.map(({sectionContent, title, showBorder, backgroundColor}, key) => (
+            <CustomSection key={key} title={title} sectionContent={sectionContent} showBorder={showBorder} backgroundColor={backgroundColor} />
           ))
         : null
       }
@@ -59,7 +59,6 @@ PrinterPageTemplate.propTypes = {
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
   const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties } = post.frontmatter;
-  debugger
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription}>
       <PrinterPageTemplate

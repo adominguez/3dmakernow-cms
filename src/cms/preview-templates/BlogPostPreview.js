@@ -8,7 +8,6 @@ CMS.registerPreviewStyle('../../css/index.css');
 const BlogPostPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(['data', 'tags'])
   const { name, title, description } = entry.getIn(['data', 'seopage']) || {}
-  debugger
   return (
     <BlogPostTemplate
       content={widgetFor('body')}

@@ -43,9 +43,9 @@ const ProductDetailValoration = ({ pageTitle, productsImages, initialValuation, 
             }
             {
               customLinks && customLinks.length ?
-                customLinks.map(({link, store = 'tienda'}) => (
+                customLinks.map(({link, store = 'tienda'}, key) => (
                   link ?
-                    <Link to={link} className="p-2 m-2 text-lg text-center text-gray-100 bg-blue-600 rounded-full hover:bg-blue-700 focus:bg-blue-700">
+                    <Link key={key} to={link} className="p-2 m-2 text-lg text-center text-gray-100 bg-blue-600 rounded-full hover:bg-blue-700 focus:bg-blue-700">
                       Comprar en {store}
                     </Link> : null
                 ))

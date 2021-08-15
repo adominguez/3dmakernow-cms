@@ -179,8 +179,8 @@ const Tab = ({ properties, activeTab = 'feature' }) => {
           }
             <b>{item[1].title}</b>: <span className="mr-2">{properties[item[0]]}</span>
             {item[1].info ?
-              <Tooltip content={item[0] === 'technology' ? renderTechnologyTooltip(properties[item[0]]) : item[1].info} title={item[1].title}>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#94a3b8">
+              <Tooltip className="hidden md:block" content={item[0] === 'technology' ? renderTechnologyTooltip(properties[item[0]]) : item[1].info} title={item[1].title}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#94a3b8">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </Tooltip>

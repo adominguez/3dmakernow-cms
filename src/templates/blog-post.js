@@ -16,7 +16,6 @@ export const BlogPostTemplate = (props) => {
     helmet,
   } = props;
   const PostContent = contentComponent || Content
-  debugger;
   return (
     <section className="section">
       {helmet || ''}
@@ -56,7 +55,6 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({ data }) => {
-  debugger
   const { markdownRemark: post } = data
   const { title, description, name } = post.frontmatter;
   return (
