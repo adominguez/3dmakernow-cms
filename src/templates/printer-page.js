@@ -193,6 +193,21 @@ export const pageQuery = graphql`
         amazonLink
         aliexpressLink
         initialValuation
+        whereBuy {
+          sectionContent
+          title
+          whereBuyText
+        }
+        advantagesDisadvantajes {
+          advantages {
+            text
+          }
+          disadvantages {
+            text
+          }
+          sectionContent
+          title
+        }
       }
     }
   }

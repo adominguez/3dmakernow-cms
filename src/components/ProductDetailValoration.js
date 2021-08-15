@@ -2,7 +2,6 @@ import React from "react";
 import ImageGalery from "./ImageGalery";
 import { HTMLContent } from './Content'
 import ProductAffiliateLinks from './ProductAffiliateLinks'
-import { Link } from "gatsby";
 import { capitalize, replaceImgUrl } from '../utils/utils';
 
 const ProductDetailValoration = ({ pageTitle, productsImages, initialValuation, amazonLink, aliexpressLink, customLinks }) => {
