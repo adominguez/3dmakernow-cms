@@ -58,7 +58,7 @@ PrinterPageTemplate.propTypes = {
 
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks } = post.frontmatter;
+  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties } = post.frontmatter;
   debugger
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription}>
@@ -75,6 +75,7 @@ const PrinterPage = ({ data }) => {
         aliexpressLink={aliexpressLink}
         customLinks={customLinks}
         customSections={customSections}
+        properties={properties}
       />
     </Layout>
   )
@@ -106,6 +107,45 @@ export const pageQuery = graphql`
           sectionContent
           showBorder
           title
+        }
+        properties {
+          content {
+            content
+          }
+          electricity {
+            input
+            voltage
+          }
+          feature {
+            BedTemperature
+            axisPrecision
+            bedLevel
+            extrusor
+            extrusorNumber
+            extrusorTemperature
+            filamentDiameter
+            layerResolution
+            materials
+            nozzleDiameterList
+            printerVolume
+            printerSpeed
+            technology
+          }
+          sectionContent
+          software {
+            conectivity
+            display
+            firmware
+            inputFormat
+            slicer
+          }
+          title
+          unboxing {
+            printerSize
+            printerWeight
+            unboxingSize
+            unboxingWeight
+          }
         }
         featuredimage {
           childImageSharp {
