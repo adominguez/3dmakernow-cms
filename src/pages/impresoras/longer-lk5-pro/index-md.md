@@ -55,15 +55,15 @@ properties:
     filamentDiameter: 1,73
     bedLevel: Manual
     nozzleDiameterList: 0,4
-    materials: TODELETE
+    materials: ""
     technology: FDM
     printerSpeed: 180 mm/s sugerido(40/60 mm/s)
     extrusor: Extrusor Bowden MK8
-    BedTemperature: TODELETE
+    BedTemperature: ""
     printerVolume: 300x300x400 mm
     extrusorNumber: "1"
-    layerResolution: TODELETE
-    axisPrecision: TODELETE
+    layerResolution: ""
+    axisPrecision: ""
   software:
     slicer: Cura, Repetier-Host, Simplify3D
     inputFormat: STL, OBJ, G-Code
@@ -72,12 +72,12 @@ properties:
     display: Pantalla táctil
   electricity:
     input: 100V-240V 600W
-    voltage: TODELETE
+    voltage: ""
   unboxing:
     printerSize: 580x540x663mm
     printerWeight: 13,5 kg
     unboxingSize: 662x588x193mm
-    unboxingWeight: TODELETE
+    unboxingWeight: ""
   content:
     content: >-
       <div class="flex-1">
@@ -106,7 +106,7 @@ properties:
 
       <div class="flex-1 flex items-center justify-center">
 
-      <img src="img/longer-lk5-unboxing.png" alt="Contenido del paquete" />
+      <img src="/img/longer-lk5-unboxing.png" alt="Contenido del paquete" />
 
       </div>
 featuredimage: /static/img/longer-lk5-pro-0.png
