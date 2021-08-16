@@ -19,6 +19,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
   const whereBuy = entry.getIn([ 'data'] ).toJS().whereBuy;
   const featuredimage = entry.getIn([ 'data'] ).toJS().featuredimage;
   const advantagesDisadvantajes = entry.getIn([ 'data'] ).toJS().advantagesDisadvantajes;
+  const prints = entry.getIn([ 'data'] ).toJS().prints;
 
   return (
     <PrinterPageTemplate
@@ -37,6 +38,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       whereBuy={whereBuy}
       featuredimage={featuredimage}
       advantagesDisadvantajes={advantagesDisadvantajes}
+      prints={prints}
     />
   )
 }

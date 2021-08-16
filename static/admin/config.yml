@@ -53,8 +53,8 @@ collections:
         name: "productsImages"
         widget: "list"
         fields:
-          - { label: "Imagen", name: "src", widget: "image", required:true }
-          - { label: "Alt Texto", name: "alt", widget: "string", required:true }
+          - { label: "Imagen", name: "src", widget: "image", required: true }
+          - { label: "Alt Texto", name: "alt", widget: "string", required: true }
       - label: "Creación de secciones"
         name: "customSections"
         widget: "list"
@@ -159,7 +159,8 @@ collections:
             name: "printImage"
             widget: "list"
             fields:
-              - { label: "imagen", name: "image", widget: "image" }
+              - { label: "Imagen", name: "src", widget: "image", required: true }
+              - { label: "Alt Texto", name: "alt", widget: "string", required: true }
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
       - {label: "Título SEO", name: "metaTitle", widget: "string", required: true, hint: "campo de texto", pattern: ['^.{1,70}$', "este campo debe de tener un máximo de 70 caracteres"]}

@@ -10,6 +10,7 @@ import ProductDetailImage from '../components/ProductDetailImage'
 import FeatureTabs from '../components/FeatureTabs'
 import {convertedKeyProperties} from '../utils/utils'
 import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes'
+import { CarouselImage } from '../components/CarouselImages'
 
 
 export const PrinterPageTemplate = (props) => {
@@ -27,7 +28,8 @@ export const PrinterPageTemplate = (props) => {
     properties,
     whereBuy,
     featuredimage,
-    advantagesDisadvantajes
+    advantagesDisadvantajes,
+    prints
   } = props;
   const PostContent = contentComponent || Content
   
@@ -61,6 +63,47 @@ export const PrinterPageTemplate = (props) => {
           </CustomSection>
         : null
       }
+      {
+        convertedKeyProperties(prints) && convertedKeyProperties(prints).length ?
+          <CustomSection title={prints.title || 'Impresiones realizadas'} sectionContent={prints.sectionContent} backgroundColor="Claro">
+            {
+              prints?.printImage && prints.printImage.length ?
+                <CarouselImage className="my-3" images={prints.printImage} settings={{
+                  infinite: false,
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  autoplay: true,
+                  pauseOnHover: true,
+                  responsive: [
+                    {
+                      breakpoint: 1024,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                      }
+                    },
+                    {
+                      breakpoint: 640,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        initialSlide: 1
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    }
+                  ]
+                }} />
+              : null
+            }
+          </CustomSection>
+        : null
+      }
       <section className="flex justify-center w-full">
         <PostContent className="w-full" content={content} />
       </section>
@@ -77,7 +120,7 @@ PrinterPageTemplate.propTypes = {
 
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties, whereBuy, advantagesDisadvantajes } = post.frontmatter;
+  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties, whereBuy, advantagesDisadvantajes, prints } = post.frontmatter;
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription}>
       <PrinterPageTemplate
@@ -97,6 +140,7 @@ const PrinterPage = ({ data }) => {
         whereBuy={whereBuy}
         featuredimage={featuredimage}
         advantagesDisadvantajes={advantagesDisadvantajes}
+        prints={prints}
       />
     </Layout>
   )
@@ -204,6 +248,14 @@ export const pageQuery = graphql`
           }
           disadvantages {
             text
+          }
+          sectionContent
+          title
+        }
+        prints {
+          printImage {
+            src
+            alt
           }
           sectionContent
           title
