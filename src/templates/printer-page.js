@@ -12,6 +12,7 @@ import {convertedKeyProperties, imageCarouselSettings} from '../utils/utils'
 import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes'
 import { CarouselImage } from '../components/CarouselImages'
 import { UpgradesToPrint } from '../components/UpgradesToPrint'
+import { splitStaticUrl } from '../utils/utils'
 
 
 export const PrinterPageTemplate = (props) => {
@@ -113,7 +114,7 @@ const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
   const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties, whereBuy, advantagesDisadvantajes, prints, upgradesToPrint, finalValuation, callToAction } = post.frontmatter;
   return (
-    <Layout metaTitle={metaTitle} metaDescription={metaDescription}>
+    <Layout metaTitle={metaTitle} metaDescription={metaDescription} featuredimage={splitStaticUrl(featuredimage.absolutePath).slice(1)}>
       <PrinterPageTemplate
         content={post.html}
         contentComponent={HTMLContent}

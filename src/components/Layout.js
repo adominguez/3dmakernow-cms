@@ -10,7 +10,7 @@ import { actualUrlpath, errorMessages, windowGlobal } from "../utils/utils.js";
 import ErrorMessage from './ErrorMessage';
 import logoMovil from '../img/logo-movil.svg'
 
-const TemplateWrapper = ({ children, metaTitle, metaDescription }) => {
+const TemplateWrapper = ({ children, metaTitle, metaDescription, featuredimage }) => {
   const { onLine } = windowGlobal && windowGlobal?.navigator;
   const { title, description } = useSiteMetadata()
   const [layoutOpened, toggleLayout] = useState(false);
@@ -101,12 +101,11 @@ const TemplateWrapper = ({ children, metaTitle, metaDescription }) => {
         />
         <meta name="theme-color" content="#fff" />
 
-        <meta property="og:type" content="business.business" />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={metaTitle || title} />
-        <meta property="og:url" content="/" />
-        <meta
-          property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
+        <meta property="og:description" content={metaDescription || description} />
+        <meta property="og:locale" content='es_ES' />
+        <meta property="og:image" content={`${withPrefix('/')}${featuredimage}`}
         />
       </Helmet>
         <>

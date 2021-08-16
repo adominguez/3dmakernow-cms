@@ -12,6 +12,10 @@ export const replaceImgUrl = url => {
     return url && url.replace('/static', '')
 }
 
+export const splitStaticUrl = url => {
+    return url && url.split('/static')[1]
+}
+
 export const imageCarouselSettings = {
     infinite: false,
     slidesToShow: 3,

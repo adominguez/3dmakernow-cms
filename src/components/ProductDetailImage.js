@@ -1,10 +1,10 @@
 import React from "react";
 import { HTMLContent } from '../components/Content'
-import { replaceImgUrl } from '../utils/utils';
+import { replaceImgUrl, splitStaticUrl } from '../utils/utils';
 import ProductAffiliateLinks from "./ProductAffiliateLinks";
 
 const ProductDetailImage = ({ featuredimage, title, content, amazonLink, aliexpressLink, customLinks }) => {
-  const image = featuredimage.absolutePath ? featuredimage.absolutePath.split('/static')[1] : featuredimage;
+  const image = featuredimage.absolutePath ? splitStaticUrl(featuredimage.absolutePath) : featuredimage;
   return (
     <div className="flex flex-col w-full md:flex-row">
       {
