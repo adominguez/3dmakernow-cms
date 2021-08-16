@@ -42,7 +42,7 @@ export const CarouselImage = ({ images, className, settings = {
   return (
     <Slider className={className} {...settings} >
       {images && images.length && images.map((item, key) => (
-        <img key={key} src={replaceImgUrl(item.src)} alt={item.alt} />
+        <img key={key} src={replaceImgUrl(item?.src?.absolutePath ? item?.src?.absolutePath.split('/static')[1] : item?.src)} alt={item.alt} />
       ))}
     </Slider>
   )

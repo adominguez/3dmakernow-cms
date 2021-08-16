@@ -252,6 +252,16 @@ export const pageQuery = graphql`
           sectionContent
           title
         }
+        prints {
+          sectionContent
+          title
+          printImage {
+            alt
+            src {
+              absolutePath
+            }
+          }
+        }
       }
     }
   }
