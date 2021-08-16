@@ -17,6 +17,14 @@ b, strong {
     @apply my-2;
 }
 
+.section-centered p{
+    @apply text-lg font-light text-center;
+}
+
+.custom-section a{
+    @apply text-primary-500 hover:text-primary-700 focus:text-primary-700;
+}
+
 .feature-tabs li{
     @apply flex items-center leading-8 border-b;
 }

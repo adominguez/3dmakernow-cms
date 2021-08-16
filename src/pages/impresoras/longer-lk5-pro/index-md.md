@@ -85,27 +85,27 @@ properties:
 
       <ul>
 
-      <li class="leading-8 border-b flex items-center">Manual</li>
+      <li class="flex items-center leading-8 border-b">Manual</li>
 
-      <li class="leading-8 border-b flex items-center">Set de herramientas y tornillería</li>
+      <li class="flex items-center leading-8 border-b">Set de herramientas y tornillería</li>
 
-      <li class="leading-8 border-b flex items-center">Cable de alimentación luz</li>
+      <li class="flex items-center leading-8 border-b">Cable de alimentación luz</li>
 
-      <li class="leading-8 border-b flex items-center">Lector de tarjetas</li>
+      <li class="flex items-center leading-8 border-b">Lector de tarjetas</li>
 
-      <li class="leading-8 border-b flex items-center">Tarjeta Micro SD</li>
+      <li class="flex items-center leading-8 border-b">Tarjeta Micro SD</li>
 
-      <li class="leading-8 border-b flex items-center">Espátula</li>
+      <li class="flex items-center leading-8 border-b">Espátula</li>
 
-      <li class="leading-8 border-b flex items-center">Sensor de filamento</li>
+      <li class="flex items-center leading-8 border-b">Sensor de filamento</li>
 
-      <li class="leading-8 border-b flex items-center">Pla para testear</li>
+      <li class="flex items-center leading-8 border-b">Pla para testear</li>
 
       </ul>
 
       </div>
 
-      <div class="flex-1 flex items-center justify-center">
+      <div class="flex items-center justify-center flex-1">
 
       <img src="/img/longer-lk5-unboxing.png" alt="Contenido del paquete" />
 
@@ -235,6 +235,7 @@ finalValuation:
 
     <p>¡Ahora es tu turno! ¿Te ha resultado útil la información?</p>
 callToAction:
+  title: Longer LK5 PRO
   actionText: >
     <p>¿Listo para comprar tu Longer LK5 Pro?</p>
 
@@ -252,4 +253,3 @@ metaDescription: ¿Quieres hacer grandes impresiones 3D? Conoce en esta review l
   impresora 3D Longer LK5 Pro con gran volumen de impresión y buena
   calidad-precio.
 ---
-TODELETE

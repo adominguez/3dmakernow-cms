@@ -94,7 +94,7 @@ export const PrinterPageTemplate = (props) => {
       {
         convertedKeyProperties(callToAction) && convertedKeyProperties(callToAction).length ?
           <CustomSection title={callToAction.title} backgroundColor="Claro">
-            <ProductDetailImage featuredimage={featuredimage} content={callToAction.actionText} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
+            <ProductDetailImage featuredimage={featuredimage} title={title} content={callToAction.actionText} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
           </CustomSection>
         : null
       }
@@ -255,6 +255,22 @@ export const pageQuery = graphql`
               absolutePath
             }
           }
+        }
+        upgradesToPrint {
+          sectionContent
+          title
+          upgrades {
+            image
+            link
+            text
+          }
+        }
+        finalValuation {
+          sectionContent
+          title
+        }
+        callToAction {
+          actionText
         }
       }
     }
