@@ -252,14 +252,6 @@ export const pageQuery = graphql`
           sectionContent
           title
         }
-        prints {
-          printImage {
-            src
-            alt
-          }
-          sectionContent
-          title
-        }
       }
     }
   }
