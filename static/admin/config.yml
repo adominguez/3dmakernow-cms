@@ -142,12 +142,12 @@ collections:
             name: "advantages"
             widget: "list"
             fields:
-              - { label: "texto", name: "text", widget: "markdown" }
+              - { label: "Texto", name: "text", widget: "markdown" }
           - label: "Desventajas"
             name: "disadvantages"
             widget: "list"
             fields:
-              - { label: "texto", name: "text", widget: "markdown" }
+              - { label: "Texto", name: "text", widget: "markdown" }
       - label: "Impresiones realizadas con la impresora 3D"
         name: "prints"
         widget: "object"
@@ -161,6 +161,20 @@ collections:
             fields:
               - { label: "Imagen", name: "src", widget: "image", required: true }
               - { label: "Alt Texto", name: "alt", widget: "string", required: true }
+      - label: "Mejoras para imprimir"
+        name: "upgradesToPrint"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: true}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Mejora"
+            name: "upgrades"
+            widget: "list"
+            fields:
+              - { label: "Texto", name: "text", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Imagen", name: "image", widget: "string" }
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
       - {label: "Título SEO", name: "metaTitle", widget: "string", required: true, hint: "campo de texto", pattern: ['^.{1,70}$', "este campo debe de tener un máximo de 70 caracteres"]}

@@ -20,6 +20,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
   const featuredimage = entry.getIn([ 'data'] ).toJS().featuredimage;
   const advantagesDisadvantajes = entry.getIn([ 'data'] ).toJS().advantagesDisadvantajes;
   const prints = entry.getIn([ 'data'] ).toJS().prints;
+  const upgradesToPrint = entry.getIn([ 'data'] ).toJS().upgradesToPrint;
 
   return (
     <PrinterPageTemplate
@@ -39,6 +40,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       featuredimage={featuredimage}
       advantagesDisadvantajes={advantagesDisadvantajes}
       prints={prints}
+      upgradesToPrint={upgradesToPrint}
     />
   )
 }

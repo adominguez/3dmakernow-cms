@@ -8,9 +8,10 @@ import ProductDetailValoration from '../components/ProductDetailValoration';
 import CustomSection from '../components/CustomSection'
 import ProductDetailImage from '../components/ProductDetailImage'
 import FeatureTabs from '../components/FeatureTabs'
-import {convertedKeyProperties} from '../utils/utils'
+import {convertedKeyProperties, imageCarouselSettings} from '../utils/utils'
 import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes'
 import { CarouselImage } from '../components/CarouselImages'
+import { UpgradesToPrint } from '../components/UpgradesToPrint'
 
 
 export const PrinterPageTemplate = (props) => {
@@ -29,7 +30,8 @@ export const PrinterPageTemplate = (props) => {
     whereBuy,
     featuredimage,
     advantagesDisadvantajes,
-    prints
+    prints,
+    upgradesToPrint
   } = props;
   const PostContent = contentComponent || Content
   
@@ -65,40 +67,21 @@ export const PrinterPageTemplate = (props) => {
       }
       {
         convertedKeyProperties(prints) && convertedKeyProperties(prints).length ?
-          <CustomSection title={prints.title || 'Impresiones realizadas'} sectionContent={prints.sectionContent} backgroundColor="Claro">
+          <CustomSection title={prints.title || 'Impresiones realizadas'} sectionContent={prints.sectionContent} backgroundColor="Claro" showBorder>
             {
               prints?.printImage && prints.printImage.length ?
-                <CarouselImage className="my-3" images={prints.printImage} settings={{
-                  infinite: false,
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
-                  autoplay: true,
-                  pauseOnHover: true,
-                  responsive: [
-                    {
-                      breakpoint: 1024,
-                      settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                      }
-                    },
-                    {
-                      breakpoint: 640,
-                      settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        initialSlide: 1
-                      }
-                    },
-                    {
-                      breakpoint: 480,
-                      settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                      }
-                    }
-                  ]
-                }} />
+                <CarouselImage className="my-3" images={prints.printImage} settings={imageCarouselSettings} />
+              : null
+            }
+          </CustomSection>
+        : null
+      }
+      {
+        convertedKeyProperties(upgradesToPrint) && convertedKeyProperties(upgradesToPrint).length ?
+          <CustomSection title={upgradesToPrint.title || 'Mejoras para imprimir'} sectionContent={upgradesToPrint.sectionContent} backgroundColor="Claro" showBorder>
+            {
+              upgradesToPrint?.upgrades && upgradesToPrint.upgrades.length ?
+                <UpgradesToPrint upgrades={upgradesToPrint.upgrades} className="my-3" />
               : null
             }
           </CustomSection>
@@ -120,7 +103,7 @@ PrinterPageTemplate.propTypes = {
 
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties, whereBuy, advantagesDisadvantajes, prints } = post.frontmatter;
+  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties, whereBuy, advantagesDisadvantajes, prints, upgradesToPrint } = post.frontmatter;
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription}>
       <PrinterPageTemplate
@@ -141,6 +124,7 @@ const PrinterPage = ({ data }) => {
         featuredimage={featuredimage}
         advantagesDisadvantajes={advantagesDisadvantajes}
         prints={prints}
+        upgradesToPrint={upgradesToPrint}
       />
     </Layout>
   )
