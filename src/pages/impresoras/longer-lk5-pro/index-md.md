@@ -164,6 +164,31 @@ advantagesDisadvantajes:
         esfuerzo conseguir óptimos resultados. Recuerda que para grandes piezas
         tendrás que tener en cuenta detalles como el relleno, la temperatura, la
         velocidad, la base de la cama, el eje Z…
+prints:
+  printImage:
+    - src: /static/img/1628717275969.png
+      alt: Impresión de pokemon Longer LK5 Pro
+    - src: /static/img/1628717276009.png
+      alt: Impresión de Odish Longer LK5 Pro
+    - src: /static/img/img_20210809_190709.png
+      alt: Impresión de Mario para Alexa
+    - src: /static/img/img_20210809_190933.png
+      alt: Mario Brosh Longer LK5 Pro
+    - src: /static/img/1628717276244.png
+      alt: Jarrón impreso en 3D
+    - src: /static/img/1628717276302.png
+      alt: Jarrón impreso en 3D
+    - src: /static/img/1628717276079.png
+      alt: Posavasos impreso en 3D
+    - src: /static/img/capa-1.png
+      alt: Astronauta de gran tamaño impreso en 3D
+    - src: /static/img/capa-2.png
+      alt: Astronauta impreso en 3D con Longer LK5 Pro
+    - src: /static/img/1628717276348.png
+      alt: Barco Benchi Longer LK5 Pro
+  sectionContent: "¿Quieres comprobar de primera mano su calidad? Te muestro
+    algunas impresiones realizadas con la Longer LK5 Pro:"
+  title: Impresiones de Longer LK5 Pro
 date: 2021-08-13T19:08:20.434Z
 metaTitle: "Impresora 3D Longer LK5: Imprimiendo a lo grande"
 metaDescription: ¿Quieres hacer grandes impresiones 3D? Conoce en esta review la
