@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import { HTMLContent } from '../components/Content'
 import Submenu from '../components/Submenu'
 import ProductDetailValoration from '../components/ProductDetailValoration';
 import CustomSection from '../components/CustomSection'
@@ -16,8 +16,6 @@ import { UpgradesToPrint } from '../components/UpgradesToPrint'
 
 export const PrinterPageTemplate = (props) => {
   const {
-    content,
-    contentComponent,
     pageTitle,
     productsImages,
     title,
@@ -31,9 +29,10 @@ export const PrinterPageTemplate = (props) => {
     featuredimage,
     advantagesDisadvantajes,
     prints,
-    upgradesToPrint
+    upgradesToPrint,
+    finalValuation,
+    callToAction
   } = props;
-  const PostContent = contentComponent || Content
   
   return (
     <>
@@ -54,7 +53,7 @@ export const PrinterPageTemplate = (props) => {
       {
         convertedKeyProperties(whereBuy) && convertedKeyProperties(whereBuy).length ?
           <CustomSection title={whereBuy.title || '¿Dónde comprar?'} sectionContent={whereBuy.sectionContent} backgroundColor="Claro">
-            <ProductDetailImage featuredimage={featuredimage} title={title} whereBuy={whereBuy} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
+            <ProductDetailImage featuredimage={featuredimage} title={title} content={whereBuy.whereBuyText} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
           </CustomSection>
         : null
       }
@@ -87,9 +86,18 @@ export const PrinterPageTemplate = (props) => {
           </CustomSection>
         : null
       }
-      <section className="flex justify-center w-full">
-        <PostContent className="w-full" content={content} />
-      </section>
+      {
+        convertedKeyProperties(finalValuation) && convertedKeyProperties(finalValuation).length ?
+          <CustomSection title={finalValuation.title || 'Conclusión final'} sectionContent={finalValuation.sectionContent} backgroundColor="Medio" showBorder />
+        : null
+      }
+      {
+        convertedKeyProperties(callToAction) && convertedKeyProperties(callToAction).length ?
+          <CustomSection title={callToAction.title} backgroundColor="Claro">
+            <ProductDetailImage featuredimage={featuredimage} content={callToAction.actionText} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
+          </CustomSection>
+        : null
+      }
     </>
   )
 }
@@ -103,7 +111,7 @@ PrinterPageTemplate.propTypes = {
 
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties, whereBuy, advantagesDisadvantajes, prints, upgradesToPrint } = post.frontmatter;
+  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties, whereBuy, advantagesDisadvantajes, prints, upgradesToPrint, finalValuation, callToAction } = post.frontmatter;
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription}>
       <PrinterPageTemplate
@@ -125,6 +133,8 @@ const PrinterPage = ({ data }) => {
         advantagesDisadvantajes={advantagesDisadvantajes}
         prints={prints}
         upgradesToPrint={upgradesToPrint}
+        finalValuation={finalValuation}
+        callToAction={callToAction}
       />
     </Layout>
   )

@@ -122,7 +122,7 @@ collections:
             widget: "object"
             collapsed: true
             fields: 
-              - {label: "Contenido", name: "content", widget: "markdown"}   
+              - {label: "Contenido", name: "content", widget: "markdown"}
       - label: "¿Dónde comprar?"
         name: "whereBuy"
         widget: "object"
@@ -175,7 +175,20 @@ collections:
               - { label: "Texto", name: "text", widget: "string" }
               - { label: "Link", name: "link", widget: "string" }
               - { label: "Imagen", name: "image", widget: "string" }
-      - {label: "Contenido", name: "body", widget: "markdown"}
+      - label: "Conclusión final"
+        name: "finalValuation"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: true}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+      - label: "Llamada a la acción"
+        name: "callToAction"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto de donde comprar", name: "actionText", widget: "markdown", required: false}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
       - {label: "Título SEO", name: "metaTitle", widget: "string", required: true, hint: "campo de texto", pattern: ['^.{1,70}$', "este campo debe de tener un máximo de 70 caracteres"]}
       - {label: "Descripción SEO", name: "metaDescription", widget: "text", required: true, hint: "campo de texto", pattern: ['^.{1,150}$', "este campo debe de tener un máximo de 150 caracteres"]}

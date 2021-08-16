@@ -21,10 +21,11 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
   const advantagesDisadvantajes = entry.getIn([ 'data'] ).toJS().advantagesDisadvantajes;
   const prints = entry.getIn([ 'data'] ).toJS().prints;
   const upgradesToPrint = entry.getIn([ 'data'] ).toJS().upgradesToPrint;
+  const finalValuation = entry.getIn([ 'data'] ).toJS().finalValuation;
+  const callToAction = entry.getIn([ 'data'] ).toJS().callToAction;
 
   return (
     <PrinterPageTemplate
-      content={widgetFor('body')}
       description={'description to change'}
       tags={tags && tags.toJS()}
       title={title}
@@ -41,6 +42,8 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       advantagesDisadvantajes={advantagesDisadvantajes}
       prints={prints}
       upgradesToPrint={upgradesToPrint}
+      finalValuation={finalValuation}
+      callToAction={callToAction}
     />
   )
 }
