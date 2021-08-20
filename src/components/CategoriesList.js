@@ -10,7 +10,7 @@ const CategoriesList = ({ categories }) => {
             <Link className={`flex-col overflow-hidden border-2 border-gray-300 rounded-md flex max-h-96 group hover:border-primary-300 focus:ring-2 focus:ring-primary-500 outline-none centered-flex bg-white`} to={route}>
               <div className="relative items-center flex-grow overflow-hidden flex-2 centered-flex">
                 <picture>
-                  <img loading="lazy" className="flex-shrink-0 object-cover object-center w-full rounded-md" src={`img/${image}-desktop.png`} alt={name} />
+                  <img className="flex-shrink-0 object-cover object-center w-full rounded-md" src={`img/${image}-desktop.png`} alt={name} />
                 </picture>
                 <div className="absolute bottom-0 left-0 w-full p-1 text-center bg-opacity-70 bg-primary-700">
                   <h3 className={`text-xl md:text-2xl font-medium truncate-2-lines text-white`} title={name}>{name}</h3>
