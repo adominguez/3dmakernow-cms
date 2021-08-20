@@ -38,6 +38,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "printer-page"}
       - {label: "Nombre de la impresora", name: "title", required: true, widget: "string"}
+      - {label: "Marca de la impresora", name: "brand", required: true, widget: "string"}
       - {label: "Imagen destacada", name: "featuredimage", widget: image}
       - {label: "Título de la página (h1)", name: "pageTitle", required: true, widget: "string"}
       - {label: "Enlace de Amazon", name: "amazonLink", widget: "string"}
