@@ -1,6 +1,7 @@
 ---
 templateKey: printer-page
 title: Longer LK5 Pro
+brand: Longer
 featuredimage: /static/img/longer-lk5-pro-0.png
 pageTitle: Impresora 3D Longer LK5 Pro. Grandes impresiones a bajo precio.
 amazonLink: https://amzn.to/3jFMPmS
