@@ -1,12 +1,20 @@
 import React from 'react'
-
+import CustomSection from '../../components/CustomSection'
+import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
 import PrinterRoll from '../../components/PrinterRoll'
+
+const page = {
+  metaTitle: 'Metatitle de la página',
+  metaDescription: 'Metadescription de la página',
+  featuredimage: '/img/longer-lk5-pro-0.png'
+}
 
 export default class PrinterPage extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout metaTitle={page.metaTitle} metaDescription={page.metaDescription} featuredimage={page.featuredimage}>
+        <CustomSection></CustomSection>
         <div
           className="full-width-image-container margin-top-0"
           style={{
