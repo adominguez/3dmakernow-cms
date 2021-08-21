@@ -21,9 +21,11 @@ export const PrinterPageTemplate = (props) => {
     productsImages,
     title,
     initialValuation,
-    amazonLink,
-    aliexpressLink,
-    customLinks,
+    links: {
+      amazonLink,
+      aliexpressLink,
+      customLinks,
+    } = {},
     customSections,
     properties,
     whereBuy,
@@ -112,7 +114,7 @@ PrinterPageTemplate.propTypes = {
 
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, amazonLink, aliexpressLink, customSections, customLinks, properties, whereBuy, advantagesDisadvantajes, prints, upgradesToPrint, finalValuation, callToAction } = post.frontmatter;
+  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, links, customSections, properties, whereBuy, advantagesDisadvantajes, prints, upgradesToPrint, finalValuation, callToAction } = post.frontmatter;
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription} featuredimage={splitStaticUrl(featuredimage.absolutePath).slice(1)}>
       <PrinterPageTemplate
@@ -124,9 +126,7 @@ const PrinterPage = ({ data }) => {
         productsImages={productsImages}
         title={title}
         initialValuation={initialValuation}
-        amazonLink={amazonLink}
-        aliexpressLink={aliexpressLink}
-        customLinks={customLinks}
+        links={links}
         customSections={customSections}
         properties={properties}
         whereBuy={whereBuy}
@@ -159,9 +159,13 @@ export const pageQuery = graphql`
         templateKey
         date(formatString: "MMMM DD, YYYY")
         featuredpost
-        customLinks {
-          link
-          store
+        links {
+          amazonLink
+          aliexpressLink
+          customLinks {
+            link
+            store
+          }
         }
         customSections {
           sectionContent
@@ -229,8 +233,6 @@ export const pageQuery = graphql`
           }
         }
         metaTitle
-        amazonLink
-        aliexpressLink
         initialValuation
         whereBuy {
           sectionContent

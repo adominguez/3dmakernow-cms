@@ -28,9 +28,6 @@ prints:
   sectionContent: "¿Quieres comprobar de primera mano su calidad? Te muestro
     algunas impresiones realizadas con la Longer LK5 Pro:"
   title: Impresiones de Longer LK5 Pro
-customLinks:
-  - store: Longer
-    link: https://www.longer3d.com/products/lk5-pro-fdm-3d-printer
 finalValuation:
   title: Conclusión de la impresora 3D Longer LK5 Pro
   sectionContent: >-
@@ -56,7 +53,6 @@ finalValuation:
 
 
     <p>¡Ahora es tu turno! ¿Te ha resultado útil la información?</p>
-aliexpressLink: https://s.click.aliexpress.com/e/_ADu9gq
 title: Longer LK5 Pro
 links:
   amazonLink: amazon
@@ -258,5 +254,4 @@ metaTitle: "Impresora 3D Longer LK5: Imprimiendo a lo grande"
 metaDescription: ¿Quieres hacer grandes impresiones 3D? Conoce en esta review la
   impresora 3D Longer LK5 Pro con gran volumen de impresión y buena
   calidad-precio.
-amazonLink: https://amzn.to/3jFMPmS
 ---
