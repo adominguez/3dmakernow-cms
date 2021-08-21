@@ -1,14 +1,69 @@
 ---
 templateKey: printer-page
-title: Longer LK5 Pro
 brand: Longer
 featuredimage: /static/img/longer-lk5-pro-0.png
 pageTitle: Impresora 3D Longer LK5 Pro. Grandes impresiones a bajo precio.
-amazonLink: https://amzn.to/3jFMPmS
-aliexpressLink: https://s.click.aliexpress.com/e/_ADu9gq
+prints:
+  printImage:
+    - src: /static/img/1628717275969.png
+      alt: Impresión de pokemon Longer LK5 Pro
+    - src: /static/img/1628717276009.png
+      alt: Impresión de Odish Longer LK5 Pro
+    - src: /static/img/img_20210809_190709.png
+      alt: Impresión de Mario para Alexa
+    - src: /static/img/img_20210809_190933.png
+      alt: Mario Brosh Longer LK5 Pro
+    - src: /static/img/1628717276244.png
+      alt: Jarrón impreso en 3D
+    - src: /static/img/1628717276302.png
+      alt: Jarrón impreso en 3D
+    - src: /static/img/1628717276079.png
+      alt: Posavasos impreso en 3D
+    - src: /static/img/capa-1.png
+      alt: Astronauta de gran tamaño impreso en 3D
+    - src: /static/img/capa-2.png
+      alt: Astronauta impreso en 3D con Longer LK5 Pro
+    - src: /static/img/1628717276348.png
+      alt: Barco Benchi Longer LK5 Pro
+  sectionContent: "¿Quieres comprobar de primera mano su calidad? Te muestro
+    algunas impresiones realizadas con la Longer LK5 Pro:"
+  title: Impresiones de Longer LK5 Pro
 customLinks:
   - store: Longer
     link: https://www.longer3d.com/products/lk5-pro-fdm-3d-printer
+finalValuation:
+  title: Conclusión de la impresora 3D Longer LK5 Pro
+  sectionContent: >-
+    <p>Debo reconocer que solo había oído hablar de la marca Longer en un par de
+    ocasiones, así que en cuanto he podido probar una de sus impresoras no lo he
+    dudado. Con su impresora 3D Longer LK5 Pro me he encontrado con una
+    impresora de la que merece la pena hablar.</p>
+
+
+    <p>Como habrás podido comprobar, se trata de una impresora 3D con una excelente relación calidad-precio que la convierte en una interesante inversión para cualquier usuario ya sea porque quiera empezar en la impresión 3D o subir de nivel en sus impresiones. Aunque no debemos olvidar que para realizar grandes impresiones requiere de algo de experiencia con todos los parámetros de impresión.</p>
+
+
+    <p>Dado su amplio volumen de impresión, puede que su tamaño intimide y que no sea apta para cualquier escritorio, pero es gracias a ese tamaño, a su diseño y su estructura que consigue la estabilidad idónea para conseguir buenos resultados.</p>
+
+
+    <p>Tras varias impresiones, puedo decir que es muy silenciosa, lo cual se agradece mucho. Además, es fácil de usar gracias a la accesibilidad de su pantalla táctil en la cual siempre muestra un resumen de impresión bastante interesante. Y, si bien es cierto que la calidad de impresión depende de muchas cosas, el resultado final es bastante decente.</p>
+
+
+    <p>Por todo ello, creo que la Longer LK5 Pro es una buena impresora 3D que no tiene nada que envidiar a impresoras de la misma gama de marcas más conocidas. Tanto si quieres una impresora que te permita grandes impresiones como si quieres aprender a superarte en cada una de tus creaciones, no pases por alto esta opción.</p>
+
+
+    <p>Y… poco más puedo decirte de esta estupenda impresora, así que hasta aquí la review.</p>
+
+
+    <p>¡Ahora es tu turno! ¿Te ha resultado útil la información?</p>
+aliexpressLink: https://s.click.aliexpress.com/e/_ADu9gq
+title: Longer LK5 Pro
+links:
+  amazonLink: amazon
+  aliexpressLink: aliexpress
+  customLinks:
+    - store: Longer
+      link: Link
 initialValuation: >-
   <p class="my-2 text-center">¿Alguna vez has probado a hacer una impresión en
   3D grande? Si no es así puedo decirte que es como subir un peldaño más en la
@@ -165,31 +220,6 @@ advantagesDisadvantajes:
         esfuerzo conseguir óptimos resultados. Recuerda que para grandes piezas
         tendrás que tener en cuenta detalles como el relleno, la temperatura, la
         velocidad, la base de la cama, el eje Z…
-prints:
-  printImage:
-    - src: /static/img/1628717275969.png
-      alt: Impresión de pokemon Longer LK5 Pro
-    - src: /static/img/1628717276009.png
-      alt: Impresión de Odish Longer LK5 Pro
-    - src: /static/img/img_20210809_190709.png
-      alt: Impresión de Mario para Alexa
-    - src: /static/img/img_20210809_190933.png
-      alt: Mario Brosh Longer LK5 Pro
-    - src: /static/img/1628717276244.png
-      alt: Jarrón impreso en 3D
-    - src: /static/img/1628717276302.png
-      alt: Jarrón impreso en 3D
-    - src: /static/img/1628717276079.png
-      alt: Posavasos impreso en 3D
-    - src: /static/img/capa-1.png
-      alt: Astronauta de gran tamaño impreso en 3D
-    - src: /static/img/capa-2.png
-      alt: Astronauta impreso en 3D con Longer LK5 Pro
-    - src: /static/img/1628717276348.png
-      alt: Barco Benchi Longer LK5 Pro
-  sectionContent: "¿Quieres comprobar de primera mano su calidad? Te muestro
-    algunas impresiones realizadas con la Longer LK5 Pro:"
-  title: Impresiones de Longer LK5 Pro
 upgradesToPrint:
   title: Mejoras para imprimir
   sectionContent: >-
@@ -210,31 +240,6 @@ upgradesToPrint:
     - image: https://cdn.thingiverse.com/assets/cf/0e/69/d5/5e/featured_preview_thingholderwire.jpg
       link: https://www.thingiverse.com/thing:4762842
       text: Soporte para los cables
-finalValuation:
-  title: Conclusión de la impresora 3D Longer LK5 Pro
-  sectionContent: >-
-    <p>Debo reconocer que solo había oído hablar de la marca Longer en un par de
-    ocasiones, así que en cuanto he podido probar una de sus impresoras no lo he
-    dudado. Con su impresora 3D Longer LK5 Pro me he encontrado con una
-    impresora de la que merece la pena hablar.</p>
-
-
-    <p>Como habrás podido comprobar, se trata de una impresora 3D con una excelente relación calidad-precio que la convierte en una interesante inversión para cualquier usuario ya sea porque quiera empezar en la impresión 3D o subir de nivel en sus impresiones. Aunque no debemos olvidar que para realizar grandes impresiones requiere de algo de experiencia con todos los parámetros de impresión.</p>
-
-
-    <p>Dado su amplio volumen de impresión, puede que su tamaño intimide y que no sea apta para cualquier escritorio, pero es gracias a ese tamaño, a su diseño y su estructura que consigue la estabilidad idónea para conseguir buenos resultados.</p>
-
-
-    <p>Tras varias impresiones, puedo decir que es muy silenciosa, lo cual se agradece mucho. Además, es fácil de usar gracias a la accesibilidad de su pantalla táctil en la cual siempre muestra un resumen de impresión bastante interesante. Y, si bien es cierto que la calidad de impresión depende de muchas cosas, el resultado final es bastante decente.</p>
-
-
-    <p>Por todo ello, creo que la Longer LK5 Pro es una buena impresora 3D que no tiene nada que envidiar a impresoras de la misma gama de marcas más conocidas. Tanto si quieres una impresora que te permita grandes impresiones como si quieres aprender a superarte en cada una de tus creaciones, no pases por alto esta opción.</p>
-
-
-    <p>Y… poco más puedo decirte de esta estupenda impresora, así que hasta aquí la review.</p>
-
-
-    <p>¡Ahora es tu turno! ¿Te ha resultado útil la información?</p>
 callToAction:
   title: Longer LK5 PRO
   actionText: >
@@ -253,4 +258,5 @@ metaTitle: "Impresora 3D Longer LK5: Imprimiendo a lo grande"
 metaDescription: ¿Quieres hacer grandes impresiones 3D? Conoce en esta review la
   impresora 3D Longer LK5 Pro con gran volumen de impresión y buena
   calidad-precio.
+amazonLink: https://amzn.to/3jFMPmS
 ---
