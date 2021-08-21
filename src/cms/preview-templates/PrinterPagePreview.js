@@ -6,23 +6,26 @@ import CMS from 'netlify-cms-app'
 CMS.registerPreviewStyle('../../css/index.css');
 
 const PrinterPagePreview = ({ entry, widgetFor }) => {
+  const {
+    pageTitle,
+    title,
+    links,
+    customSections,
+    initialValuation,
+    properties,
+    whereBuy,
+    featuredimage,
+    advantagesDisadvantajes,
+    prints,
+    upgradesToPrint,
+    finalValuation,
+    callToAction,
+    productsImages,
+  } = entry.getIn(['data']).toJSON();
   const tags = entry.getIn(['data', 'tags']);
-  const pageTitle = entry.getIn(['data', 'pageTitle']);
-  const title = entry.getIn(['data', 'title']);
-  const productsImages = entry.getIn([ 'data'] ).toJS().productsImages;
-  const initialValuation = entry.getIn(['data', 'initialValuation']);
-  const amazonLink = entry.getIn(['data', 'amazonLink']);
-  const aliexpressLink = entry.getIn(['data', 'aliexpressLink']);
-  const customLinks = entry.getIn([ 'data'] ).toJS().customLinks;
-  const customSections = entry.getIn([ 'data'] ).toJS().customSections;
-  const properties = entry.getIn([ 'data'] ).toJS().properties;
-  const whereBuy = entry.getIn([ 'data'] ).toJS().whereBuy;
-  const featuredimage = entry.getIn([ 'data'] ).toJS().featuredimage;
-  const advantagesDisadvantajes = entry.getIn([ 'data'] ).toJS().advantagesDisadvantajes;
-  const prints = entry.getIn([ 'data'] ).toJS().prints;
-  const upgradesToPrint = entry.getIn([ 'data'] ).toJS().upgradesToPrint;
-  const finalValuation = entry.getIn([ 'data'] ).toJS().finalValuation;
-  const callToAction = entry.getIn([ 'data'] ).toJS().callToAction;
+  const amazonLink = links?.amazonLink;
+  const aliexpressLink = links?.aliexpressLink;
+  const customLinks = links?.customLinks;
 
   return (
     <PrinterPageTemplate

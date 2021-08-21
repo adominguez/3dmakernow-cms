@@ -41,14 +41,19 @@ collections:
       - {label: "Marca de la impresora", name: "brand", required: true, widget: "string"}
       - {label: "Imagen destacada", name: "featuredimage", widget: image}
       - {label: "Título de la página (h1)", name: "pageTitle", required: true, widget: "string"}
-      - {label: "Enlace de Amazon", name: "amazonLink", widget: "string"}
-      - {label: "Enlace de Aliexpress", name: "aliexpressLink", widget: "string"}
-      - label: "Enlaces personalizados"
-        name: "customLinks"
-        widget: "list"
+      - label: "Enlaces de venta"
+        name: "links"
+        widget: "object"
+        collapsed: true
         fields:
-          - { label: "Tienda", name: "store", widget: "string", required:true }
-          - { label: "link", name: "link", widget: "string", required:true }
+          - {label: "Enlace de Amazon", name: "amazonLink", widget: "string"}
+          - {label: "Enlace de Aliexpress", name: "aliexpressLink", widget: "string"}
+          - label: "Enlaces personalizados"
+            name: "customLinks"
+            widget: "list"
+            fields:
+              - { label: "Tienda", name: "store", widget: "string", required:true }
+              - { label: "link", name: "link", widget: "string", required:true }
       - {label: "Valoración inicial", name: "initialValuation", required: true, widget: "markdown"}
       - label: "Imágenes de producto"
         name: "productsImages"
@@ -56,6 +61,36 @@ collections:
         fields:
           - { label: "Imagen", name: "src", widget: "image", required: true }
           - { label: "Alt Texto", name: "alt", widget: "string", required: true }
+      - label: Secciones
+        name: sections
+        widget: list
+        types:
+          - label: Generic Section
+            name: generic-section
+            fields:
+              - label: Title
+                name: title
+              - label: Content
+                name: content
+                widget: markdown
+          - label: Team Section
+            name: team-section
+            fields:
+              - label: People
+                name: people
+                widget: list
+                fields:
+                  - label: Name
+                    name: name
+          - label: Grid de Amazon
+            name: amazonGrid
+            fields:
+              - label: Listado de productos
+                name: amazonList
+                widget: productsList
+                fields:
+                  - label: Name
+                    name: name
       - label: "Creación de secciones"
         name: "customSections"
         widget: "list"
