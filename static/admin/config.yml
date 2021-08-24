@@ -40,6 +40,19 @@ collections:
       - {label: "Nombre de la impresora", name: "title", required: true, widget: "string"}
       - {label: "Marca de la impresora", name: "brand", required: true, widget: "string"}
       - {label: "Imagen destacada", name: "featuredimage", widget: image}
+      - label: "Submenu"
+        name: "submenu"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Mostrar submenu", name: "showSubmenu", widget: "boolean", required: false}
+          - label: "Elementos del menu"
+            name: "menuItems"
+            widget: "list"
+            fields:
+              - { label: "Nombre", name: "name", widget: "string", required: true }
+              - { label: "link", name: "route", widget: "string", required: true }
+              - { label: "icon", name: "icon", hint: "inserta el código de un svg", widget: "string", required: true }
       - {label: "Título de la página (h1)", name: "pageTitle", required: true, widget: "string"}
       - label: "Enlaces de venta"
         name: "links"

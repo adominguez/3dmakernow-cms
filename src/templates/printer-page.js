@@ -34,13 +34,18 @@ export const PrinterPageTemplate = (props) => {
     prints,
     upgradesToPrint,
     finalValuation,
-    callToAction
+    callToAction,
+    submenu
   } = props;
   
   return (
     <>
-      <Submenu title={title} />
-      <ProductDetailValoration pageTitle={pageTitle} initialValuation={initialValuation} productsImages={productsImages} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
+      <Submenu submenu={submenu} />
+      {
+        pageTitle || initialValuation ?
+          <ProductDetailValoration pageTitle={pageTitle} initialValuation={initialValuation} productsImages={productsImages} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
+        : null
+      }
       {
         customSections && customSections.length ?
           customSections.map(({sectionContent, title, showBorder, backgroundColor}, key) => (

@@ -21,11 +21,9 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
     finalValuation,
     callToAction,
     productsImages,
+    submenu
   } = entry.getIn(['data']).toJSON();
   const tags = entry.getIn(['data', 'tags']);
-  const amazonLink = links?.amazonLink;
-  const aliexpressLink = links?.aliexpressLink;
-  const customLinks = links?.customLinks;
 
   return (
     <PrinterPageTemplate
@@ -35,9 +33,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       pageTitle={pageTitle}
       productsImages={productsImages}
       initialValuation={initialValuation}
-      amazonLink={amazonLink}
-      aliexpressLink={aliexpressLink}
-      customLinks={customLinks}
+      links={links}
       customSections={customSections}
       properties={properties}
       whereBuy={whereBuy}
@@ -47,6 +43,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       upgradesToPrint={upgradesToPrint}
       finalValuation={finalValuation}
       callToAction={callToAction}
+      submenu={submenu}
     />
   )
 }
