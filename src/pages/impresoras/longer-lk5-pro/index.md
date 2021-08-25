@@ -2,8 +2,6 @@
 templateKey: printer-page
 title: Longer LK5 Pro
 brand: Longer
-printerCategory: FDM
-printerSize: 30x30 o superior
 featuredimage: /static/img/longer-lk5-pro-0.png
 submenu:
   showSubmenu: false
@@ -258,4 +256,8 @@ metaTitle: "Impresora 3D Longer LK5: Imprimiendo a lo grande"
 metaDescription: ¿Quieres hacer grandes impresiones 3D? Conoce en esta review la
   impresora 3D Longer LK5 Pro con gran volumen de impresión y buena
   calidad-precio.
+printerCategory: FDM
+tags:
+  - tags
+printerSize: 30x30 o superior
 ---
