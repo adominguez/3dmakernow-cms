@@ -283,11 +283,6 @@ export const pageQuery = graphql`
         }
         submenu {
           showSubmenu
-          menuItems {
-            name
-            icon
-            route
-          }
         }
       }
     }

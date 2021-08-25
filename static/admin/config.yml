@@ -42,6 +42,7 @@ collections:
       - {label: "Tipo de impresora", name: "printerCategory", widget: "select", default: "FDM", options: ["FDM", "Resina"], required: true}
       - {label: "Volumen de impresión", name: "printerSize", widget: "select", default: "Inferior de 30x30", options: ["Inferior de 20x20", "Inferior de 30x30", "30x30 o superior", "40x40 o superior"], required: true}
       - {label: "Imagen destacada", name: "featuredimage", widget: image}
+      - {label: "Impresora destacada", name: "featuredPrinter", widget: "boolean", , hint: "Si quieres destacar esta impresora marca esta opción", required: false}
       - label: "Submenu"
         name: "submenu"
         widget: "object"
@@ -51,6 +52,7 @@ collections:
           - label: "Elementos del menu"
             name: "menuItems"
             widget: "list"
+            required: false
             fields:
               - { label: "Nombre", name: "name", widget: "string", required: true }
               - { label: "link", name: "route", widget: "string", required: false }
