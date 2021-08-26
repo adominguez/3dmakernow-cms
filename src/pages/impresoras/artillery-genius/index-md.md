@@ -29,12 +29,12 @@ initialValuation: >
 productsImages:
   - src: /static/img/artillery-genius.png
     alt: Impresora Artillery Genius
-  - src: /static/img/longer-lk5-pro-1.png
-    alt: Impresora 3D Ender 3 frontal
-  - src: /static/img/longer-lk5-pro-2.png
-    alt: Características Longer LK5 Pro
-  - src: /static/img/longer-lk5-pro-3.png
-    alt: Impresora 3D Ender 3 Medidas
+  - src: /static/img/artillery-genius-4.png
+    alt: Impresora 3D Artillery Genius frontal
+  - src: /static/img/artillery-genius-3.png
+    alt: Display Artillery Genius
+  - src: /static/img/artillery-genius-2.png
+    alt: Extrusor Artillery Genius
 customSections:
   - showBorder: true
     title: Artillery Genius, la impresora 3D del 2020
