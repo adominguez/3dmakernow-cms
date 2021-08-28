@@ -8,12 +8,15 @@ import ReviewPageTemplate from './preview-templates/reviewsPagePreview';
 import PrinterPagePreview from './preview-templates/PrinterPagePreview';
 import ProductPagePreview from './preview-templates/ProductPagePreview';
 import { ProductsListControl } from "./widgets/ProductsList";
+import { CompareProductsControl } from "./widgets/CompareProducts";
 import { SeoPageControl } from './widgets/SeoPage';
 import ProductsList from "../components/productsList";
+import CompareProducts from "../components/compareProducts";
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
+CMS.registerWidget("compareProducts", CompareProductsControl, CompareProducts);
 CMS.registerWidget("productsList", ProductsListControl, ProductsList);
 CMS.registerWidget("seoPage", SeoPageControl);
 

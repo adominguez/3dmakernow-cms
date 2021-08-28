@@ -120,6 +120,14 @@ collections:
           - { label: "Título", name: "title", widget: "string" }
           - {label: "Contenido de la sección", name: "sectionContent", required: true, widget: "markdown"}
           - {label: "Mostrar borde inferior", name: "showBorder", widget: "boolean", default: false}
+      - label: "Comparación de productos"
+        name: "comparation"
+        widget: object
+        fields:
+          - {label: "Mostrar Comparación", name: "showComparation", widget: "boolean", required: false}
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Contenido inicial", name: "sectionContent", widget: "markdown", required: false}
+          - {label: Comparación, name: compareProducts, widget: compareProducts}
       - label: "Propiedades"
         name: "properties"
         widget: "object"

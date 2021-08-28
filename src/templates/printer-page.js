@@ -13,6 +13,7 @@ import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes'
 import { CarouselImage } from '../components/CarouselImages'
 import { UpgradesToPrint } from '../components/UpgradesToPrint'
 import { splitStaticUrl } from '../utils/utils'
+import CompareProducts from '../components/compareProducts'
 
 
 export const PrinterPageTemplate = (props) => {
@@ -35,7 +36,12 @@ export const PrinterPageTemplate = (props) => {
     upgradesToPrint,
     finalValuation,
     callToAction,
-    submenu
+    submenu,
+    comparation,
+    comparation: {
+      showComparation,
+      compareProducts,
+    } = {}
   } = props;
   
   return (
@@ -51,6 +57,13 @@ export const PrinterPageTemplate = (props) => {
           customSections.map(({sectionContent, title, showBorder, backgroundColor}, key) => (
             <CustomSection key={key} title={title} sectionContent={sectionContent} showBorder={showBorder} backgroundColor={backgroundColor} />
           ))
+        : null
+      }
+      {
+        showComparation ?
+          <CustomSection title={comparation.title || 'Comparativa de impresoras'} sectionContent={comparation.sectionContent} backgroundColor="Claro" showBorder={true}>
+            <CompareProducts compareProducts={compareProducts} />
+          </CustomSection>
         : null
       }
       {

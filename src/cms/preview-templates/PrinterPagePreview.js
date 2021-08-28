@@ -21,7 +21,8 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
     finalValuation,
     callToAction,
     productsImages,
-    submenu
+    submenu,
+    comparation
   } = entry.getIn(['data']).toJSON();
   const tags = entry.getIn(['data', 'tags']);
 
@@ -44,6 +45,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       finalValuation={finalValuation}
       callToAction={callToAction}
       submenu={submenu}
+      comparation={comparation}
     />
   )
 }
