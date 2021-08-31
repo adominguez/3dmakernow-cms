@@ -235,6 +235,30 @@ advantagesDisadvantajes:
     - text: Es posible que en algunas ocasiones sea necesario tensar las correas de la
         impresora sobre todo del Eje X, ya que no vienen bien tensas de fábrica,
         lo que puede hacer que no salgan las impresiones del todo bien.
+faqs:
+  showFaqs: true
+  sectionContent: Aqui tienes algunas de las preguntas más frequentes que se hacen
+    los usuarios de esta impresora.
+  asks:
+    - ask: ¿Qué filamento usa la artillery genius?
+      response: La Artillery Genius tiene un extrusor Titán directo, por lo que podras
+        imprimir la mayoría de filamentos comunes, PLA, ABS, PETG, Flexible,
+        TPU, madera, lo que sí, tienes que prestar atención a que el grosor sea
+        de 1,75mm
+    - ask: ¿Cómo se nivela la artillery genius?
+      response: >-
+        <p>A diferencia de otras impresoras, la Artillery Genius, no tiene
+        autonivelación, sin embargo, en su firmware trae una funcion para poder
+        calibrarla que te guiará a través de los puntos que tienes que ir
+        calibrando, para ello, necesitaras una hoja de papel.</p>
+
+        <p>Deberás de ir desplazando el carro a los puntos indicados por el programa, colocar el papel debajo de la boquilla y ajustar con las ruedas de nivelación de debajo de la cama hasta conseguir que el papel no quede ni demasiado suelto ni muy apretado y seas capaz de pasar el papel correctamente entre la cama y la boquilla.</p>
+    - ask: ¿Cómo cambiar filamento en artillery genius?
+      response: >-
+        <p>Es muy fácil cambiar de filamento, el propio firmware ya trae una
+        función  a través de la cual puedes realizar el cambio.</p>
+
+        <p>Simplemente caliente el hotend a la temperatura del filamento que quieres extraer y o insertar, pulsa el cambio de filamento y ve siguiendo los pasos que te va indicando la pantalla.</p>
 prints:
   printImage:
     - src: /static/img/impresion-artillery-1.png
