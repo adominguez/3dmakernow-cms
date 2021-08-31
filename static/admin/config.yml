@@ -27,57 +27,6 @@ collections:
       - {label: "Imagen destacada", name: "featuredimage", widget: image}
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
-  - name: "impresoras"
-    label: "impresoras"
-    folder: "src/pages/impresoras"
-    path: "{{slug}}/index.md"
-    media_folder: '/static/img'
-    public_folder: '/static/img'
-    create: true
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "printer-page"}
-      - {label: "Nombre de la impresora", name: "title", required: true, widget: "string"}
-      - {label: "Marca de la impresora", name: "brand", required: true, widget: "string"}
-      - {label: "Tipo de impresora", name: "printerCategory", widget: "select", default: "FDM", options: ["FDM", "Resina"], required: true}
-      - {label: "Volumen de impresión", name: "printerSize", widget: "select", default: "Inferior de 30x30", options: ["Inferior de 20x20", "Inferior de 30x30", "30x30 o superior", "40x40 o superior"], required: true}
-      - {label: "Imagen destacada", name: "featuredimage", widget: image}
-      - {label: "Impresora destacada", name: "featuredPrinter", widget: "boolean", hint: "Si quieres destacar esta impresora marca esta opción", required: false}
-      - label: "Submenu"
-        name: "submenu"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Mostrar submenu", name: "showSubmenu", widget: "boolean", required: false}
-          - label: "Elementos del menu"
-            name: "menuItems"
-            widget: "list"
-            required: false
-            fields:
-              - { label: "Nombre", name: "name", widget: "string", required: true }
-              - { label: "link", name: "route", widget: "string", required: false }
-              - { label: "icon", name: "icon", hint: "inserta el código de un svg", widget: "string", required: true }
-      - {label: "Título de la página (h1)", name: "pageTitle", required: true, widget: "string"}
-      - label: "Enlaces de venta"
-        name: "links"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Enlace de Amazon", name: "amazonLink", widget: "string"}
-          - {label: "Enlace de Aliexpress", name: "aliexpressLink", widget: "string"}
-          - label: "Enlaces personalizados"
-            name: "customLinks"
-            widget: "list"
-            fields:
-              - { label: "Tienda", name: "store", widget: "string", required:true }
-              - { label: "link", name: "link", widget: "string", required:true }
-      - {label: "Valoración inicial", name: "initialValuation", required: true, widget: "markdown"}
-      - label: "Imágenes de producto"
-        name: "productsImages"
-        widget: "list"
-        fields:
-          - { label: "Imagen", name: "src", widget: "image", required: true }
-          - { label: "Alt Texto", name: "alt", widget: "string", required: true }
       - label: Secciones
         name: sections
         widget: list
@@ -108,21 +57,78 @@ collections:
                 fields:
                   - label: Name
                     name: name
+
+  - name: "impresoras"
+    label: "impresoras"
+    folder: "src/pages/impresoras"
+    path: "{{slug}}/index.md"
+    media_folder: '/static/img'
+    public_folder: '/static/img'
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "printer-page"}
+      - {label: "Nombre de la impresora", name: "title", required: true, widget: "string"}
+      - {label: "Marca de la impresora", name: "brand", required: true, widget: "string"}
+      - {label: "Tipo de impresora", name: "printerCategory", widget: "select", default: "FDM", options: ["FDM", "Resina"], required: true}
+      - {label: "Volumen de impresión", name: "printerSize", widget: "select", default: "Inferior de 30x30", options: ["Inferior de 20x20", "Inferior de 30x30", "30x30 o superior", "40x40 o superior"], required: true}
+      - {label: "Imagen destacada", name: "featuredimage", widget: image, required: true}
+      - {label: "Impresora destacada", name: "featuredPrinter", widget: "boolean", hint: "Si quieres destacar esta impresora marca esta opción", required: false}
+      - label: "Submenu"
+        name: "submenu"
+        widget: "object"
+        collapsed: true
+        required: false
+        fields:
+          - {label: "Mostrar submenu", name: "showSubmenu", widget: "boolean", required: false}
+          - label: "Elementos del menu"
+            name: "menuItems"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Nombre", name: "name", widget: "string", required: true }
+              - { label: "link", name: "route", widget: "string", required: false }
+              - { label: "icon", name: "icon", hint: "inserta el código de un svg", widget: "string", required: true }
+      - {label: "Título de la página (h1)", name: "pageTitle", required: true, widget: "string"}
+      - label: "Enlaces de venta"
+        name: "links"
+        widget: "object"
+        collapsed: true
+        required: false
+        fields:
+          - {label: "Enlace de Amazon", name: "amazonLink", widget: "string", required: false}
+          - {label: "Enlace de Aliexpress", name: "aliexpressLink", widget: "string", required: false}
+          - label: "Enlaces personalizados"
+            name: "customLinks"
+            widget: "list"
+            fields:
+              - { label: "Tienda", name: "store", widget: "string", required: true }
+              - { label: "link", name: "link", widget: "string", required: true }
+      - {label: "Valoración inicial", name: "initialValuation", required: false, widget: "markdown"}
+      - label: "Imágenes de producto"
+        name: "productsImages"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Imagen", name: "src", widget: "image", required: true }
+          - { label: "Alt Texto", name: "alt", widget: "string", required: true }
       - label: "Creación de secciones"
         name: "customSections"
         widget: "list"
+        required: false
         fields:
           - label: "Color de fondo"
             name: "backgroundColor"
             widget: "select"
             options: ["Claro", "Medio", "Oscuro"]
             default: "Claro"
-          - { label: "Título", name: "title", widget: "string" }
+            required: false
+          - { label: "Título", name: "title", widget: "string", required: false }
           - {label: "Contenido de la sección", name: "sectionContent", required: true, widget: "markdown"}
           - {label: "Mostrar borde inferior", name: "showBorder", widget: "boolean", default: false}
       - label: "Comparación de productos"
         name: "comparation"
         widget: object
+        required: false
         fields:
           - {label: "Mostrar Comparación", name: "showComparation", widget: "boolean", required: false}
           - {label: "Título", name: "title", widget: "string", required: false}
@@ -131,6 +137,7 @@ collections:
       - label: "Propiedades"
         name: "properties"
         widget: "object"
+        required: false
         fields:
           - {label: "Título", name: "title", widget: "string", required: false}
           - {label: "Contenido inicial", name: "sectionContent", widget: "markdown", required: false}
@@ -188,6 +195,7 @@ collections:
         name: "whereBuy"
         widget: "object"
         collapsed: true
+        required: false
         fields:
           - {label: "Título", name: "title", widget: "string", required: false}
           - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
@@ -195,6 +203,7 @@ collections:
       - label: "Ventajas y desventajas"
         name: "advantagesDisadvantajes"
         widget: "object"
+        required: false
         collapsed: true
         fields:
           - {label: "Título", name: "title", widget: "string", required: false}
@@ -209,9 +218,25 @@ collections:
             widget: "list"
             fields:
               - { label: "Texto", name: "text", widget: "markdown" }
+      - label: "Preguntas frecuentes"
+        name: "faqs"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Mostrar Preguntas frecuentes", name: "showFaqs", widget: "boolean", required: false}
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Preguntas"
+            name: "asks"
+            widget: "list"
+            fields:
+              - { label: "Pregunta", name: "ask", widget: "string", required: true }
+              - { label: "Respuesta", name: "response", widget: "markdown", required: true }
       - label: "Impresiones realizadas con la impresora 3D"
         name: "prints"
         widget: "object"
+        required: false
         collapsed: true
         fields:
           - {label: "Título", name: "title", widget: "string", required: false}
@@ -225,6 +250,7 @@ collections:
       - label: "Mejoras para imprimir"
         name: "upgradesToPrint"
         widget: "object"
+        required: false
         collapsed: true
         fields:
           - {label: "Título", name: "title", widget: "string", required: true}
@@ -239,6 +265,7 @@ collections:
       - label: "Conclusión final"
         name: "finalValuation"
         widget: "object"
+        required: false
         collapsed: true
         fields:
           - {label: "Título", name: "title", widget: "string", required: true}
@@ -246,10 +273,11 @@ collections:
       - label: "Llamada a la acción"
         name: "callToAction"
         widget: "object"
+        required: false
         collapsed: true
         fields:
           - {label: "Texto de donde comprar", name: "actionText", widget: "markdown", required: false}
-      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime", required: true}
       - {label: "Título SEO", name: "metaTitle", widget: "string", required: true, hint: "campo de texto", pattern: ['^.{1,70}$', "este campo debe de tener un máximo de 70 caracteres"]}
       - {label: "Descripción SEO", name: "metaDescription", widget: "text", required: true, hint: "campo de texto", pattern: ['^.{1,150}$', "este campo debe de tener un máximo de 150 caracteres"]}
       - {label: "Tags", name: "tags", widget: "list"}

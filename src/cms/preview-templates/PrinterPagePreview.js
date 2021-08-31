@@ -22,7 +22,8 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
     callToAction,
     productsImages,
     submenu,
-    comparation
+    comparation,
+    faqs
   } = entry.getIn(['data']).toJSON();
   const tags = entry.getIn(['data', 'tags']);
 
@@ -46,6 +47,7 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
       callToAction={callToAction}
       submenu={submenu}
       comparation={comparation}
+      faqs={faqs}
     />
   )
 }

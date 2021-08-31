@@ -14,6 +14,7 @@ import { CarouselImage } from '../components/CarouselImages'
 import { UpgradesToPrint } from '../components/UpgradesToPrint'
 import { splitStaticUrl } from '../utils/utils'
 import CompareProducts from '../components/compareProducts'
+import Faqs from '../components/faqs'
 
 
 export const PrinterPageTemplate = (props) => {
@@ -41,6 +42,11 @@ export const PrinterPageTemplate = (props) => {
     comparation: {
       showComparation,
       compareProducts,
+    } = {},
+    faqs,
+    faqs: {
+      showFaqs,
+      asks
     } = {}
   } = props;
   
@@ -88,11 +94,18 @@ export const PrinterPageTemplate = (props) => {
       {
         convertedKeyProperties(prints) && convertedKeyProperties(prints).length ?
           <CustomSection title={prints.title || 'Impresiones realizadas'} sectionContent={prints.sectionContent} backgroundColor="Claro" showBorder>
-            {
-              prints?.printImage && prints.printImage.length ?
+              {
+                prints?.printImage && prints.printImage.length ?
                 <CarouselImage className="my-3" images={prints.printImage} settings={imageCarouselSettings} />
-              : null
-            }
+                : null
+              }
+            </CustomSection>
+          : null
+      }
+      {
+        showFaqs ?
+          <CustomSection title={faqs.title || 'Preguntas frecuentes'} sectionContent={faqs.sectionContent} backgroundColor="Claro" showBorder>
+            <Faqs asks={asks} />
           </CustomSection>
         : null
       }
