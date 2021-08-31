@@ -53,7 +53,7 @@ customSections:
     backgroundColor: Claro
   - showBorder: false
     title: Artillery Genius vs Ender 3
-    sectionContent: >-
+    sectionContent: >
       <p>Seguro que si estás pensando en comprar una impresora 3D FDM
       actualmente, las dos impresoras 3D que se te vienen a la mente son la
       impresora 3D Ender 3, y la Artillery Genius, y es normal, son de las
@@ -102,13 +102,49 @@ customSections:
       <p>Este es uno de los factores en los que seguro más te fijarás a la hora de elegir una impresora 3D, el precio de ambas es similar, aunque la Genius es un poco más cara. No obstante, la diferencia varía según la plataforma y el sitio donde se comercializa. De todos modos, se trata de un valor escaso teniendo en cuenta todo lo que hemos comentado un poco más arriba.</p>
 
       <p>Cabe destacar que el precio se justifica también por la calidad de sus materiales (placa, cables, filamento, pantalla LCD, etc) y por su precisión al momento de crear piezas e impresiones, y además, el que traiga estas nuevas funcionalidades y correcciones, hacen que encarezcan un poco el precio de la máquina.</p>
-
-      <h3 class="text-primary-500 font-bold py-5">Ante tanta paridad, ¿Cuál comprar?</h3>
-
-      <p>Como ves, estas dos impresoras presentan grandes similitudes y se diferencian en algunos detalles y funcionalidades que se evidencian en la práctica, nuevamente hay que tener en cuenta que la artillery Genius es más nueva que la Ender 3, sin embargo, la Ender 3 cuenta con mayor experiencia en el mercado, tiene una gran cantidad de usuarios a sus espaldas que han testado la impresora y han desarrollados nuevos componentes y mejoras en ella.</p>
-
-      <p>Ahora bien, sinceramente creo que Artillery promete mucho, y va a dar mucho que hablar, tanto con esta impresora como con su hermana mayor, la sidewinder, y es muy probable que sigan desarrollando su gama de impresoras 3D y continúen mejorándolas, la Artillery Genius es una impresora de muy alta gama a un precio muy razonable, por lo que puede ser una buena opción de compra si estás buscando una nueva impresora 3D.</p>
     backgroundColor: Claro
+comparation:
+  showComparation: true
+  compareProducts:
+    products:
+      - name: ender 3
+        image: https://cocky-yalow-a9e1a8.netlify.app/static/f7e7236a95ddc9f860f9d80c50e30d6d/53f65/impresora-3d-ender-3-01.png
+        link: https://www.amazon.es/Impresora-3D-Creality-Tama%C3%B1o-impressio/dp/B07JC93LKS?&linkCode=sl1&tag=3dmakernow-21&linkId=00ac8406c60f09b8e4c8603a254d05e2&language=es_ES&ref_=as_li_ss_tl
+        Volumen de impresión: 220x220x250mm
+        Cama caliente: BuildTak, puede extraerse
+        Estructura: Perfil de aluminio
+        Motores Eje Z: Un motor
+        Sensor final de filamento: No tiene
+        Pantalla: Pantalla mediante rueda
+        id: 0
+      - name: Artillery Genius
+        image: https://cocky-yalow-a9e1a8.netlify.app/static/5a6f10ba84dca7cf7f1ccac6db1d483a/53f65/artillery-genius-4.png
+        link: https://www.amazon.es/Artillery-Genius-3D-Printer-2019-integridad/dp/B07Z39DRSL?&linkCode=sl1&tag=3dmakernow-21&linkId=d52061c6a903f45164194fbfc95f95c0&language=es_ES&ref_=as_li_ss_tl
+        Volumen de impresión: 220x220x250mm
+        Cama caliente: Cristal templado, no puede extraerse
+        Estructura: Perfil de aluminio
+        Motores Eje Z: Dos motores sincronizados
+        Sensor final de filamento: si
+        Pantalla: Pantalla táctil
+        id: 1
+    properties:
+      - Volumen de impresión
+      - Cama caliente
+      - Estructura
+      - Motores Eje Z
+      - Sensor final de filamento
+      - Pantalla
+  sectionContent: >-
+    <p>Como ves, estas dos impresoras presentan grandes similitudes y se
+    diferencian en algunos detalles y funcionalidades que se evidencian en la
+    práctica, nuevamente hay que tener en cuenta que la artillery Genius es más
+    nueva que la Ender 3, sin embargo, la Ender 3 cuenta con mayor experiencia
+    en el mercado, tiene una gran cantidad de usuarios a sus espaldas que han
+    testado la impresora y han desarrollados nuevos componentes y mejoras en
+    ella.</p>
+
+    <p>Ahora bien, sinceramente creo que Artillery promete mucho, y va a dar mucho que hablar, tanto con esta impresora como con su hermana mayor, la sidewinder, y es muy probable que sigan desarrollando su gama de impresoras 3D y continúen mejorándolas, la Artillery Genius es una impresora de muy alta gama a un precio muy razonable, por lo que puede ser una buena opción de compra si estás buscando una nueva impresora 3D.</p>
+  title: Ante tanta paridad, ¿Cuál comprar?
 properties:
   title: Características técnicas de la impresora 3D Artillery Genius
   sectionContent: <p>Lo cierto es que la Artillery Genius ha revolucionado el
