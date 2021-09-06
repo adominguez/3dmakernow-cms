@@ -39,10 +39,6 @@ export const PrinterPageTemplate = (props) => {
     callToAction,
     submenu,
     comparation,
-    comparation: {
-      showComparation,
-      compareProducts,
-    } = {},
     faqs,
     faqs: {
       showFaqs,
@@ -66,9 +62,9 @@ export const PrinterPageTemplate = (props) => {
         : null
       }
       {
-        showComparation ?
+        comparation?.showComparation ?
           <CustomSection title={comparation.title || 'Comparativa de impresoras'} sectionContent={comparation.sectionContent} backgroundColor="Claro" showBorder={true}>
-            <CompareProducts compareProducts={compareProducts} />
+            <CompareProducts compareProducts={comparation?.compareProducts} />
           </CustomSection>
         : null
       }
