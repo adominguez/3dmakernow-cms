@@ -145,7 +145,7 @@ PrinterPageTemplate.propTypes = {
 
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, links, customSections, properties, whereBuy, advantagesDisadvantajes, prints, upgradesToPrint, finalValuation, callToAction, submenu } = post.frontmatter;
+  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, links, customSections, properties, whereBuy, advantagesDisadvantajes, prints, upgradesToPrint, finalValuation, callToAction, submenu, comparation } = post.frontmatter;
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription} featuredimage={splitStaticUrl(featuredimage.absolutePath).slice(1)}>
       <PrinterPageTemplate
@@ -168,6 +168,7 @@ const PrinterPage = ({ data }) => {
         finalValuation={finalValuation}
         callToAction={callToAction}
         submenu={submenu}
+        comparation={comparation}
       />
     </Layout>
   )
@@ -302,6 +303,21 @@ export const pageQuery = graphql`
         }
         finalValuation {
           sectionContent
+          title
+        }
+        comparation {
+          compareProducts {
+            products {
+              id
+              image
+              link
+              name
+              propertiesValues
+            }
+            properties
+          }
+          sectionContent
+          showComparation
           title
         }
         callToAction {

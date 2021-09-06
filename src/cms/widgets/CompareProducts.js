@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 export const CompareProductsControl = (props) => {
   const { onChange } = props;
+  const { compareProducts } = props.entry.getIn(['data']).toJS().comparation || {}
   const widgets = CMS.getWidgets('input');
   const [properties, setProperties] = useState([]);
   const [products, setProducts] = useState([]);
@@ -12,7 +13,29 @@ export const CompareProductsControl = (props) => {
   const [product, setProduct] = useState(null);
   const [productState, setProductState] = useState('create');
   const [view, setView] = useState('properties');
-  const InputWidget = widgets.find(item => item.name === 'string').control;
+  const InputWidget = widgets.find(item => item.name === 'string').control;  
+
+  useEffect(() => {
+    if (compareProducts) {
+      if(compareProducts.properties && compareProducts?.properties?.length !== properties?.length) {
+        setProperties(compareProducts.properties);
+      }
+      if(compareProducts.products && compareProducts?.products?.length !== products?.length) {
+        const newProducts = compareProducts.products.map(({propertiesValues, ...rest}) => {
+          const comparation = {};
+          compareProducts.properties.forEach((item, index) => {
+            comparation[item] = propertiesValues[index];
+          });
+          return {
+            ...rest,
+            ...comparation
+          }
+        });
+        setProducts(newProducts);
+        change({newProperties: compareProducts.properties, newProducts})
+      }
+    }
+  }, []);
 
   const change = ({ newProperties, newProducts }) => {
     const convertedProducts = newProducts || products;
