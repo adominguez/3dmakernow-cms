@@ -103,6 +103,41 @@ customSections:
 
       <p>Cabe destacar que el precio se justifica también por la calidad de sus materiales (placa, cables, filamento, pantalla LCD, etc) y por su precisión al momento de crear piezas e impresiones, y además, el que traiga estas nuevas funcionalidades y correcciones, hacen que encarezcan un poco el precio de la máquina.</p>
     backgroundColor: Claro
+comparation:
+  showComparation: true
+  title: Comparativa
+  sectionContent: Contenido
+  compareProducts:
+    products:
+      - id: 0
+        name: Ender 3
+        image: https://cocky-yalow-a9e1a8.netlify.app/static/f7e7236a95ddc9f860f9d80c50e30d6d/53f65/impresora-3d-ender-3-01.png
+        link: https://www.amazon.es/Impresora-3D-Creality-Tama%C3%B1o-impressio/dp/B07JC93LKS?&linkCode=sl1&tag=3dmakernow-21&linkId=00ac8406c60f09b8e4c8603a254d05e2&language=es_ES&ref_=as_li_ss_tl
+        propertiesValues:
+          - 220x220x250mm
+          - BuildTak, puede extraerse
+          - Perfil de aluminio
+          - Un motor
+          - No tiene
+          - Pantalla con rueda
+      - id: 1
+        name: Artillery Genius
+        image: https://cocky-yalow-a9e1a8.netlify.app/static/5a6f10ba84dca7cf7f1ccac6db1d483a/53f65/artillery-genius-4.png
+        link: https://www.amazon.es/Artillery-Genius-3D-Printer-2019-integridad/dp/B07Z39DRSL?&linkCode=sl1&tag=3dmakernow-21&linkId=d52061c6a903f45164194fbfc95f95c0&language=es_ES&ref_=as_li_ss_tl
+        propertiesValues:
+          - 220x220x250mm
+          - Cristal templado, no puede extraerse
+          - Perfil de aluminio
+          - Dos motores sincronizados
+          - Si
+          - Pantalla tactil
+    properties:
+      - Volumen de impresión
+      - Cama caliente
+      - Estructura
+      - Motores Eje Z
+      - Sensor final de filamento
+      - Pantalla
 properties:
   title: Características técnicas de la impresora 3D Artillery Genius
   sectionContent: <p>Lo cierto es que la Artillery Genius ha revolucionado el
