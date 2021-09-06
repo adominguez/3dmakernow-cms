@@ -15,8 +15,13 @@ export const CompareProductsControl = (props) => {
   const InputWidget = widgets.find(item => item.name === 'string').control;
 
   const change = ({ newProperties, newProducts }) => {
+    const convertedProducts = newProducts || products;
+    
     onChange({
-      products: newProducts || products,
+      products: convertedProducts && convertedProducts.length && convertedProducts.map(product => {
+        const { name, image, link, id, ...rest } = product;
+        return { id, name, image, link, propertiesValues: Object.values(rest)};
+      }),
       properties: newProperties || properties,
     });
   }
