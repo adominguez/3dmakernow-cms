@@ -3,7 +3,9 @@ import { Link, withPrefix } from "gatsby";
 import PropTypes from "prop-types";
 import { products, printersTypes, filamentsTypes, filamentsColor, resinsColor, accesorios, postprocesados, printyText } from '../utils/utils'
 
-const SearcherCombo = ({ useAsTitle }) => {
+const SearcherCombo = ({ useAsTitle, 
+  title='Todo lo que buscas para imprimir en 3D está a tu alcance',
+  subtitle='Encuentra lo que necesitas de una forma sencilla, fácil y rápida.'}) => {
   const { sessionProduct, sessionPrinterType, sessionFilamentColor, sessionFilamentType, sessionPostprocesado, sessionAccesorio, sessionResinColor } = typeof sessionStorage !== 'undefined' && sessionStorage.getItem('searcherCombo') ? JSON.parse(sessionStorage.getItem('searcherCombo')) : {}
   const [product, setProduct] = useState(sessionProduct || products[0]);
   const [printerType, setPrinterType] = useState(sessionPrinterType || printersTypes[0]);
@@ -181,16 +183,16 @@ const SearcherCombo = ({ useAsTitle }) => {
               useAsTitle ?
                 <>
                   <h1 className="block p-2 text-2xl text-center text-primary-500 md:text-3xl lg:text-4xl">
-                    Todo lo que buscas para imprimir en 3D está a tu alcance
+                    {title}
                   </h1>
-                  <h2 className="block text-xl text-center font-extralight md:text-2xl lg:text-3xl">Encuentra lo que necesitas de una forma sencilla, fácil y rápida.</h2>
+                  <h2 className="block text-xl text-center font-extralight md:text-2xl lg:text-3xl">{subtitle}</h2>
                 </>
               :
               <>
                 <h2 className="block p-2 text-2xl text-center text-primary-500 md:text-3xl lg:text-4xl">
-                  Todo lo que buscas para imprimir en 3D está a tu alcance
+                  {title}
                 </h2>
-                <h3 className="block text-xl text-center font-extralight md:text-2xl lg:text-3xl">Encuentra lo que necesitas de una forma sencilla, fácil y rápida.</h3>
+                <h3 className="block text-xl text-center font-extralight md:text-2xl lg:text-3xl">{subtitle}</h3>
               </>
             }
             <div className="flex flex-col p-2">
