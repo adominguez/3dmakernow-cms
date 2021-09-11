@@ -17,7 +17,7 @@ const page = {
 const PrinterPage = () => {
 
   const renderSearcherCombo = () => {
-    sessionStorage.setItem('searcherCombo', JSON.stringify({
+    typeof sessionStorage !== 'undefined' && sessionStorage.setItem('searcherCombo', JSON.stringify({
       sessionProduct: products[0],
       sessionPrinterType: printersTypes[0]
     }));

@@ -17,7 +17,7 @@ const page = {
 const MaterialPage = () => {
 
   const renderSearcherCombo = () => {
-    sessionStorage.setItem('searcherCombo', JSON.stringify({
+    typeof sessionStorage !== 'undefined' && sessionStorage.setItem('searcherCombo', JSON.stringify({
       sessionProduct: products[1],
       sessionFilamentType: filamentsTypes[0],
       sessionFilamentColor: filamentsColor[0]
