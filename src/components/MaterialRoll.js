@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../components/slick.css"
 
-class PrinterRoll extends React.Component {
+class MaterialRoll extends React.Component {
   render() {
     const { data, maxProducts, type = 'slider', settings = sliderSettings } = this.props
     const { edges: reviews } = data.allMarkdownRemark
@@ -81,7 +81,7 @@ class PrinterRoll extends React.Component {
   }
 }
 
-PrinterRoll.propTypes = {
+MaterialRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -92,10 +92,10 @@ PrinterRoll.propTypes = {
 export default ({ maxProducts, type }) => (
   <StaticQuery
     query={graphql`
-      query PrinterRollQuery {
+      query MaterialRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "printer-page" } } }
+          filter: { frontmatter: { templateKey: { eq: "material-page" } } }
         ) {
           edges {
             node {
@@ -128,6 +128,6 @@ export default ({ maxProducts, type }) => (
         }
       }
     `}
-    render={(data, count) => <PrinterRoll data={data} count={count} maxProducts={maxProducts} type={type} />}
+    render={(data, count) => <MaterialRoll data={data} count={count} maxProducts={maxProducts} type={type} />}
   />
 )

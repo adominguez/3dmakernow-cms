@@ -282,6 +282,173 @@ collections:
       - {label: "Descripción SEO", name: "metaDescription", widget: "text", required: true, hint: "campo de texto", pattern: ['^.{1,150}$', "este campo debe de tener un máximo de 150 caracteres"]}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "materiales"
+    label: "materiales"
+    folder: "src/pages/materiales"
+    path: "{{slug}}/index.md"
+    media_folder: '/static/img'
+    public_folder: '/static/img'
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "material-page"}
+      - {label: "Nombre del material", name: "title", required: true, widget: "string"}
+      - {label: "Marca del material", name: "brand", required: true, widget: "string"}
+      - {label: "Tipo de material", name: "materialCategory", widget: "select", default: "PLA", options: ["PLA", "PETG", "TPU", "Flexible", "Resina", "ABS"], required: true}
+      - {label: "Imagen destacada", name: "featuredimage", widget: image, required: true}
+      - {label: "Material destacado", name: "featuredMaterial", widget: "boolean", hint: "Si quieres destacar este material marca esta opción", required: false}
+      - {label: "Título de la página (h1)", name: "pageTitle", required: true, widget: "string"}
+      - label: "Enlaces de venta"
+        name: "links"
+        widget: "object"
+        collapsed: true
+        required: false
+        fields:
+          - {label: "Enlace de Amazon", name: "amazonLink", widget: "string", required: false}
+          - {label: "Enlace de Aliexpress", name: "aliexpressLink", widget: "string", required: false}
+          - label: "Enlaces personalizados"
+            name: "customLinks"
+            widget: "list"
+            fields:
+              - { label: "Tienda", name: "store", widget: "string", required: true }
+              - { label: "link", name: "link", widget: "string", required: true }
+      - {label: "Valoración inicial", name: "initialValuation", required: false, widget: "markdown"}
+      - label: "Imágenes de producto"
+        name: "productsImages"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Imagen", name: "src", widget: "image", required: true }
+          - { label: "Alt Texto", name: "alt", widget: "string", required: true }
+      - label: "Creación de secciones"
+        name: "customSections"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Color de fondo"
+            name: "backgroundColor"
+            widget: "select"
+            options: ["Claro", "Medio", "Oscuro"]
+            default: "Claro"
+            required: false
+          - { label: "Título", name: "title", widget: "string", required: false }
+          - {label: "Contenido de la sección", name: "sectionContent", required: true, widget: "markdown"}
+          - {label: "Mostrar borde inferior", name: "showBorder", widget: "boolean", default: false}
+      - label: "Comparación de productos"
+        name: "comparation"
+        widget: object
+        required: false
+        fields:
+          - {label: "Mostrar Comparación", name: "showComparation", widget: "boolean", required: false}
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Contenido inicial", name: "sectionContent", widget: "markdown", required: false}
+          - {label: Comparación, name: compareProducts, widget: compareProducts}
+      - label: "Propiedades"
+        name: "properties"
+        widget: "object"
+        required: false
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Contenido inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Características"
+            name: "feature"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - {label: "Tipo de material", name: "materialType", widget: "select", default: "PLA", options: ["PLA", "PETG", "TPU", "Flexible", "Resina", "ABS"], required: false}
+              - {label: "Diámetro de filamento", name: "filamentDiameter", widget: "string", required: false}
+              - {label: "Tamaño de la bobina", name: "reelSize", widget: "string", required: false}
+              - {label: "Diámetro del eje de la bobina", name: "reelDiameter", widget: "string", required: false}
+              - {label: "Composición", name: "composition", widget: "string", required: false}
+          - label: "Temperatura de impresion"
+            name: "temperature"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - {label: "Rango de temperatura", name: "temperatureRange", widget: "string", required: false}
+              - {label: "Temperatura óptima de impresión", name: "optimalTemperature", widget: "string", required: false}
+          - label: "Unboxing"
+            name: "unboxing"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - {label: "Peso del paquete", name: "unboxingWeight", widget: "string", required: false}
+              - {label: "Dimensiones del paquete", name: "unboxingSize", widget: "string", required: false}
+      - label: "¿Dónde comprar?"
+        name: "whereBuy"
+        widget: "object"
+        collapsed: true
+        required: false
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - {label: "Texto de donde comprar", name: "whereBuyText", widget: "markdown", required: false}
+      - label: "Ventajas y desventajas"
+        name: "advantagesDisadvantajes"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Ventajas"
+            name: "advantages"
+            widget: "list"
+            fields:
+              - { label: "Texto", name: "text", widget: "markdown" }
+          - label: "Desventajas"
+            name: "disadvantages"
+            widget: "list"
+            fields:
+              - { label: "Texto", name: "text", widget: "markdown" }
+      - label: "Preguntas frecuentes"
+        name: "faqs"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Mostrar Preguntas frecuentes", name: "showFaqs", widget: "boolean", required: false}
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Preguntas"
+            name: "asks"
+            widget: "list"
+            fields:
+              - { label: "Pregunta", name: "ask", widget: "string", required: true }
+              - { label: "Respuesta", name: "response", widget: "markdown", required: true }
+      - label: "Impresiones realizadas con el material"
+        name: "prints"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Imágenes de impresiones"
+            name: "printImage"
+            widget: "list"
+            fields:
+              - { label: "Imagen", name: "src", widget: "image", required: true }
+              - { label: "Alt Texto", name: "alt", widget: "string", required: true }
+      - label: "Conclusión final"
+        name: "finalValuation"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: true}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+      - label: "Llamada a la acción"
+        name: "callToAction"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Texto de donde comprar", name: "actionText", widget: "markdown", required: false}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime", required: true}
+      - {label: "Título SEO", name: "metaTitle", widget: "string", required: true, hint: "campo de texto", pattern: ['^.{1,70}$', "este campo debe de tener un máximo de 70 caracteres"]}
+      - {label: "Descripción SEO", name: "metaDescription", widget: "text", required: true, hint: "campo de texto", pattern: ['^.{1,150}$', "este campo debe de tener un máximo de 150 caracteres"]}
+      - {label: "Tags", name: "tags", widget: "list"}
+
   - name: "reviews"
     label: "Review"
     folder: "src/pages/reviews"
