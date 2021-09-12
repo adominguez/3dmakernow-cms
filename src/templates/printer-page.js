@@ -1,21 +1,26 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
-import Submenu from '../components/Submenu'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import { HTMLContent } from '../components/Content';
+import Submenu from '../components/Submenu';
 import ProductDetailValoration from '../components/ProductDetailValoration';
-import CustomSection from '../components/CustomSection'
-import ProductDetailImage from '../components/ProductDetailImage'
-import FeatureTabs from '../components/FeatureTabs'
-import {convertedKeyProperties, imageCarouselSettings} from '../utils/utils'
-import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes'
-import { CarouselImage } from '../components/CarouselImages'
-import { UpgradesToPrint } from '../components/UpgradesToPrint'
-import { splitStaticUrl } from '../utils/utils'
-import CompareProducts from '../components/compareProducts'
-import Faqs from '../components/faqs'
-import ProductsList from '../components/productsList'
+import CustomSection from '../components/CustomSection';
+import ProductDetailImage from '../components/ProductDetailImage';
+import FeatureTabs from '../components/FeatureTabs';
+import {convertedKeyProperties, imageCarouselSettings, products as productsTypes, printersTypes, splitStaticUrl} from '../utils/utils';
+import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes';
+import { CarouselImage } from '../components/CarouselImages';
+import { UpgradesToPrint } from '../components/UpgradesToPrint';
+import CompareProducts from '../components/compareProducts';
+import Faqs from '../components/faqs';
+import ProductsList from '../components/productsList';
+import SearcherCombo from '../components/SearcherCombo';
+
+const page = {
+  title: '¿No te convence esta impresora 3D?',
+  subtitle: 'Elige tus requisitos y encuentra la impresora 3D que necesitas'
+}
 
 
 export const PrinterPageTemplate = (props) => {
@@ -151,6 +156,15 @@ PrinterPageTemplate.propTypes = {
 const PrinterPage = ({ data }) => {
   const { markdownRemark: post } = data;
   const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, links, customSections, properties, whereBuy, advantagesDisadvantajes, prints, upgradesToPrint, finalValuation, callToAction, submenu, comparation, products } = post.frontmatter;
+
+  const renderSearcherCombo = () => {
+    typeof sessionStorage !== 'undefined' && sessionStorage.setItem('searcherCombo', JSON.stringify({
+      sessionProduct: productsTypes[0],
+      sessionPrinterType: printersTypes[0]
+    }));
+    return <SearcherCombo title={page.title} subtitle={page.subtitle} />
+  }
+
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription} featuredimage={splitStaticUrl(featuredimage.absolutePath).slice(1)}>
       <PrinterPageTemplate
@@ -176,6 +190,7 @@ const PrinterPage = ({ data }) => {
         comparation={comparation}
         products={products}
       />
+      {renderSearcherCombo()}
     </Layout>
   )
 }

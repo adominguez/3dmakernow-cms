@@ -1,19 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import { HTMLContent } from '../components/Content';
 import ProductDetailValoration from '../components/ProductDetailValoration';
-import CustomSection from '../components/CustomSection'
-import ProductDetailImage from '../components/ProductDetailImage'
-import FeatureTabs from '../components/FeatureTabs'
-import {convertedKeyProperties, imageCarouselSettings} from '../utils/utils'
-import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes'
-import { CarouselImage } from '../components/CarouselImages'
-import { splitStaticUrl } from '../utils/utils'
-import CompareProducts from '../components/compareProducts'
-import Faqs from '../components/faqs'
+import CustomSection from '../components/CustomSection';
+import ProductDetailImage from '../components/ProductDetailImage';
+import FeatureTabs from '../components/FeatureTabs';
+import {convertedKeyProperties, imageCarouselSettings, products as productsTypes, filamentsTypes, filamentsColor, splitStaticUrl} from '../utils/utils';
+import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes';
+import { CarouselImage } from '../components/CarouselImages';
+import CompareProducts from '../components/compareProducts';
+import Faqs from '../components/faqs';
+import SearcherCombo from '../components/SearcherCombo';
 
+const page = {
+  title: '¿Estás buscando un material diferente?',
+  subtitle: 'Elige el tipo de material, y el color que necesitas'
+}
 
 export const MaterialPageTemplate = (props) => {
   const {
@@ -126,6 +130,16 @@ MaterialPageTemplate.propTypes = {
 const MaterialPage = ({ data }) => {
   const { markdownRemark: post } = data;
   const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, links, customSections, properties, whereBuy, advantagesDisadvantajes, prints, finalValuation, callToAction, comparation } = post.frontmatter;
+
+  const renderSearcherCombo = () => {
+    typeof sessionStorage !== 'undefined' && sessionStorage.setItem('searcherCombo', JSON.stringify({
+      sessionProduct: productsTypes[1],
+      sessionFilamentType: filamentsTypes[0],
+      sessionFilamentColor: filamentsColor[0]
+    }));
+    return <SearcherCombo title={page.title} subtitle={page.subtitle} />
+  }
+
   return (
     <Layout metaTitle={metaTitle} metaDescription={metaDescription} featuredimage={splitStaticUrl(featuredimage.absolutePath).slice(1)}>
       <MaterialPageTemplate
@@ -148,6 +162,7 @@ const MaterialPage = ({ data }) => {
         callToAction={callToAction}
         comparation={comparation}
       />
+      {renderSearcherCombo()}
     </Layout>
   )
 }

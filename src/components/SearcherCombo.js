@@ -211,7 +211,7 @@ const SearcherCombo = ({ useAsTitle,
             <div className="w-full p-2 text-xl text-center border rounded-xl">
               <p className="font-mono font-thin">{printyText[product].text}</p>
             </div>
-            <img src={`img/${printyText[product].img}`} width="450" />
+            <img src={`${withPrefix('/')}img/${printyText[product].img}`} width="450" />
           </div>
         </div>
       </div>
