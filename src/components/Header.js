@@ -23,9 +23,6 @@ const Navbar = ({ focusSearch, cancelSearch, searchOpened, menuOpened, toggleMen
           <Link className="p-2" to="/about">
             About
           </Link>
-          <Link className="p-2" to="/products">
-            Products
-          </Link>
           <Link className="p-2" to="/impresoras">
             Impresoras 3D
           </Link>

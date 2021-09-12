@@ -7,7 +7,6 @@ import BlogPostPreview from './preview-templates/BlogPostPreview';
 import ReviewPageTemplate from './preview-templates/reviewsPagePreview';
 import PrinterPagePreview from './preview-templates/PrinterPagePreview';
 import MaterialPagePreview from './preview-templates/MaterialPagePreview';
-import ProductPagePreview from './preview-templates/ProductPagePreview';
 import { ProductsListControl } from "./widgets/ProductsList";
 import { CompareProductsControl } from "./widgets/CompareProducts";
 import { SeoPageControl } from './widgets/SeoPage';
@@ -22,7 +21,6 @@ CMS.registerWidget("productsList", ProductsListControl, ProductsList);
 CMS.registerWidget("seoPage", SeoPageControl);
 
 CMS.registerPreviewTemplate('about', AboutPagePreview);
-CMS.registerPreviewTemplate('products', ProductPagePreview);
 CMS.registerPreviewTemplate('blog', BlogPostPreview);
 CMS.registerPreviewTemplate('reviews', ReviewPageTemplate);
 CMS.registerPreviewTemplate('impresoras', PrinterPagePreview);
