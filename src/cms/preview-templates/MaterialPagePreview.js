@@ -21,6 +21,7 @@ const MaterialPagePreview = ({ entry, widgetFor }) => {
     callToAction,
     productsImages,
     comparation,
+    products,
     faqs,
   } = entry.getIn(['data']).toJSON()
   const tags = entry.getIn(['data', 'tags'])
@@ -44,6 +45,7 @@ const MaterialPagePreview = ({ entry, widgetFor }) => {
       callToAction={callToAction}
       comparation={comparation}
       faqs={faqs}
+      products={products}
     />
   )
 }

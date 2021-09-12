@@ -346,6 +346,15 @@ collections:
           - {label: "Título", name: "title", widget: "string", required: false}
           - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
           - {label: "Texto de donde comprar", name: "whereBuyText", widget: "markdown", required: false}
+      - label: "Listado de productos"
+        name: "products"
+        widget: object
+        required: false
+        fields:
+          - {label: "Mostrar listado de productos", name: "showProductsList", widget: "boolean", required: false}
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Contenido inicial", name: "sectionContent", widget: "markdown", required: false}
+          - {label: Listado de productos, name: productsList, widget: productsList}
       - label: "Ventajas y desventajas"
         name: "advantagesDisadvantajes"
         widget: "object"

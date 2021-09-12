@@ -19,6 +19,7 @@ import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes'
 import { CarouselImage } from '../components/CarouselImages'
 import CompareProducts from '../components/compareProducts'
 import Faqs from '../components/faqs'
+import ProductsList from '../components/productsList'
 import SearcherCombo from '../components/SearcherCombo'
 
 const page = {
@@ -44,6 +45,7 @@ export const MaterialPageTemplate = (props) => {
     comparation,
     faqs,
     faqs: { showFaqs, asks } = {},
+    products
   } = props
 
   return (
@@ -99,6 +101,19 @@ export const MaterialPageTemplate = (props) => {
             amazonLink={amazonLink}
             aliexpressLink={aliexpressLink}
             customLinks={customLinks}
+          />
+        </CustomSection>
+      ) : null}
+      {products?.showProductsList ? (
+        <CustomSection
+          title={products.title || 'Listado de productos'}
+          sectionContent={products.sectionContent}
+          backgroundColor="Claro"
+        >
+          <ProductsList
+            productsList={products?.productsList?.productsList}
+            type={products?.productsList?.type}
+            showToolbar
           />
         </CustomSection>
       ) : null}
