@@ -18,9 +18,8 @@ class PrinterRoll extends React.Component {
         {type === 'slider' ? (
           <Slider {...settings} >
             {reviews &&
-              reviews.slice(0, maxProducts || reviews.length).map(({ node: post }) => (
-
-                <article className="w-full p-2" key={post.id}>
+              reviews.slice(0, maxProducts || reviews.length).map(({ node: post }, key) => (
+                <article key={key} className="w-full p-2" key={post.id}>
                   <Link className={`flex-col overflow-hidden border-2 border-gray-300 rounded-md flex group hover:border-primary-300 focus:ring-2 focus:ring-primary-500 outline-none centered-flex bg-white`} to={post.fields.slug}>
                     <div className="relative items-center flex-grow overflow-hidden flex-2 centered-flex">
                       {post.frontmatter.featuredimage ?
@@ -42,16 +41,20 @@ class PrinterRoll extends React.Component {
         ) : ''}
         {type === 'list' ?
           <ul className="flex flex-wrap px-4">
-            {reviews && reviews.slice(0, maxProducts || reviews.length).map(({ node: post }) => (
-              <li className="flex flex-col w-full px-10 py-10 md:px-16 lg:px-28 md:flex-row">
+            {reviews && reviews.slice(0, maxProducts || reviews.length).map(({ node: post }, key) => (
+              <li key={key} className="flex flex-col w-full px-10 py-10 md:px-16 lg:px-28 md:flex-row">
                 <div className="relative items-center flex-grow overflow-hidden">
                   {post.frontmatter.featuredimage ?
+                  <Link to={post.fields.slug} className="block border-2 border-transparent rounded-md hover:border-primary-500 focus:border-primary-500">
                     <PreviewCompatibleImage
+                      className="rounded-md"
                       imageInfo={{
                         image: post.frontmatter.featuredimage,
                         alt: `${post.frontmatter.title}`,
                       }}
-                    /> : ''}
+                    />
+                  </Link>
+                  : ''}
                 </div>
                 <div className="flex flex-col justify-center flex-1 p-1">
                   <h3 className={`leading-tight truncate-2-lines p-2 text-2xl font-light text-center md:font-extralight lg:text-3xl text-primary-500`} title={post.frontmatter.pageTitle}>{post.frontmatter.pageTitle}</h3>
