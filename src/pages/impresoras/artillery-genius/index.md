@@ -224,53 +224,53 @@ products:
   productsList:
     type: grid
     productsList:
-      - ASIN: B097MXX3M4
+      - Price: 22,99 €
+        ListPrice: ""
+        IsPrimeEligible: "1"
+        DetailPageURL: https://www.amazon.es/dp/B097MXX3M4
+        ImageUrl: https://m.media-amazon.com/images/I/41JItUpQ3oL._SL160_.jpg
+        TotalReviews: "2"
+        ASIN: B097MXX3M4
+        Subtitle: ""
         Title: MaxAwe Kit de piezas de impresora 3D, accesorios adecuado para artillería
           impresora 3D Sidewinder X1 con boquilla de silicona, mango termistor,
           tubo calefactor y bloque de calefacción.
-        Price: 22,99 €
-        ListPrice: ""
-        ImageUrl: https://m.media-amazon.com/images/I/41JItUpQ3oL._SL160_.jpg
-        DetailPageURL: https://www.amazon.es/dp/B097MXX3M4
         Rating: "4.5"
-        TotalReviews: "2"
-        Subtitle: ""
+      - Price: 18,99 €
+        ListPrice: ""
         IsPrimeEligible: "1"
-      - ASIN: B086RVJ36S
+        DetailPageURL: https://www.amazon.es/dp/B086RVJ36S
+        ImageUrl: https://m.media-amazon.com/images/I/51CKEuTM4jL._SL160_.jpg
+        TotalReviews: "167"
+        ASIN: B086RVJ36S
+        Subtitle: ""
         Title: ruthex Set de 12 boquillas Nozzle Volcano para impresoras 3D - 6
           boquillas de latón + 6 de acero inoxidable para filamento 1,75 - para
           impresoras Volcano Hotend como Artillery Genius y Sidewinder X1
-        Price: 18,99 €
-        ListPrice: ""
-        ImageUrl: https://m.media-amazon.com/images/I/51CKEuTM4jL._SL160_.jpg
-        DetailPageURL: https://www.amazon.es/dp/B086RVJ36S
         Rating: "4.6"
-        TotalReviews: "167"
-        Subtitle: ""
+      - Price: 16,99 €
+        ListPrice: ""
         IsPrimeEligible: "1"
-      - ASIN: B09261R3XL
+        DetailPageURL: https://www.amazon.es/dp/B09261R3XL
+        ImageUrl: https://m.media-amazon.com/images/I/51Ra8YO1FxS._SL160_.jpg
+        TotalReviews: "3"
+        ASIN: B09261R3XL
+        Subtitle: ""
         Title: DURTAIL Boquilla para impresora 3D Volcano Nozzle, 8 Boquillas de Latón,
           8 Boquillas de Acero Inoxidable (0,4x8+0,3/0,5/0,6/0,8x 2), 1 Llave de
           Boquilla, 5 Agujas de 0,2-0,8 para 1,75 Filamentos
-        Price: 16,99 €
-        ListPrice: ""
-        ImageUrl: https://m.media-amazon.com/images/I/51Ra8YO1FxS._SL160_.jpg
-        DetailPageURL: https://www.amazon.es/dp/B09261R3XL
         Rating: "4.3"
-        TotalReviews: "3"
-        Subtitle: ""
+      - Price: 11,99 €
+        ListPrice: ""
         IsPrimeEligible: "1"
-      - ASIN: B08WC3524R
+        DetailPageURL: https://www.amazon.es/dp/B08WC3524R
+        ImageUrl: https://m.media-amazon.com/images/I/217uKeJsOiL._SL160_.jpg
+        TotalReviews: "1"
+        ASIN: B08WC3524R
+        Subtitle: ""
         Title: 3DPLady | Original Artillery Sidewinder X1 / Artillery Genius Thermistor
           con conector XH2.54 (2 unidades)
-        Price: 11,99 €
-        ListPrice: ""
-        ImageUrl: https://m.media-amazon.com/images/I/217uKeJsOiL._SL160_.jpg
-        DetailPageURL: https://www.amazon.es/dp/B08WC3524R
         Rating: "5.0"
-        TotalReviews: "1"
-        Subtitle: ""
-        IsPrimeEligible: "1"
   showProductsList: true
   title: Productos relacionados con la Artillery Genius
   sectionContent: Aquí puedes ver algunos productos relacionados con la impresora
