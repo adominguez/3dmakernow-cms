@@ -182,21 +182,6 @@ collections:
             widget: "list"
             fields:
               - { label: "Texto", name: "text", widget: "markdown" }
-      - label: "Preguntas frecuentes"
-        name: "faqs"
-        widget: "object"
-        required: false
-        collapsed: true
-        fields:
-          - {label: "Mostrar Preguntas frecuentes", name: "showFaqs", widget: "boolean", required: false}
-          - {label: "Título", name: "title", widget: "string", required: false}
-          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
-          - label: "Preguntas"
-            name: "asks"
-            widget: "list"
-            fields:
-              - { label: "Pregunta", name: "ask", widget: "string", required: true }
-              - { label: "Respuesta", name: "response", widget: "markdown", required: true }
       - label: "Impresiones realizadas con la impresora 3D"
         name: "prints"
         widget: "object"
@@ -226,6 +211,21 @@ collections:
               - { label: "Texto", name: "text", widget: "string" }
               - { label: "Link", name: "link", widget: "string" }
               - { label: "Imagen", name: "image", widget: "string" }
+      - label: "Preguntas frecuentes"
+        name: "faqs"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Mostrar Preguntas frecuentes", name: "showFaqs", widget: "boolean", required: false}
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Preguntas"
+            name: "asks"
+            widget: "list"
+            fields:
+              - { label: "Pregunta", name: "ask", widget: "string", required: true }
+              - { label: "Respuesta", name: "response", widget: "markdown", required: true }
       - label: "Conclusión final"
         name: "finalValuation"
         widget: "object"
@@ -364,6 +364,20 @@ collections:
             widget: "list"
             fields:
               - { label: "Texto", name: "text", widget: "markdown" }
+      - label: "Impresiones realizadas con el material"
+        name: "prints"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Título", name: "title", widget: "string", required: false}
+          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
+          - label: "Imágenes de impresiones"
+            name: "printImage"
+            widget: "list"
+            fields:
+              - { label: "Imagen", name: "src", widget: "image", required: true }
+              - { label: "Alt Texto", name: "alt", widget: "string", required: true }
       - label: "Preguntas frecuentes"
         name: "faqs"
         widget: "object"
@@ -379,20 +393,6 @@ collections:
             fields:
               - { label: "Pregunta", name: "ask", widget: "string", required: true }
               - { label: "Respuesta", name: "response", widget: "markdown", required: true }
-      - label: "Impresiones realizadas con el material"
-        name: "prints"
-        widget: "object"
-        required: false
-        collapsed: true
-        fields:
-          - {label: "Título", name: "title", widget: "string", required: false}
-          - {label: "Texto inicial", name: "sectionContent", widget: "markdown", required: false}
-          - label: "Imágenes de impresiones"
-            name: "printImage"
-            widget: "list"
-            fields:
-              - { label: "Imagen", name: "src", widget: "image", required: true }
-              - { label: "Alt Texto", name: "alt", widget: "string", required: true }
       - label: "Conclusión final"
         name: "finalValuation"
         widget: "object"

@@ -60,16 +60,16 @@ export const MaterialPageTemplate = (props) => {
       ) : null}
       {customSections && customSections.length
         ? customSections.map(
-            ({ sectionContent, title, showBorder, backgroundColor }, key) => (
-              <CustomSection
-                key={key}
-                title={title}
-                sectionContent={sectionContent}
-                showBorder={showBorder}
-                backgroundColor={backgroundColor}
-              />
-            )
+          ({ sectionContent, title, showBorder, backgroundColor }, key) => (
+            <CustomSection
+              key={key}
+              title={title}
+              sectionContent={sectionContent}
+              showBorder={showBorder}
+              backgroundColor={backgroundColor}
+            />
           )
+        )
         : null}
       {comparation?.showComparation ? (
         <CustomSection
@@ -82,11 +82,11 @@ export const MaterialPageTemplate = (props) => {
         </CustomSection>
       ) : null}
       {convertedKeyProperties(properties) &&
-      convertedKeyProperties(properties).length ? (
+        convertedKeyProperties(properties).length ? (
         <FeatureTabs properties={properties} />
       ) : null}
       {convertedKeyProperties(whereBuy) &&
-      convertedKeyProperties(whereBuy).length ? (
+        convertedKeyProperties(whereBuy).length ? (
         <CustomSection
           title={whereBuy.title || '¿Dónde comprar?'}
           sectionContent={whereBuy.sectionContent}
@@ -103,7 +103,7 @@ export const MaterialPageTemplate = (props) => {
         </CustomSection>
       ) : null}
       {convertedKeyProperties(advantagesDisadvantajes) &&
-      convertedKeyProperties(advantagesDisadvantajes).length ? (
+        convertedKeyProperties(advantagesDisadvantajes).length ? (
         <CustomSection
           title={advantagesDisadvantajes.title || 'Ventajas y desventajas'}
           sectionContent={advantagesDisadvantajes.sectionContent}
@@ -115,7 +115,7 @@ export const MaterialPageTemplate = (props) => {
         </CustomSection>
       ) : null}
       {convertedKeyProperties(prints) &&
-      convertedKeyProperties(prints).length ? (
+        convertedKeyProperties(prints).length ? (
         <CustomSection
           title={prints.title || 'Impresiones realizadas'}
           sectionContent={prints.sectionContent}
@@ -142,7 +142,7 @@ export const MaterialPageTemplate = (props) => {
         </CustomSection>
       ) : null}
       {convertedKeyProperties(finalValuation) &&
-      convertedKeyProperties(finalValuation).length ? (
+        convertedKeyProperties(finalValuation).length ? (
         <CustomSection
           title={finalValuation.title || 'Conclusión final'}
           sectionContent={finalValuation.sectionContent}
@@ -151,7 +151,7 @@ export const MaterialPageTemplate = (props) => {
         />
       ) : null}
       {convertedKeyProperties(callToAction) &&
-      convertedKeyProperties(callToAction).length ? (
+        convertedKeyProperties(callToAction).length ? (
         <CustomSection title={callToAction.title} backgroundColor="Claro">
           <ProductDetailImage
             featuredimage={featuredimage}
