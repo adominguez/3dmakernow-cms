@@ -29,10 +29,10 @@ const MaterialPage = () => {
     <Layout metaTitle={page.metaTitle} metaDescription={page.metaDescription} featuredimage={page.featuredimage}>
       {renderSearcherCombo()}
       <CustomSection backgroundColor="Claro" showBorder={true}>
-        <h1 className="p-2 text-2xl font-light text-center md:font-extralight lg:text-3xl text-primary-500">
+        <h2 className="p-2 text-2xl font-light text-center md:font-extralight lg:text-3xl text-primary-500">
         sustituir este título por algo referente a los materiales
-        </h1>
-        <h2 className="block text-xl text-center font-extralight md:font-thin lg:text-2xl text-blueGray-400">Crear un subtítulo para el título.</h2>
+        </h2>
+        <h3 className="block text-xl text-center font-extralight md:font-thin lg:text-2xl text-blueGray-400">Crear un subtítulo para el título.</h3>
         <p className="my-2 text-center">Insertar aquí un texto de unas 200 o 300 palabras sobre la elección de impresoras en función de las review que hemos preparado al usuario</p>
         <MaterialRoll type="list" />
       </CustomSection>

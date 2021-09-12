@@ -40,9 +40,9 @@ class MaterialRoll extends React.Component {
           </Slider>
         ) : ''}
         {type === 'list' ?
-          <ul className="flex flex-wrap px-4">
+          <div className="flex flex-wrap px-4">
             {reviews && reviews.slice(0, maxProducts || reviews.length).map(({ node: post }, key) => (
-              <li key={key} className="flex flex-col w-full px-10 py-10 md:px-16 lg:px-28 md:flex-row">
+              <article key={key} className="flex flex-col w-full px-10 py-10 md:px-16 lg:px-28 md:flex-row">
                 <div className="relative items-center flex-grow overflow-hidden">
                   {post.frontmatter.featuredimage ?
                     <Link to={post.fields.slug} className="block border-2 border-transparent rounded-md hover:border-primary-500 focus:border-primary-500">
@@ -75,9 +75,9 @@ class MaterialRoll extends React.Component {
                       : null
                   }
                 </div>
-              </li>
+              </article>
             ))}
-          </ul>
+          </div>
           : ''}
       </>
     )
