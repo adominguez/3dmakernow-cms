@@ -350,6 +350,26 @@ export const pageQuery = graphql`
           showComparation
           title
         }
+        products {
+          showProductsList
+          title
+          sectionContent
+          productsList {
+            type
+            productsList {
+              ASIN
+              TotalReviews
+              Title
+              Subtitle
+              Rating
+              Price
+              ListPrice
+              IsPrimeEligible
+              ImageUrl
+              DetailPageURL
+            }
+          }
+        }
         callToAction {
           actionText
         }
