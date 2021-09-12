@@ -13,51 +13,6 @@ public_folder: /img
 publish_mode: editorial_workflow
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: Seo de la página, name: seopage, widget: seoPage }
-      - {label: "Título", name: "title", widget: "string"}
-      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
-      - {label: "Descripción", name: "description", widget: "text"}
-      - {label: "Post destacado", name: "featuredpost", widget: "boolean", required: false}
-      - {label: "Imagen destacada", name: "featuredimage", widget: image}
-      - {label: "Contenido", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - label: Secciones
-        name: sections
-        widget: list
-        types:
-          - label: Generic Section
-            name: generic-section
-            fields:
-              - label: Title
-                name: title
-              - label: Content
-                name: content
-                widget: markdown
-          - label: Team Section
-            name: team-section
-            fields:
-              - label: People
-                name: people
-                widget: list
-                fields:
-                  - label: Name
-                    name: name
-          - label: Grid de Amazon
-            name: amazonGrid
-            fields:
-              - label: Listado de productos
-                name: amazonList
-                widget: productsList
-                fields:
-                  - label: Name
-                    name: name
-
   - name: "impresoras"
     label: "impresoras"
     folder: "src/pages/impresoras"

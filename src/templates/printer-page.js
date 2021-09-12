@@ -212,7 +212,6 @@ export const pageQuery = graphql`
         title
         templateKey
         date(formatString: "MMMM DD, YYYY")
-        featuredpost
         links {
           amazonLink
           aliexpressLink
@@ -274,7 +273,6 @@ export const pageQuery = graphql`
           absolutePath
         }
         metaDescription
-        description
         pageTitle
         productsImages {
           alt

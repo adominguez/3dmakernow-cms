@@ -29,9 +29,6 @@ const Navbar = ({ focusSearch, cancelSearch, searchOpened, menuOpened, toggleMen
           <Link className="p-2" to="/materiales">
             Materiales
           </Link>
-          <Link className="p-2" to="/blog">
-            Blog
-          </Link>
           <Link className="p-2" to="/contact">
             Contact
           </Link>

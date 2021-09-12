@@ -117,7 +117,6 @@ export default ({ maxProducts, type }) => (
                   aliexpressLink
                 }
                 date(formatString: "MMMM DD, YYYY")
-                featuredpost
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
