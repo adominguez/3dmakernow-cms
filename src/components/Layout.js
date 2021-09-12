@@ -8,7 +8,6 @@ import CookieConsent from 'react-cookie-consent'
 import { itemsToSearch } from '../utils/searcher.js'
 import { actualUrlpath, errorMessages, windowGlobal } from '../utils/utils.js'
 import ErrorMessage from './ErrorMessage'
-import logoMovil from '../img/logo-movil.svg'
 
 const TemplateWrapper = ({
   children,
@@ -24,6 +23,11 @@ const TemplateWrapper = ({
   const [isScrolling, setScrolling] = useState(false)
 
   useEffect(() => {
+    const escFunction = (event) => {
+      if (event.keyCode === 27) {
+        layoutClicked()
+      }
+    }
     document.addEventListener('keydown', escFunction, false)
     setLocalStorage()
 
@@ -31,12 +35,6 @@ const TemplateWrapper = ({
       document.removeEventListener('keydown', escFunction, false)
     }
   }, [])
-
-  const escFunction = (event) => {
-    if (event.keyCode === 27) {
-      layoutClicked()
-    }
-  }
 
   const setLocalStorage = () => {
     const item = itemsToSearch.find((item) => item.url === actualUrlpath())
@@ -143,6 +141,7 @@ const TemplateWrapper = ({
           onScroll={scrollLayout}
         >
           {children}
+          <Footer />
         </main>
         {typeof onLine !== 'undefined' && !onLine ? (
           <div className="absolute bg-white border border-red-700 rounded-md max-w-max bottom-2 right-6">

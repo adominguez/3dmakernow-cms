@@ -136,7 +136,7 @@ const Home = () => {
         <div className="flex flex-col justify-between w-full md:w-4/5 text-blueGray-500">
           <h2 className="p-2 text-2xl font-light text-center md:font-extralight lg:text-3xl text-primary-500">
             No se cómo ni por dónde empezar en la impresión 3D, ¡Estoy perdido
-            😖 !
+            <span role="img">😖</span> !
           </h2>
           <p className="block text-xl text-center font-extralight md:font-thin lg:text-2xl text-blueGray-400">
             Si nunca has realizado una impresión 3D y quieres comenzar, te

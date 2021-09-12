@@ -1,6 +1,5 @@
-import { Link, withPrefix } from 'gatsby'
+import { Link } from 'gatsby'
 import React from 'react'
-import { submenu } from '../utils/utils'
 import Parser from 'html-react-parser'
 
 const Submenu = ({ submenu = {} }) => {

@@ -1,6 +1,5 @@
 import React from 'react'
 import CustomSection from '../../components/CustomSection'
-import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
 import PrinterRoll from '../../components/PrinterRoll'
 import { products, printersTypes } from '../../utils/utils'

@@ -118,9 +118,10 @@ export const CompareProductsControl = (props) => {
   const renderProperties = () => (
     <div style={wrapper}>
       <div className="flex items-end my-2">
-        <label>
+        <label htmlFor="prop">
           Añade una nueva propiedad a comparar
           <InputWidget
+            id="prop"
             forID="key"
             name="key"
             value={newProperty}
@@ -225,31 +226,34 @@ export const CompareProductsControl = (props) => {
     <div style={wrapper}>
       {product ? (
         <>
-          <label>
+          <label  htmlFor="name">
             Nombre del producto
             <InputWidget
               forID="name"
               name="name"
+              id="name"
               value={product['name']}
               onChange={(value) => setProductKey('name', value)}
               classNameWrapper="css-83wr9v"
             />
           </label>
-          <label>
+          <label htmlFor="image">
             url imagen del producto
             <InputWidget
               forID="image"
               name="image"
+              id="image"
               value={product['image']}
               onChange={(value) => setProductKey('image', value)}
               classNameWrapper="css-83wr9v"
             />
           </label>
-          <label>
+          <label htmlFor="linkBuild">
             Link de compra
             <InputWidget
               forID="image"
               name="link"
+              id="linkBuild"
               value={product['link']}
               onChange={(value) => setProductKey('link', value)}
               classNameWrapper="css-83wr9v"
@@ -258,9 +262,10 @@ export const CompareProductsControl = (props) => {
           {properties &&
             properties.length &&
             properties.map((item, index) => (
-              <label key={index}>
+              <label key={index} htmlFor={index}>
                 {item}
                 <InputWidget
+                  id={index}
                   forID={item}
                   name={item}
                   value={product[item]}

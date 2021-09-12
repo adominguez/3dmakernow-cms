@@ -1,7 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import { HTMLContent } from '../components/Content'
 import { sliderSettings } from '../utils/utils'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'

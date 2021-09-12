@@ -349,6 +349,7 @@ const SearcherCombo = ({
               <p className="font-mono font-thin">{printyText[product].text}</p>
             </div>
             <img
+              alt={printyText[product]}
               src={`${withPrefix('/')}img/${printyText[product].img}`}
               width="450"
             />
