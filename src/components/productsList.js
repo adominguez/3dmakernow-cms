@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ProductActionPrice from './ProductActionPrice';
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -41,10 +41,18 @@ const settings = {
 const ProductsList = ({ productsList = [], type = 'grid', showToolbar, searching = false, searchingError = false }) => {
   const [typeList, setTypeList] = useState(type);
   const [order, setOrder] = useState('Por relevancia');
-  const [productsListState, setProductsListState] = useState((productsList || {}).map((item, index) => ({
-    ...item,
-    order: index + 1
-  })));
+  const [productsListState, setProductsListState] = useState(undefined);
+
+  useEffect(() => {
+    if(productsList && productsList?.length) {
+      setProductsListState((productsList || []).map((item, index) => ({
+        ...item,
+        order: index + 1
+      })));
+    } else {
+      setProductsListState(undefined);
+    }
+  }, [productsList])
 
   const parseNumber = (str) => {
     const number = str.replace(' €', '').replace(',', '.')

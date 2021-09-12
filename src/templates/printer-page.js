@@ -15,6 +15,7 @@ import { UpgradesToPrint } from '../components/UpgradesToPrint'
 import { splitStaticUrl } from '../utils/utils'
 import CompareProducts from '../components/compareProducts'
 import Faqs from '../components/faqs'
+import ProductsList from '../components/productsList'
 
 
 export const PrinterPageTemplate = (props) => {
@@ -43,7 +44,8 @@ export const PrinterPageTemplate = (props) => {
     faqs: {
       showFaqs,
       asks
-    } = {}
+    } = {},
+    productsList:products
   } = props;
   
   return (
@@ -77,6 +79,13 @@ export const PrinterPageTemplate = (props) => {
         convertedKeyProperties(whereBuy) && convertedKeyProperties(whereBuy).length ?
           <CustomSection title={whereBuy.title || '¿Dónde comprar?'} sectionContent={whereBuy.sectionContent} backgroundColor="Claro">
             <ProductDetailImage featuredimage={featuredimage} title={title} content={whereBuy.whereBuyText} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
+          </CustomSection>
+        : null
+      }
+      {
+        products?.showProductsList ?
+          <CustomSection title={products.title || 'Listado de productos'} sectionContent={products.sectionContent} backgroundColor="Claro">
+            <ProductsList  productsList={products?.productsList?.productsList} type={products?.productsList?.type} showToolbar />
           </CustomSection>
         : null
       }
