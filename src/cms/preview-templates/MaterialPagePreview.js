@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { MaterialPageTemplate } from '../../templates/material-page'
 import CMS from 'netlify-cms-app'
 
-CMS.registerPreviewStyle('../../css/index.css');
+CMS.registerPreviewStyle('../../css/index.css')
 
 const MaterialPagePreview = ({ entry, widgetFor }) => {
   const {
@@ -21,9 +21,9 @@ const MaterialPagePreview = ({ entry, widgetFor }) => {
     callToAction,
     productsImages,
     comparation,
-    faqs
-  } = entry.getIn(['data']).toJSON();
-  const tags = entry.getIn(['data', 'tags']);
+    faqs,
+  } = entry.getIn(['data']).toJSON()
+  const tags = entry.getIn(['data', 'tags'])
 
   return (
     <MaterialPageTemplate

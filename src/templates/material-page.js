@@ -1,22 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import { HTMLContent } from '../components/Content';
-import ProductDetailValoration from '../components/ProductDetailValoration';
-import CustomSection from '../components/CustomSection';
-import ProductDetailImage from '../components/ProductDetailImage';
-import FeatureTabs from '../components/FeatureTabs';
-import {convertedKeyProperties, imageCarouselSettings, products as productsTypes, filamentsTypes, filamentsColor, splitStaticUrl} from '../utils/utils';
-import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes';
-import { CarouselImage } from '../components/CarouselImages';
-import CompareProducts from '../components/compareProducts';
-import Faqs from '../components/faqs';
-import SearcherCombo from '../components/SearcherCombo';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import { HTMLContent } from '../components/Content'
+import ProductDetailValoration from '../components/ProductDetailValoration'
+import CustomSection from '../components/CustomSection'
+import ProductDetailImage from '../components/ProductDetailImage'
+import FeatureTabs from '../components/FeatureTabs'
+import {
+  convertedKeyProperties,
+  imageCarouselSettings,
+  products as productsTypes,
+  filamentsTypes,
+  filamentsColor,
+  splitStaticUrl,
+} from '../utils/utils'
+import AdvantagesDisadvantajes from '../components/AdvantagesDisadvantajes'
+import { CarouselImage } from '../components/CarouselImages'
+import CompareProducts from '../components/compareProducts'
+import Faqs from '../components/faqs'
+import SearcherCombo from '../components/SearcherCombo'
 
 const page = {
   title: '¿Estás buscando un material diferente?',
-  subtitle: 'Elige el tipo de material, y el color que necesitas'
+  subtitle: 'Elige el tipo de material, y el color que necesitas',
 }
 
 export const MaterialPageTemplate = (props) => {
@@ -25,11 +32,7 @@ export const MaterialPageTemplate = (props) => {
     productsImages,
     title,
     initialValuation,
-    links: {
-      amazonLink,
-      aliexpressLink,
-      customLinks,
-    } = {},
+    links: { amazonLink, aliexpressLink, customLinks } = {},
     customSections,
     properties,
     whereBuy,
@@ -40,82 +43,126 @@ export const MaterialPageTemplate = (props) => {
     callToAction,
     comparation,
     faqs,
-    faqs: {
-      showFaqs,
-      asks
-    } = {}
-  } = props;
-  
+    faqs: { showFaqs, asks } = {},
+  } = props
+
   return (
     <>
-      {
-        pageTitle || initialValuation ?
-          <ProductDetailValoration pageTitle={pageTitle} initialValuation={initialValuation} productsImages={productsImages} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
-        : null
-      }
-      {
-        customSections && customSections.length ?
-          customSections.map(({sectionContent, title, showBorder, backgroundColor}, key) => (
-            <CustomSection key={key} title={title} sectionContent={sectionContent} showBorder={showBorder} backgroundColor={backgroundColor} />
-          ))
-        : null
-      }
-      {
-        comparation?.showComparation ?
-          <CustomSection title={comparation.title || 'Comparativa de impresoras'} sectionContent={comparation.sectionContent} backgroundColor="Claro" showBorder={true}>
-            <CompareProducts compareProducts={comparation?.compareProducts} />
-          </CustomSection>
-        : null
-      }
-      {
-        convertedKeyProperties(properties) && convertedKeyProperties(properties).length ?
-          <FeatureTabs properties={properties} />
-        : null
-      }
-      {
-        convertedKeyProperties(whereBuy) && convertedKeyProperties(whereBuy).length ?
-          <CustomSection title={whereBuy.title || '¿Dónde comprar?'} sectionContent={whereBuy.sectionContent} backgroundColor="Claro">
-            <ProductDetailImage featuredimage={featuredimage} title={title} content={whereBuy.whereBuyText} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
-          </CustomSection>
-        : null
-      }
-      {
-        convertedKeyProperties(advantagesDisadvantajes) && convertedKeyProperties(advantagesDisadvantajes).length ?
-          <CustomSection title={advantagesDisadvantajes.title || 'Ventajas y desventajas'} sectionContent={advantagesDisadvantajes.sectionContent} backgroundColor="Oscuro">
-            <AdvantagesDisadvantajes advantagesDisadvantajes={advantagesDisadvantajes} />
-          </CustomSection>
-        : null
-      }
-      {
-        convertedKeyProperties(prints) && convertedKeyProperties(prints).length ?
-          <CustomSection title={prints.title || 'Impresiones realizadas'} sectionContent={prints.sectionContent} backgroundColor="Claro" showBorder>
-              {
-                prints?.printImage && prints.printImage.length ?
-                <CarouselImage className="my-3" images={prints.printImage} settings={imageCarouselSettings} />
-                : null
-              }
-            </CustomSection>
-          : null
-      }
-      {
-        showFaqs ?
-          <CustomSection title={faqs.title || 'Preguntas frecuentes'} sectionContent={faqs.sectionContent} backgroundColor="Claro" showBorder>
-            <Faqs asks={asks} />
-          </CustomSection>
-        : null
-      }
-      {
-        convertedKeyProperties(finalValuation) && convertedKeyProperties(finalValuation).length ?
-          <CustomSection title={finalValuation.title || 'Conclusión final'} sectionContent={finalValuation.sectionContent} backgroundColor="Medio" showBorder />
-        : null
-      }
-      {
-        convertedKeyProperties(callToAction) && convertedKeyProperties(callToAction).length ?
-          <CustomSection title={callToAction.title} backgroundColor="Claro">
-            <ProductDetailImage featuredimage={featuredimage} title={title} content={callToAction.actionText} amazonLink={amazonLink} aliexpressLink={aliexpressLink} customLinks={customLinks} />
-          </CustomSection>
-        : null
-      }
+      {pageTitle || initialValuation ? (
+        <ProductDetailValoration
+          pageTitle={pageTitle}
+          initialValuation={initialValuation}
+          productsImages={productsImages}
+          amazonLink={amazonLink}
+          aliexpressLink={aliexpressLink}
+          customLinks={customLinks}
+        />
+      ) : null}
+      {customSections && customSections.length
+        ? customSections.map(
+            ({ sectionContent, title, showBorder, backgroundColor }, key) => (
+              <CustomSection
+                key={key}
+                title={title}
+                sectionContent={sectionContent}
+                showBorder={showBorder}
+                backgroundColor={backgroundColor}
+              />
+            )
+          )
+        : null}
+      {comparation?.showComparation ? (
+        <CustomSection
+          title={comparation.title || 'Comparativa de impresoras'}
+          sectionContent={comparation.sectionContent}
+          backgroundColor="Claro"
+          showBorder={true}
+        >
+          <CompareProducts compareProducts={comparation?.compareProducts} />
+        </CustomSection>
+      ) : null}
+      {convertedKeyProperties(properties) &&
+      convertedKeyProperties(properties).length ? (
+        <FeatureTabs properties={properties} />
+      ) : null}
+      {convertedKeyProperties(whereBuy) &&
+      convertedKeyProperties(whereBuy).length ? (
+        <CustomSection
+          title={whereBuy.title || '¿Dónde comprar?'}
+          sectionContent={whereBuy.sectionContent}
+          backgroundColor="Claro"
+        >
+          <ProductDetailImage
+            featuredimage={featuredimage}
+            title={title}
+            content={whereBuy.whereBuyText}
+            amazonLink={amazonLink}
+            aliexpressLink={aliexpressLink}
+            customLinks={customLinks}
+          />
+        </CustomSection>
+      ) : null}
+      {convertedKeyProperties(advantagesDisadvantajes) &&
+      convertedKeyProperties(advantagesDisadvantajes).length ? (
+        <CustomSection
+          title={advantagesDisadvantajes.title || 'Ventajas y desventajas'}
+          sectionContent={advantagesDisadvantajes.sectionContent}
+          backgroundColor="Oscuro"
+        >
+          <AdvantagesDisadvantajes
+            advantagesDisadvantajes={advantagesDisadvantajes}
+          />
+        </CustomSection>
+      ) : null}
+      {convertedKeyProperties(prints) &&
+      convertedKeyProperties(prints).length ? (
+        <CustomSection
+          title={prints.title || 'Impresiones realizadas'}
+          sectionContent={prints.sectionContent}
+          backgroundColor="Claro"
+          showBorder
+        >
+          {prints?.printImage && prints.printImage.length ? (
+            <CarouselImage
+              className="my-3"
+              images={prints.printImage}
+              settings={imageCarouselSettings}
+            />
+          ) : null}
+        </CustomSection>
+      ) : null}
+      {showFaqs ? (
+        <CustomSection
+          title={faqs.title || 'Preguntas frecuentes'}
+          sectionContent={faqs.sectionContent}
+          backgroundColor="Claro"
+          showBorder
+        >
+          <Faqs asks={asks} />
+        </CustomSection>
+      ) : null}
+      {convertedKeyProperties(finalValuation) &&
+      convertedKeyProperties(finalValuation).length ? (
+        <CustomSection
+          title={finalValuation.title || 'Conclusión final'}
+          sectionContent={finalValuation.sectionContent}
+          backgroundColor="Medio"
+          showBorder
+        />
+      ) : null}
+      {convertedKeyProperties(callToAction) &&
+      convertedKeyProperties(callToAction).length ? (
+        <CustomSection title={callToAction.title} backgroundColor="Claro">
+          <ProductDetailImage
+            featuredimage={featuredimage}
+            title={title}
+            content={callToAction.actionText}
+            amazonLink={amazonLink}
+            aliexpressLink={aliexpressLink}
+            customLinks={customLinks}
+          />
+        </CustomSection>
+      ) : null}
     </>
   )
 }
@@ -128,24 +175,49 @@ MaterialPageTemplate.propTypes = {
 }
 
 const MaterialPage = ({ data }) => {
-  const { markdownRemark: post } = data;
-  const { title, metaTitle, metaDescription, pageTitle, productsImages, featuredimage, initialValuation, links, customSections, properties, whereBuy, advantagesDisadvantajes, prints, finalValuation, callToAction, comparation } = post.frontmatter;
+  const { markdownRemark: post } = data
+  const {
+    title,
+    metaTitle,
+    metaDescription,
+    pageTitle,
+    productsImages,
+    featuredimage,
+    initialValuation,
+    links,
+    customSections,
+    properties,
+    whereBuy,
+    advantagesDisadvantajes,
+    prints,
+    finalValuation,
+    callToAction,
+    comparation,
+  } = post.frontmatter
 
   const renderSearcherCombo = () => {
-    typeof sessionStorage !== 'undefined' && sessionStorage.setItem('searcherCombo', JSON.stringify({
-      sessionProduct: productsTypes[1],
-      sessionFilamentType: filamentsTypes[0],
-      sessionFilamentColor: filamentsColor[0]
-    }));
+    typeof sessionStorage !== 'undefined' &&
+      sessionStorage.setItem(
+        'searcherCombo',
+        JSON.stringify({
+          sessionProduct: productsTypes[1],
+          sessionFilamentType: filamentsTypes[0],
+          sessionFilamentColor: filamentsColor[0],
+        })
+      )
     return <SearcherCombo title={page.title} subtitle={page.subtitle} />
   }
 
   return (
-    <Layout metaTitle={metaTitle} metaDescription={metaDescription} featuredimage={splitStaticUrl(featuredimage.absolutePath).slice(1)}>
+    <Layout
+      metaTitle={metaTitle}
+      metaDescription={metaDescription}
+      featuredimage={splitStaticUrl(featuredimage.absolutePath).slice(1)}
+    >
       <MaterialPageTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={"Descripción a cambiar"}
+        description={'Descripción a cambiar'}
         tags={post.frontmatter.tags}
         pageTitle={pageTitle}
         productsImages={productsImages}

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { PrinterPageTemplate } from '../../templates/printer-page'
 import CMS from 'netlify-cms-app'
 
-CMS.registerPreviewStyle('../../css/index.css');
+CMS.registerPreviewStyle('../../css/index.css')
 
 const PrinterPagePreview = ({ entry, widgetFor }) => {
   const {
@@ -24,9 +24,9 @@ const PrinterPagePreview = ({ entry, widgetFor }) => {
     submenu,
     comparation,
     products,
-    faqs
-  } = entry.getIn(['data']).toJSON();
-  const tags = entry.getIn(['data', 'tags']);
+    faqs,
+  } = entry.getIn(['data']).toJSON()
+  const tags = entry.getIn(['data', 'tags'])
 
   return (
     <PrinterPageTemplate

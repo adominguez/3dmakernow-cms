@@ -2,10 +2,10 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
-const fs = require('fs-extra');
+const fs = require('fs-extra')
 
 const getName = (slug) => {
-  return slug.split('/').splice(-2, 1)[0].replace(/-/g, ' ');
+  return slug.split('/').splice(-2, 1)[0].replace(/-/g, ' ')
 }
 
 const getType = (slug) => {
@@ -39,11 +39,11 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges
-    const searcher = [];
+    const searcher = []
 
     posts.forEach((edge) => {
       const id = edge.node.id
-      if(edge.node.fields.slug !== '/') {
+      if (edge.node.fields.slug !== '/') {
         searcher.push({
           name: getName(edge.node.fields.slug),
           type: getType(edge.node.fields.slug),
@@ -64,8 +64,10 @@ exports.createPages = ({ actions, graphql }) => {
     })
 
     const searcherFile = 'src/utils/searcher.js'
-    const updatedSearcherContent = `export const itemsToSearch = ${JSON.stringify(searcher)};`;
-    fs.writeFileSync(searcherFile, updatedSearcherContent);
+    const updatedSearcherContent = `export const itemsToSearch = ${JSON.stringify(
+      searcher
+    )};`
+    fs.writeFileSync(searcherFile, updatedSearcherContent)
 
     // Tag pages:
     let tags = []

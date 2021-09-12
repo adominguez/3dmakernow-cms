@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { AboutPageTemplate } from '../../templates/about-page'
 import CMS from 'netlify-cms-app'
 
-CMS.registerPreviewStyle('../../css/index.css');
+CMS.registerPreviewStyle('../../css/index.css')
 
 const AboutPagePreview = ({ entry, widgetFor }) => (
   <AboutPageTemplate

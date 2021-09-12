@@ -66,7 +66,7 @@ module.exports = {
           trackingId: 'G-LYSG7VSTM4', // leave empty if you want to disable the tracker
           cookieName: 'google-analytics', // default
           anonymize: true, // default
-          allowAdFeatures: false // default
+          allowAdFeatures: false, // default
         },
         // googleTagManager: {
         //   trackingId: 'YOUR_GOOGLE_TAG_MANAGER_TRACKING_ID', // leave empty if you want to disable the tracker
@@ -78,7 +78,7 @@ module.exports = {
         //   cookieName: 'gatsby-gdpr-facebook-pixel', // default
         // },
         // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production', 'development']
+        environments: ['production', 'development'],
       },
     },
     {
