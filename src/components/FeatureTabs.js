@@ -95,7 +95,6 @@ const FeatureTabs = ({ properties }) => {
   return (
     <CustomSection
       backgroundColor="Oscuro"
-      title="Características técnicas"
       sectionContent={properties.sectionContent}
       title={properties.title || 'Características técnicas'}
     >
