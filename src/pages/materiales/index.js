@@ -2,7 +2,7 @@ import React from 'react';
 import CustomSection from '../../components/CustomSection';
 import { Link } from 'gatsby';
 import Layout from '../../components/Layout';
-import PrinterRoll from '../../components/PrinterRoll';
+import MaterialRoll from '../../components/MaterialRoll';
 import { products, filamentsTypes, filamentsColor } from '../../utils/utils'
 import SearcherCombo from '../../components/SearcherCombo';
 
@@ -34,7 +34,7 @@ const MaterialPage = () => {
         </h1>
         <h2 className="block text-xl text-center font-extralight md:font-thin lg:text-2xl text-blueGray-400">Crear un subtítulo para el título.</h2>
         <p className="my-2 text-center">Insertar aquí un texto de unas 200 o 300 palabras sobre la elección de impresoras en función de las review que hemos preparado al usuario</p>
-        <PrinterRoll type="list" />
+        <MaterialRoll type="list" />
       </CustomSection>
     </Layout>
   )
