@@ -208,6 +208,7 @@ const MaterialPage = ({ data }) => {
     finalValuation,
     callToAction,
     comparation,
+    products
   } = post.frontmatter
 
   const renderSearcherCombo = () => {
@@ -248,6 +249,7 @@ const MaterialPage = ({ data }) => {
         finalValuation={finalValuation}
         callToAction={callToAction}
         comparation={comparation}
+        products={products}
       />
       {renderSearcherCombo()}
     </Layout>
