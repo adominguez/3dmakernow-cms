@@ -45,7 +45,7 @@ export const PrinterPageTemplate = (props) => {
       showFaqs,
       asks
     } = {},
-    productsList:products
+    products
   } = props;
   
   return (
