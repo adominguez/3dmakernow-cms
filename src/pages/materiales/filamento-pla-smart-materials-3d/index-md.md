@@ -28,6 +28,12 @@ customSections:
     sectionContent: >-
       <div class="flex flex-col md:flex-row">
 
+      <div class="flex-1 justify-center flex">
+
+      <img src="/img/granvariedad.jpg" alt="Temperatura óptima de trabajo" />
+
+      </div>
+
       <div class="flex-1">
 
       <p>Comparado con otras marcas, el filamento PLA Smart Materials 3D tiene un gran abanico de colores, lo que es genial a la hora de poder elegir prácticamente cualquier tonalidad incluidos tonos pastel, madera y glitter. ¡Los querrás todos!</p>
@@ -35,8 +41,6 @@ customSections:
       <p>Además, según el color lo podrás encontrar tanto de diámetro 1.75mm como de 2.85mm y verás que ofrecen diferentes tamaños como 330g, 750g y 1000g para la mayoría de colores y formatos 3300g, 5600g y 8000g para los tonos blanco y negro. ¡Increíble!</p>
 
       </div>
-
-      <div>Imagen</div>
 
       </div>
   - backgroundColor: Claro
@@ -51,7 +55,11 @@ customSections:
 
       </div>
 
-      <div>Imagen</div>
+      <div class="flex-1 justify-center flex">
+
+      <img src="/img/granvariedad.jpg" alt="Temperatura óptima de trabajo" />
+
+      </div>
 
       </div>
   - backgroundColor: Claro
@@ -60,13 +68,13 @@ customSections:
     sectionContent: >-
       <div class="flex flex-col md:flex-row">
 
-      <div class="flex-1">
+      <div class="flex-1 justify-center flex">
 
-      imagen
+      <img src="/img/granvariedad.jpg" alt="Temperatura óptima de trabajo" />
 
       </div>
 
-      <div>
+      <div class="flex-1">
 
       <p>La temperatura a la que Smart Materials 3D recomienda fundir su filamento es entre 200 – 220ºC.</p>
 
@@ -92,7 +100,11 @@ customSections:
 
       <div>
 
-      imagen
+      <div class="flex-1 justify-center flex">
+
+      <img src="/img/granvariedad.jpg" alt="Temperatura óptima de trabajo" />
+
+      </div>
 
       </div>
 
@@ -103,6 +115,12 @@ customSections:
     sectionContent: >-
       <div class="flex flex-col md:flex-row">
 
+      <div class="flex-1 justify-center flex">
+
+      <img src="/img/granvariedad.jpg" alt="Temperatura óptima de trabajo" />
+
+      </div>
+
       <div class="flex-1">
 
       <p>Una de las mayores preocupaciones a la hora de comprar filamentos es la posibilidad de que se enrede o rompa.</p>
@@ -110,8 +128,6 @@ customSections:
       <p>Puedo decirte que el filamento PLA Smart Materials 3D lo hemos utilizado bastante, hemos probado muchos colores y hasta el momento no hemos tenido problemas y solo conocemos un caso de un amigo al que le vino enredado en una ocasión.</p>
 
       </div>
-
-      <div>Imagen</div>
 
       </div>
     title: Enredos y roturas de filamento
@@ -122,17 +138,17 @@ customSections:
 
       <div class="flex-1">
 
-      imagen
-
-      </div>
-
-      <div>
-
       <p>Cuando compras por primera vez un filamento de Smart Materials 3D te sorprende mucho por su packaging. Y dirás: ¿por qué?</p>
 
       <p>Porque las marcas de filamentos nos tienen acostumbrados a la caja de cartón, bolsa zip y el filamento, pero Smart Materials 3D cambia el modelo tradicional por una bolsa de zip dura en la que guardar bien protegido tu filamento cuando no lo estás usando, ayudando a que no se deteriore con el paso del tiempo.</p>
 
       <p>Es un packaging sencillo e interesante en el que encontrarás todos los consejos de la marca para conservar el filamento, así como las indicaciones de impresión.</p>
+
+      </div>
+
+      <div class="flex-1 justify-center flex">
+
+      <img src="/img/granvariedad.jpg" alt="Temperatura óptima de trabajo" />
 
       </div>
 
@@ -157,6 +173,11 @@ comparation:
 properties:
   feature:
     materialType: PLA
+    filamentDiameter: "1.75"
+    reelSize: ""
+  unboxing:
+    unboxingWeight: 1kg
+    unboxingSize: 40cm
 whereBuy:
   title: Comprar filamento PLA Smart Materials 3D
   sectionContent: <p>Si quieres comprar filamento PLA Smart Materials 3D, podrás
