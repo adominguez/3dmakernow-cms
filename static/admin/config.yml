@@ -458,23 +458,6 @@ collections:
       - {label: "Descripción SEO", name: "metaDescription", widget: "text", required: true, hint: "campo de texto", pattern: ['^.{1,150}$', "este campo debe de tener un máximo de 150 caracteres"]}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: "reviews"
-    label: "Review"
-    folder: "src/pages/reviews"
-    create: true
-    fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: review-page}
-      - {label: Listado de productos, name: productsList, widget: productsList}
-      - {label: "Título", name: "title", widget: "string"}
-      - {label: "Nombre del producto", name: "name", widget: "string"}
-      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
-      - {label: "Descripción", name: "description", widget: "text"}
-      - {label: "Post destacado", name: "featuredpost", widget: "boolean", required: false}
-      - {label: "Imagen destacada", name: "featuredimage", widget: image}
-      - {label: "valoración", name: "ratings", widget: "string"}
-      - {label: "Contenido", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
   - name: "pages"
     label: "Páginas"
     files:
