@@ -1,9 +1,9 @@
 ---
 templateKey: printer-page
-title: Ender 5
-brand: Creality
-printerCategory: FDM
-printerSize: Inferior de 30x30
+title: Anycubic Photon mono SE
+brand: Anycubic
+printerCategory: Resina
+printerSize: Inferior de 20x20
 featuredimage: /static/img/artillery-genius.png
 featuredPrinter: true
 submenu:

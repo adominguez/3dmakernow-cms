@@ -1,6 +1,6 @@
 ---
 templateKey: printer-page
-title: CR 10S
+title: CR 10S Pro V2
 brand: Creality
 printerCategory: FDM
 printerSize: 30x30 o superior

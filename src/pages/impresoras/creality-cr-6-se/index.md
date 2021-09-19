@@ -1,14 +1,14 @@
 ---
 templateKey: printer-page
-title: Anycubic Photon mono S
-brand: Anycubic
-printerCategory: Resina
-printerSize: Inferior de 20x20
+title: Creality CR-6 SE
+brand: Creality
+printerCategory: FDM
+printerSize: Inferior de 30x30
 featuredimage: /static/img/artillery-genius.png
 featuredPrinter: true
 submenu:
   showSubmenu: false
-pageTitle: Artillery Genius, la impresora 3D del momento
+pageTitle: Creality CR-6 SE, la nueva impresora de Creality
 links:
   amazonLink: https://amzn.to/2UNImGj
   aliexpressLink: https://s.click.aliexpress.com/e/_AFRwjo
