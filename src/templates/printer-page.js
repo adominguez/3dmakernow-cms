@@ -187,7 +187,7 @@ export const PrinterPageTemplate = (props) => {
       ) : null}
       {convertedKeyProperties(callToAction) &&
         convertedKeyProperties(callToAction).length ? (
-        <CustomSection title={callToAction.title} backgroundColor="Claro">
+        <CustomSection backgroundColor="Claro">
           <ProductDetailImage
             featuredimage={featuredimage}
             title={title}
