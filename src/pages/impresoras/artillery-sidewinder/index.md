@@ -8,24 +8,24 @@ featuredimage: /static/img/artillery-genius.png
 featuredPrinter: true
 submenu:
   showSubmenu: false
-pageTitle: Artillery Sidewinder, la mejor impresora 3D gran formato
+pageTitle: Impresora 3D Artillery Sidewinder X1. Grandes impresiones de calidad.
 links:
   amazonLink: https://amzn.to/2UNImGj
   aliexpressLink: https://s.click.aliexpress.com/e/_AFRwjo
   customLinks:
     - store: Artillery
       link: https://artillery3d.es/artillery-genius/
-initialValuation: >
-  <p>La impresora 3D Artillery Genius está causando furor en el mercado debido a
-  las grandes ventajas que ofrece: presenta una alta calidad, escaso consumo, es
-  muy sencilla de montar y de utilizar, y promete ser de larga duración con la
-  posibilidad de sustituir sus piezas cuando fallan o se desgastan.</p>
+initialValuation: >-
+  <p>¿Quién no ha oído hablar de <a href="https://artillery3d.es/">Artillery</a>
+  y sus impresoras 3D? Sin duda, esta marca de impresoras 3D ha revolucionado el
+  mercado con impresoras de gran calidad y buen precio. En su momento, ya
+  hablamos de su <a
+  href="https://3dmakernow.com/impresora-3d-artillery-genius/">Artillery
+  Genius</a>, pero hoy te presento su impresora de gran formato: <b>la impresora
+  Artillery Sidewinder X1.</b> </p>
 
-  <p>Ahora mismo, esta impresora se vende a un precio muy económico y competitivo lo que hace que sea una gran inversión si se usa a menudo. Además, permite realizar todo tipo de trabajos de impresión y es ideal tanto para profesionales de la impresión 3D como para aficionados que se están iniciando en dicha actividad.</p>
 
-  <p>Hablamos de una impresora 3D con una excelente relación precio-calidad, muy recomendada por los expertos y con una demanda cada vez mayor en todo el mundo por eso se posiciona en los primeros puestos del ranking de impresoras de 2020 con múltiples reseñas positivas.</p>
-
-  <p>Su eficiencia a nivel general y su calidad de impresión han conseguido que la impresora 3D Artillery Genius sea considerada una de las mejores impresoras 3D del 2020.</p>
+  <p>¿Quieres hacer impresiones en 3D a lo grande? Recuerda que es como subir un peldaño más en la cima de la impresión 3D, así que si te gusta imprimir a lo grande o no lo has probado nunca, pero estás deseando imprimir piezas grandes a un buen precio, es muy probable que estés buscando <b>una impresora 3D como la Artillery Sidewinder X1 que nos ofrece la marca <a href="https://artillery3d.es/">Artillery</a></b>.</p>
 productsImages:
   - src: /static/img/artillery-genius.png
     alt: Impresora Artillery Genius
@@ -37,19 +37,18 @@ productsImages:
     alt: Extrusor Artillery Genius
 customSections:
   - showBorder: true
-    title: Artillery Genius, la impresora 3D del 2020
+    title: Doble motor en el Eje Z
     sectionContent: >-
-      <p>La impresora 3D Artillery Genius está causando furor en el mercado
-      debido a las grandes ventajas que ofrece: presenta una alta calidad,
-      escaso consumo, es muy sencilla de montar y de utilizar, y promete ser de
-      larga duración con la posibilidad de sustituir sus piezas cuando fallan o
-      se desgastan.</p>
+      ![doble motor en eje Z](/static/img/doble-motor.jpg)
 
-      <p>Ahora mismo, esta impresora se vende a un precio muy económico y competitivo lo que hace que sea una gran inversión si se usa a menudo. Además, permite realizar todo tipo de trabajos de impresión y es ideal tanto para profesionales de la impresión 3D como para aficionados que se están iniciando en dicha actividad.</p>
 
-      <p>Hablamos de una impresora 3D con una excelente relación precio-calidad, muy recomendada por los expertos y con una demanda cada vez mayor en todo el mundo por eso se posiciona en los primeros puestos del ranking de impresoras de 2020 con múltiples reseñas positivas.</p>
+      <p>La estructura de esta impresora 3D es muy elegante y robusta ya que cuenta con perfiles de aluminio anchos en todos los ejes que aportan estabilidad al conjunto.</p>
 
-      <p>Su eficiencia a nivel general y su calidad de impresión han conseguido que la impresora 3D Artillery Genius sea considerada una de las mejores impresoras 3D del 2020.</p>
+
+      <p>Pero un punto muy positivo de la Artillery Sidewinder X1 es que trae <b>doble motor en el eje Z</b> que consiguen que ese eje siempre esté bien nivelado con respecto a la cama caliente. Además, para mantenerlos sincronizados, cuenta con una correa en la parte superior de sus husillos.</p>
+
+
+      <p>Sin duda, estos motores otorgan a la impresora una <b>mayor precisión y firmeza</b> en impresiones a altas velocidades.</p>
     backgroundColor: Claro
   - showBorder: false
     title: Artillery Genius vs Ender 3
@@ -320,30 +319,6 @@ advantagesDisadvantajes:
     - text: Es posible que en algunas ocasiones sea necesario tensar las correas de la
         impresora sobre todo del Eje X, ya que no vienen bien tensas de fábrica,
         lo que puede hacer que no salgan las impresiones del todo bien.
-faqs:
-  showFaqs: true
-  sectionContent: Aqui tienes algunas de las preguntas más frequentes que se hacen
-    los usuarios de esta impresora.
-  asks:
-    - ask: ¿Qué filamento usa la artillery genius?
-      response: La Artillery Genius tiene un extrusor Titán directo, por lo que podras
-        imprimir la mayoría de filamentos comunes, PLA, ABS, PETG, Flexible,
-        TPU, madera, lo que sí, tienes que prestar atención a que el grosor sea
-        de 1,75mm
-    - ask: ¿Cómo se nivela la artillery genius?
-      response: >-
-        <p>A diferencia de otras impresoras, la Artillery Genius, no tiene
-        autonivelación, sin embargo, en su firmware trae una funcion para poder
-        calibrarla que te guiará a través de los puntos que tienes que ir
-        calibrando, para ello, necesitaras una hoja de papel.</p>
-
-        <p>Deberás de ir desplazando el carro a los puntos indicados por el programa, colocar el papel debajo de la boquilla y ajustar con las ruedas de nivelación de debajo de la cama hasta conseguir que el papel no quede ni demasiado suelto ni muy apretado y seas capaz de pasar el papel correctamente entre la cama y la boquilla.</p>
-    - ask: ¿Cómo cambiar filamento en artillery genius?
-      response: >-
-        <p>Es muy fácil cambiar de filamento, el propio firmware ya trae una
-        función  a través de la cual puedes realizar el cambio.</p>
-
-        <p>Simplemente caliente el hotend a la temperatura del filamento que quieres extraer y o insertar, pulsa el cambio de filamento y ve siguiendo los pasos que te va indicando la pantalla.</p>
 prints:
   printImage:
     - src: /static/img/impresion-artillery-1.png
@@ -383,6 +358,30 @@ upgradesToPrint:
     - text: Agarradera para la cama caliente de la impresora
       link: https://www.thingiverse.com/thing:4136438
       image: https://cdn.thingiverse.com/assets/ae/ba/3f/27/e8/featured_preview_Genius_Logo_Bed_Handle.png
+faqs:
+  showFaqs: true
+  sectionContent: Aqui tienes algunas de las preguntas más frequentes que se hacen
+    los usuarios de esta impresora.
+  asks:
+    - ask: ¿Qué filamento usa la artillery genius?
+      response: La Artillery Genius tiene un extrusor Titán directo, por lo que podras
+        imprimir la mayoría de filamentos comunes, PLA, ABS, PETG, Flexible,
+        TPU, madera, lo que sí, tienes que prestar atención a que el grosor sea
+        de 1,75mm
+    - ask: ¿Cómo se nivela la artillery genius?
+      response: >-
+        <p>A diferencia de otras impresoras, la Artillery Genius, no tiene
+        autonivelación, sin embargo, en su firmware trae una funcion para poder
+        calibrarla que te guiará a través de los puntos que tienes que ir
+        calibrando, para ello, necesitaras una hoja de papel.</p>
+
+        <p>Deberás de ir desplazando el carro a los puntos indicados por el programa, colocar el papel debajo de la boquilla y ajustar con las ruedas de nivelación de debajo de la cama hasta conseguir que el papel no quede ni demasiado suelto ni muy apretado y seas capaz de pasar el papel correctamente entre la cama y la boquilla.</p>
+    - ask: ¿Cómo cambiar filamento en artillery genius?
+      response: >-
+        <p>Es muy fácil cambiar de filamento, el propio firmware ya trae una
+        función  a través de la cual puedes realizar el cambio.</p>
+
+        <p>Simplemente caliente el hotend a la temperatura del filamento que quieres extraer y o insertar, pulsa el cambio de filamento y ve siguiendo los pasos que te va indicando la pantalla.</p>
 finalValuation:
   title: Nuestra opinion final de la impresora 3D Artillery Genius
   sectionContent: >-
