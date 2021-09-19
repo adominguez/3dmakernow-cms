@@ -16,7 +16,7 @@ links:
     - store: Artillery
       link: https://artillery3d.es/artillery-genius/
 initialValuation: >
-  <p>La impresora 3D Artillery Genius está causando furor en el mercado debido a
+  <p>La impresora 3D Anet A8 está causando furor en el mercado debido a
   las grandes ventajas que ofrece: presenta una alta calidad, escaso consumo, es
   muy sencilla de montar y de utilizar, y promete ser de larga duración con la
   posibilidad de sustituir sus piezas cuando fallan o se desgastan.</p>
