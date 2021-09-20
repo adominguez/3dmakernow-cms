@@ -39,22 +39,26 @@ customSections:
   - showBorder: true
     title: Doble motor en el Eje Z
     sectionContent: >-
-      ![doble motor en eje Z](/static/img/doble-motor2.jpg)
+      <div class="flex">
 
+      <div class="flex-1"><img src="/img/doble-motor2.jpg" /></div>
 
-      <p>La estructura de esta impresora 3D es muy elegante y robusta ya que cuenta con perfiles de aluminio anchos en todos los ejes que aportan estabilidad al conjunto.</p>
+      <div class="flex-1"><p>La estructura de esta impresora 3D es muy elegante y robusta ya que cuenta con perfiles de aluminio anchos en todos los ejes que aportan estabilidad al conjunto.</p>
 
 
       <p>Pero un punto muy positivo de la Artillery Sidewinder X1 es que trae <b>doble motor en el eje Z</b> que consiguen que ese eje siempre esté bien nivelado con respecto a la cama caliente. Además, para mantenerlos sincronizados, cuenta con una correa en la parte superior de sus husillos.</p>
 
 
-      <p>Sin duda, estos motores otorgan a la impresora una <b>mayor precisión y firmeza</b> en impresiones a altas velocidades.</p>
+      <p>Sin duda, estos motores otorgan a la impresora una <b>mayor precisión y firmeza</b> en impresiones a altas velocidades.</p></div>
+
+      </div>
     backgroundColor: Claro
   - showBorder: false
     title: Volumen de impresión grande
     sectionContent: >-
-      ![](/static/img/volumen-sidewinder2.jpg)
+      <div class="flex">
 
+      <div class="flex-1">
 
       <p>Gracias a su volumen de impresión de 300 x 300 x 400 mm, podrás conseguir realizar grandes piezas impresas en 3D.</p>
 
@@ -66,12 +70,22 @@ customSections:
 
 
       <p>Aquí puedes encontrar un set de boquillas apropiadas para esta impresora:</p>
+
+      <div class="flex-1"><img src="/img/volumen-sidewinder2.jpg" /></div>
+
+      </div>
+
+      </div>
     backgroundColor: Claro
   - backgroundColor: Claro
     showBorder: false
     title: Cama caliente integrada para impresiones silenciosas
     sectionContent: >-
-      ![](/static/img/camacaliente.jpg)
+      <div class="flex">
+
+      <div class="flex-1"><img src="/img/camacaliente.jpg" /></div>
+
+      <div class="flex-1">
 
 
       <p><b>La cama caliente de la Artillery Sidewinder X1 viene integrada en la impresora</b>, es decir, no se puede extraer. Pensarás: ¿eso está bien?</p>
@@ -84,36 +98,57 @@ customSections:
 
 
       <p>Significa que al imprimir <b>se genera muy poco ruido cuando los motores están trabajando</b>, por lo tanto, las impresiones son muy silenciosas y se escucha muy poco ruido. Teniendo en cuenta que es una impresora de gran formato, seguro que querrás aprovechar su volumen para realizar impresiones grandes que normalmente pueden llegar a durar más de 24 horas, por lo tanto, seguro que en algún momento acabarás imprimiendo por la noche y agradecerás su silenciosa impresión.</p>
+
+      </div>
+
+      </div>
   - backgroundColor: Claro
     showBorder: false
     title: Sistema de extrusión directa.
     sectionContent: >-
-      ![](/static/img/extrusion.jpg)
+      <div class="flex">
 
+      <div class="flex-1"><img src="/img/extrusion.jpg" /></div>
+
+      <div class="flex-1">
 
       <p>Esta impresora tiene un <b>sistema de extrusión directa</b> que minimiza la distancia entre el punto de tracción y el nozzle, haciendo que sea <b>más sencillo controlar el acceso del material</b> y mejorando la calidad de las piezas impresas.</p>
 
       <p>Este es un gran punto a su favor si quieres usar materiales flexibles o más técnicos ya que la configuración de nuevos materiales es mucho más simple y se reduce la posibilidad de atascos e impresiones fallidas.</p>
 
       <p>Además, <b>tiene un sensor de final o rotura de filamento</b>, dicho sensor pausa la impresión si detecta la falta de filamento, algo de mucha utilidad en las impresiones de larga duración que puedes realizar en esta impresora. Eso unido a su <b>sistema de pausa y reanudación de impresión tras un corte de corriente</b>, genera gran confianza a la hora de hacer impresiones de gran formato.</p>
+
+      </div>
+
+      </div>
   - backgroundColor: Claro
     showBorder: false
     title: Excelente conectividad e interfaz.
     sectionContent: >-
-      ![](/static/img/conectividad.jpg)
+      <div class="flex">
 
+      <div class="flex-1">
 
       <p>La Artillery Sidewinder X1 trae incorporada una <b>pantalla táctil de 3,5 pulgadas con una interfaz de usuario fácil de usar</b> con submenús coloridos que diferencian las operaciones necesarias de cualquier impresora 3D para un control más visual y sencillo.</p>
 
       <p>Además: ¡Adiós micro SD! Si algo ha hecho realmente bien Artillery con sus impresoras es que <b>mejora la conexión con un puerto USB.</b> Ahora no te verás obligado a usar siempre una tarjeta micro SD.</p>
 
       <p>Con su práctica conectividad e interfaz de usuario, <b>Artillery facilita notablemente la experiencia del usuario.</b></p>
+
+      <div class="flex-1"><img src="/img/conectividad.jpg" /></div>
+
+      </div>
+
+      </div>
   - backgroundColor: Claro
     showBorder: false
     title: Montaje sencillo y rápido.
     sectionContent: >-
-      ![](/static/img/herramientas.jpg)
+      <div class="flex">
 
+      <div class="flex-1"><img src="/img/herramientas.jpg" /></div>
+
+      <div class="flex-1">
 
       <p>La impresora 3D Artillery Sidewinder X1 trae todas las piezas y herramientas necesarias para realizar <b>un montaje muy rápido y nada difícil.</b></p>
 
@@ -129,6 +164,10 @@ customSections:
 
 
       <p>Aquí tienes algunos set de destornilladores que te pueden venir muy bien:</p>
+
+      </div>
+
+      </div>
 comparation:
   showComparation: false
   title: Comparativa
