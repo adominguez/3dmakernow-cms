@@ -16,6 +16,7 @@ export const CarouselImage = ({
         images.length &&
         images.map((item, key) => (
           <img
+            className="object-contain max-h-96"
             key={key}
             src={replaceImgUrl(
               item?.src?.absolutePath
