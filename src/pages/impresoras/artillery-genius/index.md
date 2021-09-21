@@ -52,8 +52,8 @@ customSections:
     title: Doble motor en el eje Z
     sectionContent: >-
       <div class="flex flex-col justify-center md:flex-row">
-        <div class="flex flex-col items-center min-w-max"><img src="/img/doble-motor-genius.jpg" class="p-10"
-            alt="doble motor" />
+        <div class="flex flex-col items-center min-w-max"><img src="/img/doble-motor-genius.jpg" class="p-10" width="300"
+            alt="doble motor Genius" />
         </div>
         <div class="flex flex-col p-4 flex-2">
       <p>La Artillery Genius <b>tiene dos motores para el eje Z</b>, acompasados por una correa en la parte superior de la impresora para conseguir que el eje siempre esté bien nivelado con respecto a la cama caliente.</p>
@@ -72,7 +72,7 @@ customSections:
 
       <p>Además: ¡Adiós micro SD! Si algo hay que agradecerle a Artillery es la <b>mejora de conexión con un puerto USB</b> ya que ahora no te verás obligado a usar siempre una tarjeta micro SD para imprimir tus proyectos.</p>
        </div>
-        <div class="flex flex-col items-center min-w-max"><img src="/img/basegenius.jpg" alt="doble motor"
+        <div class="flex flex-col items-center min-w-max"><img src="/img/basegenius.jpg" alt="base Genius"
             class="p-10" />
         </div>
       </div>
@@ -102,7 +102,7 @@ customSections:
 
       <p>Además, esta impresora 3D <b>trae de serie controladores paso a paso ultra silenciosos.</b> ¿Sabes lo qué significa? Significa que al imprimir se genera muy poco ruido, por lo tanto, las impresiones son muy silenciosas.</p>
        </div>
-        <div class="flex flex-col items-center min-w-max"><img src="/img/camacalientegenius.jpg" alt="doble motor"
+        <div class="flex flex-col items-center min-w-max"><img src="/img/camacalientegenius.jpg" alt="cama caliente Genius"
             class="p-10" />
         </div>
       </div>
@@ -146,7 +146,7 @@ customSections:
 
       <p>Aquí tienes algunos sets de destornilladores que te pueden venir muy bien:</p>
        </div>
-        <div class="flex flex-col items-center min-w-max"><img src="/img/herramientas.jpg" alt="doble motor"
+        <div class="flex flex-col items-center min-w-max"><img src="/img/herramientas.jpg" alt="herramientas"
             class="p-10" />
         </div>
       </div>
@@ -154,8 +154,9 @@ customSections:
     showBorder: false
     sectionContent: >-
       <div class="flex flex-col justify-center md:flex-row">
-        <div class="flex flex-col items-center min-w-max"><img src="/img/community.png" class="p-10"
-            alt="doble motor" />
+        <div class="flex flex-col items-center min-w-max"><img src="/img/community.png" class="p-10" width="350"
+            alt="community" />
+
         </div>
         <div class="flex flex-col p-4 flex-2">
       <p>Gracias a sus características y a la gran experiencia de usuario que proporciona, esta impresora <b>ha generado una gran comunidad de usuarios</b> que comparten las novedades, mejoras y detalles interesantes sobre esta impresora.</p>
