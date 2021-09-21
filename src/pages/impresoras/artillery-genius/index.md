@@ -8,7 +8,7 @@ featuredimage: /static/img/artillery-genius.png
 featuredPrinter: true
 submenu:
   showSubmenu: false
-pageTitle: Artillery Genius, la impresora 3D del momento
+pageTitle: "Impresora 3D Artillery Genius: la impresora que ha marcado tendencia"
 links:
   amazonLink: https://amzn.to/2UNImGj
   aliexpressLink: https://s.click.aliexpress.com/e/_AFRwjo
@@ -16,16 +16,14 @@ links:
     - store: Artillery
       link: https://artillery3d.es/artillery-genius/
 initialValuation: >
-  <p>La impresora 3D Artillery Genius está causando furor en el mercado debido a
-  las grandes ventajas que ofrece: presenta una alta calidad, escaso consumo, es
-  muy sencilla de montar y de utilizar, y promete ser de larga duración con la
-  posibilidad de sustituir sus piezas cuando fallan o se desgastan.</p>
+  <p>La impresora 3D Artillery Genius ha causado furor en el mercado de la
+  impresión 3D gracias a sus grandes prestaciones.</p>
 
-  <p>Ahora mismo, esta impresora se vende a un precio muy económico y competitivo lo que hace que sea una gran inversión si se usa a menudo. Además, permite realizar todo tipo de trabajos de impresión y es ideal tanto para profesionales de la impresión 3D como para aficionados que se están iniciando en dicha actividad.</p>
+  <p>Hoy te hablamos de esta <b>impresora 3D con una excelente relación calidad-precio</b>, ideal tanto para profesionales como para los que quieren iniciarse en la impresión 3D.</p>
 
-  <p>Hablamos de una impresora 3D con una excelente relación precio-calidad, muy recomendada por los expertos y con una demanda cada vez mayor en todo el mundo por eso se posiciona en los primeros puestos del ranking de impresoras de 2020 con múltiples reseñas positivas.</p>
+  <p>Es una de las impresoras más recomendadas por los expertos y con una demanda cada vez mayor en todo el mundo, lo que la posicionó en los primeros puestos del ranking de impresoras 3D de 2020.</p>
 
-  <p>Su eficiencia a nivel general y su calidad de impresión han conseguido que la impresora 3D Artillery Genius sea considerada una de las mejores impresoras 3D del 2020.</p>
+  <p>¿Quieres saber por qué? Quédate con nosotros y descúbrelo.</p>
 productsImages:
   - src: /static/img/artillery-genius.png
     alt: Impresora Artillery Genius
@@ -37,72 +35,142 @@ productsImages:
     alt: Extrusor Artillery Genius
 customSections:
   - showBorder: true
-    title: Artillery Genius, la impresora 3D del 2020
-    sectionContent: >-
-      <p>La impresora 3D Artillery Genius está causando furor en el mercado
-      debido a las grandes ventajas que ofrece: presenta una alta calidad,
-      escaso consumo, es muy sencilla de montar y de utilizar, y promete ser de
-      larga duración con la posibilidad de sustituir sus piezas cuando fallan o
-      se desgastan.</p>
+    title: Elegante diseño y estructura
+    sectionContent: "<p>Algo que caracteriza a las impresoras de Artillery es su
+      diseño. <b>Su estructura posee unos perfiles y un marco exterior de
+      aluminio bastante gruesos</b>, que otorgan estabilidad y rigidez tanto a
+      la estructura de la máquina, como a los ejes, para conseguir grandes
+      resultados.</p>\r
 
-      <p>Ahora mismo, esta impresora se vende a un precio muy económico y competitivo lo que hace que sea una gran inversión si se usa a menudo. Además, permite realizar todo tipo de trabajos de impresión y es ideal tanto para profesionales de la impresión 3D como para aficionados que se están iniciando en dicha actividad.</p>
-
-      <p>Hablamos de una impresora 3D con una excelente relación precio-calidad, muy recomendada por los expertos y con una demanda cada vez mayor en todo el mundo por eso se posiciona en los primeros puestos del ranking de impresoras de 2020 con múltiples reseñas positivas.</p>
-
-      <p>Su eficiencia a nivel general y su calidad de impresión han conseguido que la impresora 3D Artillery Genius sea considerada una de las mejores impresoras 3D del 2020.</p>
+      <p>Gracias a sus materiales estamos ante una impresora ligera y que
+      promete larga duración. Además, su <b>diseño rematado con cubiertas y
+      detalles de plástico azul</b> le dan un toque diferencial, a la par que
+      estético y llamativo.</p>\r\n"
     backgroundColor: Claro
-  - showBorder: false
-    title: Artillery Genius vs Ender 3
-    sectionContent: >
-      <p>Seguro que si estás pensando en comprar una impresora 3D FDM
-      actualmente, las dos impresoras 3D que se te vienen a la mente son la
-      impresora 3D Ender 3, y la Artillery Genius, y es normal, son de las
-      impresoras 3D que más se están vendiendo últimamente.</p>
+  - backgroundColor: Claro
+    showBorder: false
+    title: Doble motor en el eje Z
+    sectionContent: "<p>La Artillery Genius <b>tiene dos motores para el eje Z</b>,
+      acompasados por una correa en la parte superior de la impresora para
+      conseguir que el eje siempre esté bien nivelado con respecto a la cama
+      caliente.</p>\r
 
-      <p>Tanto la Artillery Genius como la Ender 3 están siendo muy exitosas debido a que si se tuviesen que definir en pocas palabras, éstas serían sencillez y facilidad de uso. En este contexto, es importante conocer las ventajas de cada una a fin de determinar cuál es la más conveniente según las necesidades o requerimientos de cada persona.</p>
+      <p>Sin duda, estos motores otorgan a la impresora una mayor
+      precisión y firmeza en impresiones a altas velocidades.</p>\r\n"
+  - backgroundColor: Claro
+    showBorder: false
+    sectionContent: "<p>La electrónica es un elemento muy importante en las
+      impresoras 3D y Artillery la cuida de una forma excelente, ya que <b>en su
+      estilizada base recoge todo para que no haya ningún cable a la
+      vista.</b></p>\r
 
-      <p>Por eso hemos realizado una comparativa entre la Artillery Genius y la Ender 3 a partir de su diseño, formato, estructura, funcionamiento general, calidad de las piezas, electrónica y precio.</p>
+      <p>En esa base también <b>incorpora una pantalla táctil TFT con una
+      interfaz de usuario fácil de usar</b> con submenús coloridos para utilizar
+      de forma fácil e intuitiva las diferentes funcionalidades de la impresora,
+      mejorando notablemente la experiencia de usuario.</p>\r
 
-      <p>Hay que decir que en general los dos modelos de impresoras 3D son impresoras con muy buena calidad y que ofrecen a buenas prestaciones a sus usuarios, no obstante, es cierto que la Artillery Genius es más reciente que la Ender, lo que le permite tener algunas mejoras, correcciones de fallos, y funcionalidades que eran muy solicitadas por los usuarios del sector.</p>
+      <p>Además: ¡Adiós micro SD! Si algo hay que agradecerle a Artillery
+      es la <b>mejora de conexión con un puerto USB</b> ya que ahora no te verás
+      obligado a usar siempre una tarjeta micro SD para imprimir tus
+      proyectos.</p>\r\n"
+    title: Excelente electrónica y conectividad.
+  - backgroundColor: Claro
+    showBorder: false
+    title: Volumen de impresión y precisión.
+    sectionContent: "<p><b>El volumen de impresión de la Artillery Genius es de
+      220x220x250mm</b>, un volumen intermedio e interesante. Ese volumen unido
+      a que puede alcanzar los 100 mm/s de velocidad de impresión, crea una
+      cualidad muy útil para cuando se le exige una importante demanda o
+      intensidad de trabajo.</p>\r
 
-      <h3 class="py-5 font-bold text-primary-500">Diseño, formato y estructura</h3>
+      <p>Aunque evidentemente para grandes velocidades hay que balancear
+      los ajustes entre rapidez y calidad, hay que reconocer que a velocidades
+      medias se pueden conseguir <b>gran precisión en los pequeños
+      detalles.</b></p>\r"
+  - backgroundColor: Claro
+    showBorder: false
+    title: Cama caliente integrada e impresiones silenciosas.
+    sectionContent: "<p>La impresora 3D Artillery Genius trae una <b>cama
+      vitrocerámica integrada a su base</b>, lo que significa que no se puede
+      retirar para despegar las piezas. Pensarás: ¿eso no es un incordio? Te
+      diré que no, ya que las piezas se despegan fácilmente una vez termina la
+      impresión y la base se enfría.</p>\r
 
-      <p>A primera vista, la principal diferencia que se ve entre la Ender 3 y la Artillery, es que esta última posee unos perfiles y un marco exterior bastante más gruesos que su competidora, otorgándole de esta forma bastante estabilidad y rigidez tanto a la estructura de la máquina, como a los ejes, haciendo por ende que mejoren las impresiones realizadas con ella.</p>
+      <p>Además, gracias a ello consigue que la temperatura sea homogénea
+      en toda la superficie, consiguiendo una mayor adherencia de las piezas y,
+      como la cama es ligera, <b>se calienta muy rápido</b>, algo sorprendente
+      ya que puede pasar de la temperatura ambiente a 110°C en menos de un
+      130s.</p>\r
 
-      <p>También cabe destacar la utilización de plástico en la parte superior para unir las dos partes del marco en vez de aluminio, como estamos acostumbrados últimamente en las impresoras de Creality y de Anet, esto le da un toque diferencial, a la par que queda bastante estético a nuestro parecer.</p>
+      <p>Además, esta impresora 3D <b>trae de serie controladores paso a
+      paso ultra silenciosos.</b> ¿Sabes lo qué significa? Significa que al
+      imprimir se genera muy poco ruido, por lo tanto, las impresiones son muy
+      silenciosas.</p>\r\n"
+  - backgroundColor: Claro
+    showBorder: false
+    sectionContent: "<p>Esta impresora 3D tiene <b>un sistema de extrusión
+      directa</b> que minimiza la distancia entre el punto de entrada del
+      extrusor y el <i>nozzle</i>, para que sea más sencillo controlar el acceso
+      del material.</p>\r
 
-      <p>La Artillery Genius, a diferencia de la Ender, tiene 2 motores para el eje Z, que además van acompasados por una correa en la parte superior de la impresora, añadiendo nuevamente fiabilidad y precisión en las piezas impresas.</p>
+      <p>Este es un gran punto a su favor si quieres usar materiales
+      flexibles o más técnicos ya que la configuración de nuevos materiales es
+      mucho más simple y se reduce la posibilidad de atascos e impresiones
+      fallidas.</p>\r
 
-      <p>Además, la artillery también ha seguido la estela de la Ender 3, y ha añadido en la parte superior un portafilamento donde se puede poner las bobinas de filamento durante la impresión, sin embargo, cabe destacar que este portafilamento es ajustable al tamaño de la bobina que se esté utilizando, lo que le da un toque muy interesante en cuanto a usabilidad y experiencia de usuario de la impresora.</p>
+      <p>Además, <b>posee un sensor de final o rotura de filamento</b>,
+      una funcionalidad que no es que sea imprescindible, pero puede ser muy
+      útil, sobre todo para aprovechar al máximo su volumen de impresión o para
+      realizar una pieza que requiera de varios rollos de filamento para su
+      elaboración. Eso unido a su <b>sistema de detección y recuperación de
+      impresión tras un corte de energía</b>, genera gran confianza a la hora de
+      imprimir.</p>\r\n"
+    title: Sistema de extrusión directa
+  - backgroundColor: Claro
+    showBorder: false
+    sectionContent: "<p>Gracias a sus características y a la gran experiencia de
+      usuario que proporciona, esta impresora <b>ha generado una gran comunidad
+      de usuarios</b> que comparten las novedades, mejoras y detalles
+      interesantes sobre esta impresora.</p>\r
 
-      <h3 class="py-5 font-bold text-primary-500">Sensor de filamento</h3>
+      <p>Además, como consecuencia del gran volumen de demanda,
+      <b>Artillery ha sacado al mercado la versión Genius Pro</b>. Una versión
+      que incluye mejoras solicitadas por los usuarios como un sistema de
+      autonivelación, soportes para las bobinas de filamento o drivers
+      ultrasilenciosos.</p>\r\n"
+    title: Gran comunidad y versión mejorada.
+  - backgroundColor: Claro
+    showBorder: false
+    title: Montaje rápido y sencillo.
+    sectionContent: "<p>La Artillery Genius es una impresora FDM preensamblada, por
+      lo que <b>su montaje es muy rápido</b>, ya que consiste prácticamente en
+      unir las dos estructuras que conforman la impresora, la unión de los
+      cables que irán a la electrónica de la impresora y lista para imprimir.
+      Sencillo, ¿verdad?</p>\r
 
-      <p>La Artillery Genius posee un sensor de final de filamento, una funcionalidad que no es que sea imprescindible, pero que dependiendo del uso que se le vaya a dar a la impresora, puede ser muy útil, sobre todo para impresiones de piezas muy grandes, o que requieran de varios rollos de filamento para su elaboración, por lo tanto, es una funcionalidad añadida que no está nada mal.</p>
+      <p>Aunque tiene un montaje sencillo, te aconsejo <b>prestar especial
+      atención a la conexión de los cables</b> no solo para su puesta en
+      funcionamiento, sino para que la impresora no sufra cortes o quemaduras
+      que la dañen a corto plazo.</p>\r
 
-      <h3 class="py-5 font-bold text-primary-500">Electrónica</h3>
+      <p>Para cualquier duda, en la caja encontrarás un manual de
+      instrucciones muy completo con todo el montaje, configuración, calibración
+      y uso de la impresora 3D; así como todas las piezas y herramientas
+      necesarias para su montaje.</p>\r
 
-      <p>Como hemos comentado antes, la artillery es más reciente, por lo que se nota que también se están aprovechando de su ventaja, ya que últimamente, estamos viendo como algunas impresoras están dejando de tener los cables tirados por toda la impresora, e incluso están empezando a traer pantallas táctiles que mejoran la experiencia de usuario.</p>
+      <p>Pero para mí, un gran punto a su favor es que trae unas piezas de
+      repuesto, lo cual es un detalle muy bueno de la marca hacia el
+      usuario.</p>\r
 
-      <p>Pues bien, la artillery Genius, no podía ser menos, y soluciona esos dos problemas muy bien, prácticamente no hay ningún cable a la vista, y además trae una pantalla táctil con un menú a color para realizar las diferentes funcionalidades de la impresora, calentar, la impresora, extraer o insertar filamento, imprimir…, mejorando nuevamente la experiencia de usuario.</p>
+      <p><h3>Consejo</p></h3>\r
 
-      <h3 class="py-5 font-bold text-primary-500">Cama caliente</h3>
+      <p>Aunque con la impresora vienen las llaves Allen necesarias,
+      siempre es recomendable utilizar un set de destornilladores de mano, ya
+      que te harán más sencillo el montaje y, seguramente, te ayudarán a que los
+      tornillos queden mejor apretados y enroscados.</p>\r
 
-      <p>El volumen de impresión de ambas es de 220x220x250mm. La artillery trae una cama caliente con láminas microperforadas a la que se adhieren las piezas durante la impresión, mientras que la ender en su versión original viene con un buildTack, si se quisiera un cristal templado, habría que comprarlo a parte, o comprar una versión de la ender 3 que la traiga por defecto.</p>
-
-      <p>cabe destacar que en la artillery la base está pegada, por lo que no se puede retirar para despegar las piezas, sin embargo las piezas se despegan fácilmente una vez termina la impresión y la base se enfría.</p>
-
-      <h3 class="py-5 font-bold text-primary-500">Calidad de materiales y agilidad</h3>
-
-      <p>Tanto la Artillery Genius como la Ender 3 están hechas con aluminio, un material más caro pero de muy larga duración y ligero. Al mismo tiempo, el aluminio es menos pesado, lo que redunda en mayor facilidad para las piezas a la hora de trabajar. También estas impresoras 3D se mueven con mayor agilidad y, en consecuencia, realizan los trabajos de forma rápida.</p>
-
-      <p>Esto último implica menor consumo de energía y permite desarrollar una mayor cantidad de objetos o trabajos en un lapso de tiempo determinado.</p>
-
-      <h3 class="py-5 font-bold text-primary-500">Precio</h3>
-
-      <p>Este es uno de los factores en los que seguro más te fijarás a la hora de elegir una impresora 3D, el precio de ambas es similar, aunque la Genius es un poco más cara. No obstante, la diferencia varía según la plataforma y el sitio donde se comercializa. De todos modos, se trata de un valor escaso teniendo en cuenta todo lo que hemos comentado un poco más arriba.</p>
-
-      <p>Cabe destacar que el precio se justifica también por la calidad de sus materiales (placa, cables, filamento, pantalla LCD, etc) y por su precisión al momento de crear piezas e impresiones, y además, el que traiga estas nuevas funcionalidades y correcciones, hacen que encarezcan un poco el precio de la máquina.</p>
-    backgroundColor: Claro
+      <p>Aquí tienes algunos sets de destornilladores que te pueden venir
+      muy bien:</p>\r\n"
 comparation:
   showComparation: true
   title: Comparativa
@@ -140,12 +208,10 @@ comparation:
       - Pantalla
 properties:
   title: Características técnicas de la impresora 3D Artillery Genius
-  sectionContent: <p>Lo cierto es que la Artillery Genius ha revolucionado el
-    mercado desde su llegada. Si hablamos del modelo, vemos que posee una
-    relación casi perfecta entre su altura, anchura y profundidad. Además,
-    alcanza rápidamente su temperatura ideal (alrededor de 100°C), lo que le
-    permite trabajar de forma óptima y la protege en caso de
-    sobrecalentamiento.</p>
+  sectionContent: <p>Lo cierto es que la impresora 3D Artillery Genius ha
+    revolucionado el mercado de la impresión 3D desde su llegada al poseer una
+    <b>buena relación entre diseño y volumen</b> para conseguir unos resultados
+    de gran calidad.</p>
   feature:
     extrusorTemperature: 240ºC
     filamentDiameter: 1,73
@@ -205,21 +271,19 @@ properties:
       </div>
 whereBuy:
   title: Comprar Artillery Genius
-  sectionContent: <p>La Artillery Genius normalmente la encontrarás en Aliexpress,
-    es el sitio donde más opciones de compra hay, pero en Amazon y Gearbest
-    también es posible que la encuentres.</p>
-  whereBuyText: >-
-    <h3 class="py-3 text-xl font-bold text-center text-primary-500">Amazon</h3>
+  sectionContent: "<p><b>Si quieres comprar la impresora Artillery Genius podrás
+    hacerlo en Amazon o Aliexpress.</p></b>\r\n"
+  whereBuyText: "<p>Si eres usuario de Amazon, podrás comprar la impresora
+    directamente a la propia marca Artilllery. Como siempre con la seguridad de
+    Amazon en devolución, envío y garantía.</p>\r
 
-    <p>Puedes encontrar esta impresora en la tienda oficial de Amazon de la marca Artillery.</p>
+    <p>Pero también, al ser una marca fundada en China, Artillery tiene su
+    tienda en Aliexpress donde la puedes encontrar a un mejor precio.</p>\r
 
-    <h3 class="py-3 text-xl font-bold text-center text-primary-500">Aliexpress</h3>
+    <p>En cualquiera de los casos, gracias a que tiene almacenes en Europa
+    es fácil que la recibas en poco tiempo en tu casa.\r
 
-    <p>La propia marca de Artillery también tiene tienda en Aliexpress, por lo que también la puedes encontrará aquí.</p>
-
-    <h3 class="py-3 text-xl font-bold text-center text-primary-500">La tienda de Artillery</h3>
-
-    <p>También la puedes encontrar en la tienda oficial de Artillery.</p>
+    </p>"
 products:
   productsList:
     type: grid
@@ -273,53 +337,93 @@ products:
         Rating: "5.0"
   showProductsList: true
   title: Productos relacionados con la Artillery Genius
-  sectionContent: Aquí puedes ver algunos productos relacionados con la impresora
+  sectionContent: Aquí te muestro algunos productos relacionados con la impresora
     3D Artillery Genius que pueden interesarte si estás pensando en comprar esta
     impresora.
 advantagesDisadvantajes:
   title: Ventajas y desventajas de la Artillery Genius
-  sectionContent: <p>Artillery se ha hecho un hueco en el mercado rápidamente con
-    esta impresora y no es para menos. Con ella han conseguido una impresora 3D
-    robusta y estable a un precio muy competitivo. Veamos algunas de sus
-    ventajas que puede que te ayuden a decidir si esta es tu impresora 3D.</p>
+  sectionContent: >-
+    <p>Artillery se ha hecho un hueco entre los makers con esta impresora y no
+    es para menos. Con ella han conseguido <b>una impresora 3D robusta y estable
+    a un precio muy competitivo.</b></p>
+
+    <p>Te dejo con algunas ventajas y desventajas de esta impresora que seguro que te ayudan a decidir si esta impresora es para ti:</p>
   advantages:
-    - text: Esta impresora 3D tiene una gran estabilidad y precisión durante la
-        impresión gracias a la disposición de sus dos motores para el eje Z
-        unidos mediante una correa, así como la utilización de perfiles que
-        tienen un grosor superior al de otras impresoras.
-    - text: Una gran ventaja que tiene es que en caso de interrupción o pérdida de
-        energía eléctrica se guarda el trabajo hasta lo último que se realizó y,
-        una vez que se normaliza la situación, reanuda de forma automática la
-        impresión 3D.
-    - text: En todo momento, la Artillery Genius hace muy poco ruido, incluso cuando
-        está al máximo rendimiento. Esto es gracias a sus controladores de paso,
-        los cuales reducen drásticamente el nivel de ruido. Además, contiene un
-        sistema accionado por correas que sustituye a los clásicos tornillos y
-        recude más aún el ruido.
-    - text: La velocidad de impresión puede alcanzar los 100 mm/s, aunque
-        evidentemente hay que balancear los ajustes entre rapidez y calidad, sin
-        embargo, esta cualidad es muy útil para cuando se le pide una importante
-        demanda o intensidad de trabajo.
-    - text: Esta impresora protege los trabajos contra una posible fuga de calor
-        mediante una extrusora de accionamiento directo y una cama de calor con
-        calentamiento rápido y protección térmica. Y es que si hablamos de su
-        cama, podemos destacar que tarda entre tres y cinco minutos en alcanzar
-        los 110º grados (su temperatura máxima), algo que ayuda a que los
-        filamentos puedan adherirse fácilmente a ella.
-    - text: Esta impresora 3D posee un montaje muy sencillo que se lleva a cabo en
-        pocos minutos. El manual de instrucciones que trae es muy claro y el
-        único requisito es cumplir a la perfección con todas las medidas de
-        ajuste de las piezas. Aunque, si se tienen dudas o inconvenientes, es
-        recomendable consultar a la comunidad de la impresora.
+    - text: Añade la conexión con puerto USB, lo cual es muy cómodo en comparación con
+        otras impresoras.
+    - text: Su método de extrusión directa es su gran baza ya que te quita
+        preocupaciones y te permite el uso de multitud de materiales.
+    - text: En caso de interrupción o pérdida de energía eléctrica se guarda el
+        trabajo hasta lo último que realizó y, una vez que se normaliza la
+        situación, reanuda de forma automática la impresión 3D.
+    - text: La Artillery Genius hace muy poco ruido, incluso cuando está al máximo
+        rendimiento. Lo que te permite tenerla en funcionamiento en todo momento
+        sin que te moleste a la hora de trabajar o dormir.
+    - text: "Al venir preensambla, su montaje es muy sencillo y se hace en poco
+        tiempo. "
   disadvantages:
-    - text: Los cables del eje X y del Eje Y pueden tener problemas y conviene
-        reforzarlos con alguna mejora para que no se estropeen con el tiempo
-    - text: El soporte para el filamento puede ser un poco molesto de utilizar, ya que
-        hay que adaptarlo para cada tipo de filamento que se vaya a insertar en
-        la impresora.
-    - text: Es posible que en algunas ocasiones sea necesario tensar las correas de la
-        impresora sobre todo del Eje X, ya que no vienen bien tensas de fábrica,
-        lo que puede hacer que no salgan las impresiones del todo bien.
+    - text: No tiene autonivelación, aunque trae una conexión preparada para
+        incorporar un BL Touch.
+    - text: El soporte del filamento es su punto débil, ya que su diseño te obliga a
+        tener que ajustarlo a cada bobina de filamento y no es compatible con
+        algunas bobinas.
+    - text: Necesita impresión de mejoras para proteger los cables de la cama. Son
+        muchos los usuarios que vienen experimentando problemas en esa parte
+        tras muchas impresiones por lo que es casi obligatorio imprimir esta
+        mejora
+    - text: Muchos usuarios han comentado que las correas del eje X no vienen lo
+        suficientemente tensas de fábrica, por lo que puede ser necesario
+        tensarlas, o incluso imprimir algún componente para que queden bien
+        tensas.
+prints:
+  printImage:
+    - src: /static/img/impresion-artillery-1.png
+      alt: Impresión de Groot en Longer LK5 Pro
+    - src: /static/img/impresion-artillery-5.png
+      alt: Donkey Kong
+    - src: /static/img/impresion-artillery-4.png
+      alt: Impresión de pulpo en Artillery Genius
+    - src: /static/img/impresion-artillery-0.png
+      alt: Test de retracciones
+    - src: /static/img/impresion-artillery-2.png
+      alt: Cubo Artillery
+    - src: /static/img/impresion-artillery-3.png
+      alt: Pulpo impreso en 3D
+    - src: /static/img/impresion-artillery-6.png
+      alt: Donkey Kong
+  sectionContent: <p>¿Quieres comprobar de primera mano su calidad? Te muestro
+    algunas impresiones realizadas con la Artillery Genius:</p>
+  title: Impresiones de Artillery Genius
+upgradesToPrint:
+  title: Mejoras para imprimir
+  sectionContent: "<p>La Artillery Genius no necesita grandes mejoras, ya que
+    viene bien preparada de serie.</p>\r
+
+    <p>Sin embargo, aquí te muestro alguna mejora interesante:\r
+
+    </p>"
+  upgrades:
+    - image: https://cdn.thingiverse.com/assets/89/cc/8e/52/04/featured_preview_artillery_genus_-_extruder_cover_fan_v3.png
+      text: Cobertura para el extrusor
+      link: https://www.thingiverse.com/thing:4205794
+    - image: https://cdn.thingiverse.com/assets/b7/d5/e9/67/c6/featured_preview_schutz_V6.jpg
+      link: https://www.thingiverse.com/thing:4295171
+      text: Cable protector para el eje Z
+    - text: Adaptador para el soporte de filamento
+      link: https://www.thingiverse.com/thing:4286244
+      image: https://cdn.thingiverse.com/assets/ca/cf/19/28/38/featured_preview_Artillery_Genius_Easy_Spool_Adapter.png
+    - text: Sensor de filamento
+      link: https://www.thingiverse.com/thing:4042127
+      image: https://cdn.thingiverse.com/assets/8c/e0/9d/e4/17/featured_preview_2019-12-19_16.57.36.jpg
+    - text: Soporte para el cable de la cama
+      link: https://www.thingiverse.com/thing:4389200
+      image: https://cdn.thingiverse.com/assets/10/76/90/2c/f5/Artillery_Genius_cable_holder.jpg
+    - link: https://www.thingiverse.com/thing:4543710
+      text: Cubierta para la pantalla
+      image: https://cdn.thingiverse.com/assets/fd/c0/b3/a2/88/featured_preview_IMG_20200716_175115.jpg
+    - link: https://www.thingiverse.com/thing:4619215
+      text: "Varias cubiertas "
+      image: https://cdn.thingiverse.com/assets/2e/ae/28/2c/5e/featured_preview_photo5765123434962072651.jpg
 faqs:
   showFaqs: true
   sectionContent: Aqui tienes algunas de las preguntas más frequentes que se hacen
@@ -344,74 +448,60 @@ faqs:
         función  a través de la cual puedes realizar el cambio.</p>
 
         <p>Simplemente caliente el hotend a la temperatura del filamento que quieres extraer y o insertar, pulsa el cambio de filamento y ve siguiendo los pasos que te va indicando la pantalla.</p>
-prints:
-  printImage:
-    - src: /static/img/impresion-artillery-1.png
-      alt: Impresión de Groot en Longer LK5 Pro
-    - src: /static/img/impresion-artillery-5.png
-      alt: Donkey Kong
-    - src: /static/img/impresion-artillery-4.png
-      alt: Impresión de pulpo en Artillery Genius
-    - src: /static/img/impresion-artillery-0.png
-      alt: Test de retracciones
-    - src: /static/img/impresion-artillery-2.png
-      alt: Cubo Artillery
-    - src: /static/img/impresion-artillery-3.png
-      alt: Pulpo impreso en 3D
-    - src: /static/img/impresion-artillery-6.png
-      alt: Donkey Kong
-  sectionContent: <p>Te mostramos algunas impresiones realizadas con la Artillery Genius</p>
-  title: Impresiones de Artillery Genius
-upgradesToPrint:
-  title: Mejoras para imprimir
-  sectionContent: <p>La Artillery Genius no necesita grandes mejoras, ya que viene
-    bastante bien preparada de serie. Sin embargo, aquí te mostramos algunas de
-    las mejoras que más interesantes nos han resultado.</p>
-  upgrades:
-    - image: https://cdn.thingiverse.com/assets/89/cc/8e/52/04/featured_preview_artillery_genus_-_extruder_cover_fan_v3.png
-      text: Cobertura para el extrusor
-      link: https://www.thingiverse.com/thing:4205794
-    - image: https://cdn.thingiverse.com/assets/b7/d5/e9/67/c6/featured_preview_schutz_V6.jpg
-      link: https://www.thingiverse.com/thing:4295171
-      text: Cable protector para el eje Z
-    - text: Adaptador para el soporte de filamento
-      link: https://www.thingiverse.com/thing:4286244
-      image: https://cdn.thingiverse.com/assets/ca/cf/19/28/38/featured_preview_Artillery_Genius_Easy_Spool_Adapter.png
-    - text: Sensor de filamento
-      link: https://www.thingiverse.com/thing:4042127
-      image: https://cdn.thingiverse.com/assets/8c/e0/9d/e4/17/featured_preview_2019-12-19_16.57.36.jpg
-    - text: Agarradera para la cama caliente de la impresora
-      link: https://www.thingiverse.com/thing:4136438
-      image: https://cdn.thingiverse.com/assets/ae/ba/3f/27/e8/featured_preview_Genius_Logo_Bed_Handle.png
 finalValuation:
-  title: Nuestra opinion final de la impresora 3D Artillery Genius
-  sectionContent: >-
-    <p>La impresora 3D Artillery Genius es ideal para trabajar. Como has podido
-    ver, se trata de un producto muy destacado, con muchos beneficios y con una
-    excelente relación precio-calidad que la convierte en una interesante
-    inversión si se va a utilizar a menudo.</p>
+  title: Conclusión de la impresora 3D Artillery Genius
+  sectionContent: "<p>La marca Artillery, aunque es relativamente joven, se ha
+    hecho un hueco en la impresión 3D conquistando a los usuarios con sus
+    impresoras de gran calidad llenas de mejoras ansiadas hasta la fecha.</p>\r
 
-    <p>Creemos que la Artillery Genius es una impresora 3D perfecta para cualquier usuario que quiera empezar en la impresión 3D, tiene un tamaño ideal para cualquier escritorio o parte de un hogar, brinda los mejores resultados y supera las expectativas de sus usuarios.</p>
+    <p>La impresora 3D Artillery Genius <b>es una impresora 3D perfecta para
+    cualquier usuario, incluidos los que quieran empezar en la impresión 3D</b>,
+    ya que gracias a su diseño y características consigue una estupenda
+    experiencia de usuario.</p>\r
 
-    <p>Y… poco más puedo decirte de esta estupenda impresora, así que hasta aquí la review.</p>
+    <p>Sin duda, nos encontramos con una impresora <b>con una excelente
+    relación calidad-precio</b>, teniendo en cuenta las mejoras que incluye,
+    haciendo que sea una interesante inversión para trabajar con ella desde el
+    primer día.</p>\r
 
-    <p>¡Ahora es tu turno! ¿Te ha resultado útil la información?</p>
+    <p>Además, tiene <b>un tamaño ideal para cualquier escritorio</b>,
+    aunque puede parecer más grande comparada con otras impresoras del mismo
+    volumen de impresión, pero gracias a ese tamaño, su diseño y su estructura
+    consigue crear una impresora sólida para conseguir los mejores
+    resultados.</p>\r
+
+    <p>Tras varias impresiones, puedo decirte que <b>la calidad de impresión
+    es increíble</b> y que es cierto que <b>es silenciosa</b>, lo cual se
+    agradece mucho. Además, tanto la velocidad de impresión como la velocidad de
+    calentamiento de la cama superan las expectativas iniciales.</p>\r
+
+    \r
+
+    <p>Por todo ello, creo que la Artillery Genius es una gran impresora 3D.
+    Tanto si quieres una impresora que te permita aprender poco a poco como si
+    quieres una impresora duradera que te ayude en tus creaciones, no pases por
+    alto esta opción.</p>\r
+
+    <p>Y… poco más puedo decirte de esta estupenda impresora, así que hasta
+    aquí la review.</p>\r
+
+    <p>¡Ahora es tu turno! ¿Te ha resultado útil la información?\r
+
+    </p>"
 callToAction:
   title: Longer LK5 PRO
   actionText: >-
     <p>¿Te ha gustado la impresora 3D Artillery Genius?</p>
 
 
-    <p>Te recuerdo los enlaces dónde puedes adquirirla. Tanto en Amazon como en Aliexpress como en la tienda oficial de Artillery.</p>
-
-    <p>Por supuesto, hay muchas más tiendas, pero estas son las principales en las que puedes encontrarlas.</p>
+    <p>Te recuerdo los enlaces dónde puedes adquirirla. Tanto en Amazon como en Aliexpress en las tiendas oficiales de Artillery.</p>
 
 
     <p>Recuerda que, comprando a través de estos enlaces, ayudarás a la continuidad de la página para que pueda seguir creciendo poco a poco y trayéndote toda la información sobre impresión 3D.</p>
 date: 2021-08-26T03:33:35.530Z
-metaTitle: ▷ Impresora 3D Artillery Genius, la impresora 3D del momento
-metaDescription: Conoce en profundidad la impresora 3D Artillery Genius.
-  características, mejores ofertas, ventajas y comparativas.
+metaTitle: "▷ Impresora 3D Artillery Genius: la impresora que ha marcado tendencia"
+metaDescription: Descubre en profundidad la impresora 3D Artillery Genius, una
+  impresora de calidad para conseguir los mejores impresiones.
 tags:
   - tags
 ---
