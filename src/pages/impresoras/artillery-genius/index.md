@@ -34,7 +34,7 @@ productsImages:
   - src: /static/img/artillery-genius-2.png
     alt: Extrusor Artillery Genius
 customSections:
-  - showBorder: true
+  - showBorder: false
     title: Elegante diseño y estructura
     sectionContent: "<p>Algo que caracteriza a las impresoras de Artillery es su
       diseño. <b>Su estructura posee unos perfiles y un marco exterior de
@@ -50,29 +50,32 @@ customSections:
   - backgroundColor: Claro
     showBorder: false
     title: Doble motor en el eje Z
-    sectionContent: "<p>La Artillery Genius <b>tiene dos motores para el eje Z</b>,
-      acompasados por una correa en la parte superior de la impresora para
-      conseguir que el eje siempre esté bien nivelado con respecto a la cama
-      caliente.</p>\r
+    sectionContent: >-
+      <div class="flex flex-col justify-center md:flex-row">
+        <div class="flex flex-col items-center min-w-max"><img src="/img/doble-motor-genius.jpg" class="p-10"
+            alt="doble motor" />
+        </div>
+        <div class="flex flex-col p-4 flex-2">
+      <p>La Artillery Genius <b>tiene dos motores para el eje Z</b>, acompasados por una correa en la parte superior de la impresora para conseguir que el eje siempre esté bien nivelado con respecto a la cama caliente.</p>
 
-      <p>Sin duda, estos motores otorgan a la impresora una mayor
-      precisión y firmeza en impresiones a altas velocidades.</p>\r\n"
+      <p>Sin duda, estos motores otorgan a la impresora una mayor precisión y firmeza en impresiones a altas velocidades.</p>
+        </div>
+      </div>
   - backgroundColor: Claro
     showBorder: false
-    sectionContent: "<p>La electrónica es un elemento muy importante en las
-      impresoras 3D y Artillery la cuida de una forma excelente, ya que <b>en su
-      estilizada base recoge todo para que no haya ningún cable a la
-      vista.</b></p>\r
+    sectionContent: >-
+      <div class="flex flex-col justify-center md:flex-row">
+        <div class="flex flex-col p-4 flex-2">
+      <p>La electrónica es un elemento muy importante en las impresoras 3D y Artillery la cuida de una forma excelente, ya que <b>en su estilizada base recoge todo para que no haya ningún cable a la vista.</b></p>
 
-      <p>En esa base también <b>incorpora una pantalla táctil TFT con una
-      interfaz de usuario fácil de usar</b> con submenús coloridos para utilizar
-      de forma fácil e intuitiva las diferentes funcionalidades de la impresora,
-      mejorando notablemente la experiencia de usuario.</p>\r
+      <p>En esa base también <b>incorpora una pantalla táctil TFT con una interfaz de usuario fácil de usar</b> con submenús coloridos para utilizar de forma fácil e intuitiva las diferentes funcionalidades de la impresora, mejorando notablemente la experiencia de usuario.</p>
 
-      <p>Además: ¡Adiós micro SD! Si algo hay que agradecerle a Artillery
-      es la <b>mejora de conexión con un puerto USB</b> ya que ahora no te verás
-      obligado a usar siempre una tarjeta micro SD para imprimir tus
-      proyectos.</p>\r\n"
+      <p>Además: ¡Adiós micro SD! Si algo hay que agradecerle a Artillery es la <b>mejora de conexión con un puerto USB</b> ya que ahora no te verás obligado a usar siempre una tarjeta micro SD para imprimir tus proyectos.</p>
+       </div>
+        <div class="flex flex-col items-center min-w-max"><img src="/img/basegenius.jpg" alt="doble motor"
+            class="p-10" />
+        </div>
+      </div>
     title: Excelente electrónica y conectividad.
   - backgroundColor: Claro
     showBorder: false
@@ -90,22 +93,19 @@ customSections:
   - backgroundColor: Claro
     showBorder: false
     title: Cama caliente integrada e impresiones silenciosas.
-    sectionContent: "<p>La impresora 3D Artillery Genius trae una <b>cama
-      vitrocerámica integrada a su base</b>, lo que significa que no se puede
-      retirar para despegar las piezas. Pensarás: ¿eso no es un incordio? Te
-      diré que no, ya que las piezas se despegan fácilmente una vez termina la
-      impresión y la base se enfría.</p>\r
+    sectionContent: >-
+      <div class="flex flex-col justify-center md:flex-row">
+        <div class="flex flex-col p-4 flex-2">
+      <p>La impresora 3D Artillery Genius trae una <b>cama vitrocerámica integrada a su base</b>, lo que significa que no se puede retirar para despegar las piezas. Pensarás: ¿eso no es un incordio? Te diré que no, ya que las piezas se despegan fácilmente una vez termina la impresión y la base se enfría.</p>
 
-      <p>Además, gracias a ello consigue que la temperatura sea homogénea
-      en toda la superficie, consiguiendo una mayor adherencia de las piezas y,
-      como la cama es ligera, <b>se calienta muy rápido</b>, algo sorprendente
-      ya que puede pasar de la temperatura ambiente a 110°C en menos de un
-      130s.</p>\r
+      <p>Además, gracias a ello consigue que la temperatura sea homogénea en toda la superficie, consiguiendo una mayor adherencia de las piezas y, como la cama es ligera, <b>se calienta muy rápido</b>, algo sorprendente ya que puede pasar de la temperatura ambiente a 110°C en menos de un 130s.</p>
 
-      <p>Además, esta impresora 3D <b>trae de serie controladores paso a
-      paso ultra silenciosos.</b> ¿Sabes lo qué significa? Significa que al
-      imprimir se genera muy poco ruido, por lo tanto, las impresiones son muy
-      silenciosas.</p>\r\n"
+      <p>Además, esta impresora 3D <b>trae de serie controladores paso a paso ultra silenciosos.</b> ¿Sabes lo qué significa? Significa que al imprimir se genera muy poco ruido, por lo tanto, las impresiones son muy silenciosas.</p>
+       </div>
+        <div class="flex flex-col items-center min-w-max"><img src="/img/camacalientegenius.jpg" alt="doble motor"
+            class="p-10" />
+        </div>
+      </div>
   - backgroundColor: Claro
     showBorder: false
     sectionContent: "<p>Esta impresora 3D tiene <b>un sistema de extrusión
@@ -128,53 +128,54 @@ customSections:
     title: Sistema de extrusión directa
   - backgroundColor: Claro
     showBorder: false
-    sectionContent: "<p>Gracias a sus características y a la gran experiencia de
-      usuario que proporciona, esta impresora <b>ha generado una gran comunidad
-      de usuarios</b> que comparten las novedades, mejoras y detalles
-      interesantes sobre esta impresora.</p>\r
+    title: Montaje rápido y sencillo.
+    sectionContent: >-
+      <div class="flex flex-col justify-center md:flex-row">
+        <div class="flex flex-col p-4 flex-2">
+      <p>La Artillery Genius es una impresora FDM preensamblada, por lo que <b>su montaje es muy rápido</b>, ya que consiste prácticamente en unir las dos estructuras que conforman la impresora, la unión de los cables que irán a la electrónica de la impresora y lista para imprimir. Sencillo, ¿verdad?</p>
 
-      <p>Además, como consecuencia del gran volumen de demanda,
-      <b>Artillery ha sacado al mercado la versión Genius Pro</b>. Una versión
-      que incluye mejoras solicitadas por los usuarios como un sistema de
-      autonivelación, soportes para las bobinas de filamento o drivers
-      ultrasilenciosos.</p>\r\n"
-    title: Gran comunidad y versión mejorada.
+      <p>Aunque tiene un montaje sencillo, te aconsejo <b>prestar especial atención a la conexión de los cables</b> no solo para su puesta en funcionamiento, sino para que la impresora no sufra cortes o quemaduras que la dañen a corto plazo.</p>
+
+      <p>Para cualquier duda, en la caja encontrarás un manual de instrucciones muy completo con todo el montaje, configuración, calibración y uso de la impresora 3D; así como todas las piezas y herramientas necesarias para su montaje.</p>
+
+      <p>Pero para mí, un gran punto a su favor es que trae unas piezas de repuesto, lo cual es un detalle muy bueno de la marca hacia el usuario.</p>
+
+      <p><h3>Consejo</p></h3>
+
+      <p>Aunque con la impresora vienen las llaves Allen necesarias, siempre es recomendable utilizar un set de destornilladores de mano, ya que te harán más sencillo el montaje y, seguramente, te ayudarán a que los tornillos queden mejor apretados y enroscados.</p>
+
+      <p>Aquí tienes algunos sets de destornilladores que te pueden venir muy bien:</p>
+       </div>
+        <div class="flex flex-col items-center min-w-max"><img src="/img/herramientas.jpg" alt="doble motor"
+            class="p-10" />
+        </div>
+      </div>
   - backgroundColor: Claro
     showBorder: false
-    title: Montaje rápido y sencillo.
-    sectionContent: "<p>La Artillery Genius es una impresora FDM preensamblada, por
-      lo que <b>su montaje es muy rápido</b>, ya que consiste prácticamente en
-      unir las dos estructuras que conforman la impresora, la unión de los
-      cables que irán a la electrónica de la impresora y lista para imprimir.
-      Sencillo, ¿verdad?</p>\r
+    sectionContent: >-
+      <div class="flex flex-col justify-center md:flex-row">
+        <div class="flex flex-col items-center min-w-max"><img src="/img/community.png" class="p-10"
+            alt="doble motor" />
+        </div>
+        <div class="flex flex-col p-4 flex-2">
+      <p>Gracias a sus características y a la gran experiencia de usuario que proporciona, esta impresora <b>ha generado una gran comunidad de usuarios</b> que comparten las novedades, mejoras y detalles interesantes sobre esta impresora.</p>
 
-      <p>Aunque tiene un montaje sencillo, te aconsejo <b>prestar especial
-      atención a la conexión de los cables</b> no solo para su puesta en
-      funcionamiento, sino para que la impresora no sufra cortes o quemaduras
-      que la dañen a corto plazo.</p>\r
-
-      <p>Para cualquier duda, en la caja encontrarás un manual de
-      instrucciones muy completo con todo el montaje, configuración, calibración
-      y uso de la impresora 3D; así como todas las piezas y herramientas
-      necesarias para su montaje.</p>\r
-
-      <p>Pero para mí, un gran punto a su favor es que trae unas piezas de
-      repuesto, lo cual es un detalle muy bueno de la marca hacia el
-      usuario.</p>\r
-
-      <p><h3>Consejo</p></h3>\r
-
-      <p>Aunque con la impresora vienen las llaves Allen necesarias,
-      siempre es recomendable utilizar un set de destornilladores de mano, ya
-      que te harán más sencillo el montaje y, seguramente, te ayudarán a que los
-      tornillos queden mejor apretados y enroscados.</p>\r
-
-      <p>Aquí tienes algunos sets de destornilladores que te pueden venir
-      muy bien:</p>\r\n"
+      <p>Además, como consecuencia del gran volumen de demanda, <b>Artillery ha sacado al mercado la versión Genius Pro</b>. Una versión que incluye mejoras solicitadas por los usuarios como un sistema de autonivelación, soportes para las bobinas de filamento o drivers ultrasilenciosos.</p>
+        </div>
+      </div>
+    title: Gran comunidad y versión mejorada.
 comparation:
   showComparation: true
   title: Comparativa
-  sectionContent: Contenido
+  sectionContent: "<p>Para que puedas apreciar lo que ofrece la impresora
+    Artillery Genius, voy a compararla con otra grande del mercado con el mismo
+    volumen de impresión: la impresora 3D Creality Ender 3.</p>\r
+
+    <p>Ambas impresoras son las grandes favoritas en su rango y no es para
+    menos, ya que ofrecen grandes resultados y son de gran fiabilidad para gran
+    parte de los usuarios.</p>\r
+
+    <p>¡Comparemos!</p>\r\n"
   compareProducts:
     products:
       - id: 0
