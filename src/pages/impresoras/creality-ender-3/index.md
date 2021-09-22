@@ -8,7 +8,7 @@ featuredimage: /static/img/impresora-3d-ender-3.png
 featuredPrinter: true
 submenu:
   showSubmenu: false
-pageTitle: Creality Ender 3, calidad precio imbatible.
+pageTitle: Creality Ender 3, calidad a un precio imbatible.
 links:
   amazonLink: https://amzn.to/2WqpRIa
   aliexpressLink: " https://s.click.aliexpress.com/e/_Asndes"
@@ -62,12 +62,13 @@ customSections:
 
       <p>Aquí puedes encontrar un set de boquillas apropiadas para esta impresora:</p>
     backgroundColor: Claro
+comparation:
+  showComparation: false
 properties:
-  title: Características técnicas de la impresora 3D Longer LK5 Pro
-  sectionContent: Lo cierto es que aunque la marca Longer no es muy conocida, sus
-    productos tienen buena calidad. En la Longer LK5 Pro te encuentras con
-    <b>una buena relación entre diseño, volumen y mecánica</b> para conseguir
-    unos resultados óptimos de impresión.
+  title: Características técnicas de la impresora 3D Creality Ender 3
+  sectionContent: En la Creality Ender 3 te encuentras con <b>una buena relación
+    entre diseño, volumen y mecánica</b> para conseguir unos resultados óptimos
+    de impresión.
   feature:
     extrusorTemperature: 250ºC
     filamentDiameter: 1,73
@@ -128,24 +129,27 @@ properties:
 
       </div>
 whereBuy:
-  title: Comprar Longer LK5 pro
-  sectionContent: <b>Si quieres comprar la impresora Longer LK5 pro, podrás
-    hacerlo en la propia web de Longer, Amazon o Aliexpress.</b>
-  whereBuyText: >
-    <p>Puedes adquirir tu Longer LK5 pro en la web de Longer, la opción más
-    asequible de todas y, para España, con gastos de envío gratis.</p>
+  title: Comprar Creality Ender 3
+  sectionContent: <b>Si quieres comprar la impresora Creality Ender 3 podrás
+    hacerlo en Amazon o Aliexpress.</b>
+  whereBuyText: "<p>Si eres usuario de Amazon, podrás comprar la impresora
+    directamente a la propia marca Artilllery. Como siempre con la seguridad de
+    Amazon en devolución, envío y garantía.</p>\r
 
+    <p>Pero también, al ser una marca fundada en China, Artillery tiene su
+    tienda en Aliexpress donde la puedes encontrar a un mejor precio.</p>\r
 
-    <p>Si eres usuario de Amazon, esta impresora también la vende la propia marca Longer. Como siempre con la seguridad que ofrece Amazon en devolución, envío y garantía.</p>
+    <p>En cualquiera de los casos, gracias a que tiene almacenes en Europa
+    es fácil que la recibas en poco tiempo en tu casa.</p>\r
 
-
-    <p>Pero también, al ser una marca fundada en China, Longer tiene su tienda en Aliexpress donde la puedes encontrar a un precio muy bueno.</p>
-
-
-    <p>En cualquiera de los casos, gracias a que tiene almacenes en Europa (Alemania) es fácil que la recibas en poco tiempo en tu casa (a mí me tardó menos de una semana).</p>
+    \n"
+products:
+  productsList:
+    type: grid
+    productsList: null
 advantagesDisadvantajes:
-  title: Ventajas y desventajas de la Longer LK5 Pro
-  sectionContent: <p>Está claro que Longer LK5 Pro es una impresora 3D robusta y
+  title: Ventajas y desventajas de la Creality Ender 3
+  sectionContent: <p>Está claro que Creality Ender 3 es una impresora 3D robusta y
     firme a un precio muy competitivo. Te dejo con algunas ventajas y
     desventajas de esta impresora que seguro que te ayudan a decidir si esta
     impresora es para ti:</p>
@@ -204,21 +208,15 @@ prints:
     - src: /static/img/1628717276348.png
       alt: Barco Benchi Longer LK5 Pro
   sectionContent: "¿Quieres comprobar de primera mano su calidad? Te muestro
-    algunas impresiones realizadas con la Longer LK5 Pro:"
-  title: Impresiones de Longer LK5 Pro
+    algunas impresiones realizadas con la Creality Ender 3:"
+  title: Impresiones de Creality Ender 3
 upgradesToPrint:
   title: Mejoras para imprimir
   sectionContent: >-
-    <p>Como habrás deducido hasta ahora, la Longer LK5 Pro no necesita grandes
-    mejoras, ya que viene bastante bien preparada de serie. De hecho, trae en su
-    kit de montaje una mejora interesante: un <a
-    href="https://www.thingiverse.com/thing:4818795" target="_blank"
-    rel="noreferrer">protector para el cable de la cama</a>. Además, en la
-    tarjeta Micro SD incluye un archivo para imprimir una <a
-    href="https://www.thingiverse.com/thing:4911974" target="_blank"
-    rel="noreferrer">mejora del ventilador de capa</a>.</p>
+    <p>Como habrás deducido hasta ahora, la Creality Ender 3 no necesita grandes
+    mejoras, ya que viene bastante bien preparada de serie.</p>
 
-    <p>Sin embargo, aquí te muestro alguna mejora interesante:</p>
+    <p>Aquí te muestro alguna mejora interesante:</p>
   upgrades:
     - image: https://cdn.thingiverse.com/assets/1d/9b/b7/fe/99/featured_preview_Filament_detector_bracket.png
       text: Soporte para detector de filamento
@@ -227,7 +225,7 @@ upgradesToPrint:
       link: https://www.thingiverse.com/thing:4762842
       text: Soporte para los cables
 finalValuation:
-  title: Conclusión de la impresora 3D Longer LK5 Pro
+  title: Conclusión de la impresora 3D Creality Ender 3
   sectionContent: >-
     <p>Debo reconocer que solo había oído hablar de la marca Longer en un par de
     ocasiones, así que en cuanto he podido probar una de sus impresoras no lo he
@@ -265,10 +263,10 @@ callToAction:
 
     <p>Además, hasta el 22 de agosto, si la compras a través de la web de Longer, con el código FHFB2YMYHBVG conseguirás un 15% de descuento extra.</p>
 date: 2021-08-26T03:57:01.702Z
-metaTitle: Impresora 3D Ender 3, estupenda calidad precio
-metaDescription: Todo lo que debes saber sobre la impresora 3D Ender 3.
-  ventajas, características, montaje y las mejores ofertas para comprar la Ender
-  3.
+metaTitle: Impresora 3D Ender 3, calidad a un precio imbatible.
+metaDescription: Te contamos todo lo que debes saber sobre la impresora 3D
+  Creality Ender 3. Conoce sus características y ventajas para impresiones de
+  calidad.
 tags:
   - tags
 ---
