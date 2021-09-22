@@ -36,16 +36,17 @@ productsImages:
 customSections:
   - showBorder: false
     title: Elegante diseño y estructura
-    sectionContent: "<p>Algo que caracteriza a las impresoras de Artillery es su
-      diseño. <b>Su estructura posee unos perfiles y un marco exterior de
-      aluminio bastante gruesos</b>, que otorgan estabilidad y rigidez tanto a
-      la estructura de la máquina, como a los ejes, para conseguir grandes
-      resultados.</p>\r
+    sectionContent: >-
+      <div class="flex flex-col justify-center md:flex-row">
+        <div class="flex flex-col p-4 flex-2">
+      <p>Algo que caracteriza a las impresoras de Artillery es su diseño. <b>Su estructura posee unos perfiles y un marco exterior de aluminio bastante gruesos</b>, que otorgan estabilidad y rigidez tanto a la estructura de la máquina, como a los ejes, para conseguir grandes resultados.</p>
 
-      <p>Gracias a sus materiales estamos ante una impresora ligera y que
-      promete larga duración. Además, su <b>diseño rematado con cubiertas y
-      detalles de plástico azul</b> le dan un toque diferencial, a la par que
-      estético y llamativo.</p>\r\n"
+      <p>Gracias a sus materiales estamos ante una impresora ligera y que promete larga duración. Además, su <b>diseño rematado con cubiertas y detalles de plástico azul</b> le dan un toque diferencial, a la par que estético y llamativo.</p>
+        </div>
+        <div class="flex flex-col items-center min-w-max"><img src="/img/estructuragenius.jpg" alt="estructura Genius"
+            class="p-10" />
+        </div>
+      </div>
     backgroundColor: Claro
   - backgroundColor: Claro
     showBorder: false
@@ -80,16 +81,17 @@ customSections:
   - backgroundColor: Claro
     showBorder: false
     title: Volumen de impresión y precisión.
-    sectionContent: "<p><b>El volumen de impresión de la Artillery Genius es de
-      220x220x250mm</b>, un volumen intermedio e interesante. Ese volumen unido
-      a que puede alcanzar los 100 mm/s de velocidad de impresión, crea una
-      cualidad muy útil para cuando se le exige una importante demanda o
-      intensidad de trabajo.</p>\r
+    sectionContent: >-
+      <div class="flex flex-col justify-center md:flex-row">
+        <div class="flex flex-col items-center min-w-max"><img src="/img/volumengenius2.jpg" class="p-10"
+            alt="Volumen Genius" />
+        </div>
+        <div class="flex flex-col p-4 flex-2">
+      <p><b>El volumen de impresión de la Artillery Genius es de 220x220x250mm</b>, un volumen intermedio e interesante. Ese volumen unido a que puede alcanzar los 150 mm/s de velocidad de impresión, crea una cualidad muy útil para cuando se le exige una importante demanda o intensidad de trabajo.</p>
 
-      <p>Aunque evidentemente para grandes velocidades hay que balancear
-      los ajustes entre rapidez y calidad, hay que reconocer que a velocidades
-      medias se pueden conseguir <b>gran precisión en los pequeños
-      detalles.</b></p>\r"
+      <p>Aunque evidentemente para grandes velocidades hay que balancear los ajustes entre rapidez y calidad, hay que reconocer que a velocidades medias se pueden conseguir <b>gran precisión en los pequeños detalles.</b></p>
+        </div>
+      </div>
   - backgroundColor: Claro
     showBorder: false
     title: Cama caliente integrada e impresiones silenciosas.
@@ -108,23 +110,19 @@ customSections:
       </div>
   - backgroundColor: Claro
     showBorder: false
-    sectionContent: "<p>Esta impresora 3D tiene <b>un sistema de extrusión
-      directa</b> que minimiza la distancia entre el punto de entrada del
-      extrusor y el <i>nozzle</i>, para que sea más sencillo controlar el acceso
-      del material.</p>\r
+    sectionContent: >-
+      <div class="flex flex-col justify-center md:flex-row">
+        <div class="flex flex-col items-center min-w-max"><img src="/img/extrusiongenius.jpg" class="p-10"
+            alt="extrusión Genius" />
+        </div>
+        <div class="flex flex-col p-4 flex-2">
+      <p>Esta impresora 3D tiene <b>un sistema de extrusión directa</b> que minimiza la distancia entre el punto de entrada del extrusor y el <i>nozzle</i>, para que sea más sencillo controlar el acceso del material.</p>
 
-      <p>Este es un gran punto a su favor si quieres usar materiales
-      flexibles o más técnicos ya que la configuración de nuevos materiales es
-      mucho más simple y se reduce la posibilidad de atascos e impresiones
-      fallidas.</p>\r
+      <p>Este es un gran punto a su favor si quieres usar materiales flexibles o más técnicos ya que la configuración de nuevos materiales es mucho más simple y se reduce la posibilidad de atascos e impresiones fallidas.</p>
 
-      <p>Además, <b>posee un sensor de final o rotura de filamento</b>,
-      una funcionalidad que no es que sea imprescindible, pero puede ser muy
-      útil, sobre todo para aprovechar al máximo su volumen de impresión o para
-      realizar una pieza que requiera de varios rollos de filamento para su
-      elaboración. Eso unido a su <b>sistema de detección y recuperación de
-      impresión tras un corte de energía</b>, genera gran confianza a la hora de
-      imprimir.</p>\r\n"
+      <p>Además, <b>posee un sensor de final o rotura de filamento</b>, una funcionalidad que no es que sea imprescindible, pero puede ser muy útil, sobre todo para aprovechar al máximo su volumen de impresión o para realizar una pieza que requiera de varios rollos de filamento para su elaboración. Eso unido a su <b>sistema de detección y recuperación de impresión tras un corte de energía</b>, genera gran confianza a la hora de imprimir.</p>
+        </div>
+      </div>
     title: Sistema de extrusión directa
   - backgroundColor: Claro
     showBorder: false
@@ -151,7 +149,7 @@ customSections:
         </div>
       </div>
   - backgroundColor: Claro
-    showBorder: false
+    showBorder: true
     sectionContent: >-
       <div class="flex flex-col justify-center md:flex-row">
         <div class="flex flex-col items-center min-w-max"><img src="/img/community.png" class="p-10" width="350"
@@ -169,14 +167,14 @@ comparation:
   showComparation: true
   title: Comparativa
   sectionContent: "<p>Para que puedas apreciar lo que ofrece la impresora
-    Artillery Genius, voy a compararla con otra grande del mercado con el mismo
-    volumen de impresión: la impresora 3D Creality Ender 3.</p>\r
+    Artillery Genius, vamos a compararla con otra grande del mercado con el
+    mismo volumen de impresión: <b>la impresora 3D Creality Ender 3.</b></p>\r
 
     <p>Ambas impresoras son las grandes favoritas en su rango y no es para
-    menos, ya que ofrecen grandes resultados y son de gran fiabilidad para gran
-    parte de los usuarios.</p>\r
+    menos, ya que ofrecen grandes resultados y son de gran fiabilidad para os
+    usuarios.</p>\r
 
-    <p>¡Comparemos!</p>\r\n"
+    <p><h3>¡Comparemos!</h3></p>\r\n"
   compareProducts:
     products:
       - id: 0
@@ -185,22 +183,26 @@ comparation:
         link: https://www.amazon.es/Impresora-3D-Creality-Tama%C3%B1o-impressio/dp/B07JC93LKS?&linkCode=sl1&tag=3dmakernow-21&linkId=00ac8406c60f09b8e4c8603a254d05e2&language=es_ES&ref_=as_li_ss_tl
         propertiesValues:
           - 220x220x250mm
-          - BuildTak, puede extraerse
+          - BuildTak (puede extraerse)
           - Perfil de aluminio
           - Un motor
           - No tiene
           - Pantalla con rueda
+          - 440x410x465mm
+          - Tarjeta Micro SD y cable USB.
       - id: 1
         name: Artillery Genius
         image: https://cocky-yalow-a9e1a8.netlify.app/static/5a6f10ba84dca7cf7f1ccac6db1d483a/53f65/artillery-genius-4.png
         link: https://www.amazon.es/Artillery-Genius-3D-Printer-2019-integridad/dp/B07Z39DRSL?&linkCode=sl1&tag=3dmakernow-21&linkId=d52061c6a903f45164194fbfc95f95c0&language=es_ES&ref_=as_li_ss_tl
         propertiesValues:
           - 220x220x250mm
-          - Cristal templado, no puede extraerse
+          - Cristal templado integrado (no puede extraerse)
           - Perfil de aluminio
           - Dos motores sincronizados
-          - Si
-          - Pantalla tactil
+          - Sí
+          - Pantalla táctil TFT
+          - 430x390x590mm
+          - Puerto USB, tarjeta Micro SD y cable USB.
     properties:
       - Volumen de impresión
       - Cama caliente
@@ -208,6 +210,8 @@ comparation:
       - Motores Eje Z
       - Sensor final de filamento
       - Pantalla
+      - Medidas
+      - Conectividad
 properties:
   title: Características técnicas de la impresora 3D Artillery Genius
   sectionContent: <p>Lo cierto es que la impresora 3D Artillery Genius ha
@@ -216,13 +220,13 @@ properties:
     de gran calidad.</p>
   feature:
     extrusorTemperature: 240ºC
-    filamentDiameter: 1,73
+    filamentDiameter: 1,75mm
     bedLevel: Manual
     nozzleDiameterList: 0,4
-    materials: PLA, ABS, TPU, wood, Flexible
+    materials: PLA, ABS, TPU, madera, Flexible
     technology: FDM
-    printerSpeed: 150 mm/s
-    extrusor: Extrusor Tital
+    printerSpeed: 150mm/s
+    extrusor: Extrusor directo Titán
     BedTemperature: 130ºC
     printerVolume: 220x220x250mm
     extrusorNumber: "1"
@@ -232,35 +236,35 @@ properties:
     slicer: Cura, Repetier-Host, Simplify3D
     inputFormat: STL, OBJ, G-Code
     firmware: ""
-    conectivity: USB, tarjeta TF, memoria USB
-    display: Pantalla táctil
+    conectivity: Puerto USB, tarjeta Micro SD y cable USB
+    display: Pantalla táctil TFT
   electricity:
-    input: 100V-240V 600W
+    input: 100V-240V 600W máx
     voltage: ""
   unboxing:
-    printerSize: 430 x 390 x 590 mm
+    printerSize: 430x390x590 mm
     printerWeight: 8,9kg
-    unboxingSize: 535 x 435 x 320 mm
-    unboxingWeight: 10kg
+    unboxingSize: 535x435x320 mm
+    unboxingWeight: 10,5kg
   content:
     content: >-
       <div class="flex-1">
 
       <ul>
 
-      <li class="flex items-center leading-8 border-b">Impresora 3D</li>
+      <li class="flex items-center leading-8 border-b">Impresora 3D preensamblada</li>
 
-      <li class="flex items-center leading-8 border-b">Cama caliente y cuadro eléctrico</li>
+      <li class="flex items-center leading-8 border-b">Tornillería y todas las piezas necesarias para su montaje</li>
 
-      <li class="flex items-center leading-8 border-b">Tornillería y piezas necesarias para su montaje</li>
+      <li class="flex items-center leading-8 border-b">Herramientas para el montaje (llaves Allen, llave española)</li>
 
-      <li class="flex items-center leading-8 border-b">Herramientas para el montaje (llaves, allen)</li>
-
-      <li class="flex items-center leading-8 border-b">USB con tarjeta</li>
+      <li class="flex items-center leading-8 border-b">Memoria USB</li>
 
       <li class="flex items-center leading-8 border-b">Cable de alimentación</li>
 
-      <li class="flex items-center leading-8 border-b">Instrucciones</li>
+      <li class="flex items-center leading-8 border-b">Manual de instrucciones</li>
+
+      <li class="flex items-center leading-8 border-b">Estuche con piezas de repuesto</li>
 
       </ul>
 
@@ -428,28 +432,29 @@ upgradesToPrint:
       image: https://cdn.thingiverse.com/assets/2e/ae/28/2c/5e/featured_preview_photo5765123434962072651.jpg
 faqs:
   showFaqs: true
-  sectionContent: Aqui tienes algunas de las preguntas más frequentes que se hacen
-    los usuarios de esta impresora.
+  sectionContent: ¿Todavía tienes duda? Puede que en estas preguntas más
+    frecuentes, que se hacen los usuarios sobre esta impresora 3D, encuentres la
+    respuesta.
   asks:
-    - ask: ¿Qué filamento usa la artillery genius?
-      response: La Artillery Genius tiene un extrusor Titán directo, por lo que podras
-        imprimir la mayoría de filamentos comunes, PLA, ABS, PETG, Flexible,
-        TPU, madera, lo que sí, tienes que prestar atención a que el grosor sea
-        de 1,75mm
-    - ask: ¿Cómo se nivela la artillery genius?
+    - ask: ¿Qué filamento usa la Artillery Genius?
+      response: "La Artillery Genius tiene un extrusor Titán directo que le permite
+        imprimir la mayoría de filamentos más comunes: PLA, ABS, PETG,
+        flexibles, TPU, madera... Eso sí, tienes que prestar atención a que el
+        grosor sea de 1,75mm."
+    - ask: ¿Cómo se nivela la Artillery Genius?
       response: >-
-        <p>A diferencia de otras impresoras, la Artillery Genius, no tiene
-        autonivelación, sin embargo, en su firmware trae una funcion para poder
-        calibrarla que te guiará a través de los puntos que tienes que ir
-        calibrando, para ello, necesitaras una hoja de papel.</p>
+        <p>La Artillery Genius no tiene autonivelación, sin embargo, en su
+        firmware trae una función para poder calibrarla de forma fácil que te
+        guiará a través de los puntos que tienes que ir calibrando.</p>
 
-        <p>Deberás de ir desplazando el carro a los puntos indicados por el programa, colocar el papel debajo de la boquilla y ajustar con las ruedas de nivelación de debajo de la cama hasta conseguir que el papel no quede ni demasiado suelto ni muy apretado y seas capaz de pasar el papel correctamente entre la cama y la boquilla.</p>
-    - ask: ¿Cómo cambiar filamento en artillery genius?
+        <p>Para calibrarla solo necesitarás una hoja de papel. Deberás ir desplazando el carro a los puntos indicados por el programa, colocar el papel debajo de la boquilla y ajustar con las ruedas de nivelación de debajo de la cama hasta conseguir que el papel no quede ni demasiado suelto ni demasiado apretado, para que seas capaz de pasar el papel correctamente entre la cama y la boquilla (<i>nozzle</i>).</p>
+    - ask: ¿Cómo cambiar filamento en Artillery Genius?
       response: >-
-        <p>Es muy fácil cambiar de filamento, el propio firmware ya trae una
-        función  a través de la cual puedes realizar el cambio.</p>
+        <p>Gracias a su extrusión directa, es muy fácil cambiar de filamento,
+        además, el propio firmware ya trae una función a través de la cual
+        puedes realizar el cambio.</p>
 
-        <p>Simplemente caliente el hotend a la temperatura del filamento que quieres extraer y o insertar, pulsa el cambio de filamento y ve siguiendo los pasos que te va indicando la pantalla.</p>
+        <p>Simplemente calienta el <i>hotend</i> a la temperatura del filamento que quieres extraer y o insertar, pulsa el cambio de filamento y ve siguiendo los pasos que te va indicando la pantalla.</p>
 finalValuation:
   title: Conclusión de la impresora 3D Artillery Genius
   sectionContent: "<p>La marca Artillery, aunque es relativamente joven, se ha
