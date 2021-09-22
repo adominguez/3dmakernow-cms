@@ -22,6 +22,7 @@ import CompareProducts from '../components/compareProducts'
 import Faqs from '../components/faqs'
 import ProductsList from '../components/productsList'
 import SearcherCombo from '../components/SearcherCombo'
+import TextEditorContent from '../components/TextEditor'
 
 const page = {
   title: '¿No te convence esta impresora 3D?',
@@ -49,10 +50,12 @@ export const PrinterPageTemplate = (props) => {
     faqs,
     faqs: { showFaqs, asks } = {},
     products,
+    sectionContent
   } = props
 
   return (
     <>
+      <TextEditorContent sectionContent={sectionContent}  />
       <Submenu submenu={submenu} />
       {pageTitle || initialValuation ? (
         <ProductDetailValoration
@@ -225,6 +228,7 @@ const PrinterPage = ({ data }) => {
     whereBuy,
     advantagesDisadvantajes,
     prints,
+    faqs,
     upgradesToPrint,
     finalValuation,
     callToAction,
@@ -273,6 +277,7 @@ const PrinterPage = ({ data }) => {
         submenu={submenu}
         comparation={comparation}
         products={products}
+        faqs={faqs}
       />
       {renderSearcherCombo()}
     </Layout>
@@ -428,6 +433,14 @@ export const pageQuery = graphql`
         }
         submenu {
           showSubmenu
+        }
+        faqs {
+          sectionContent
+          showFaqs
+          asks {
+            ask
+            response
+          }
         }
         products {
           showProductsList
