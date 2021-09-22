@@ -39,12 +39,14 @@ customSections:
     sectionContent: >-
       <div class="flex flex-col justify-center md:flex-row">
         <div class="flex flex-col p-4 flex-2">
-      <p>Algo que caracteriza a las impresoras de Artillery es su diseño. <b>Su estructura posee unos perfiles y un marco exterior de aluminio bastante gruesos</b>, que otorgan estabilidad y rigidez tanto a la estructura de la máquina, como a los ejes, para conseguir grandes resultados.</p>
+      <p>Algo que caracteriza a las impresoras de Artillery es su diseño.</p>
+
+      <p><b>Su estructura posee unos perfiles y un marco exterior de aluminio bastante gruesos</b>, que otorgan estabilidad y rigidez tanto a la estructura de la máquina, como a los ejes, para conseguir grandes resultados.</p>
 
       <p>Gracias a sus materiales estamos ante una impresora ligera y que promete larga duración. Además, su <b>diseño rematado con cubiertas y detalles de plástico azul</b> le dan un toque diferencial, a la par que estético y llamativo.</p>
         </div>
         <div class="flex flex-col items-center min-w-max"><img src="/img/estructuragenius.jpg" alt="estructura Genius"
-            class="p-10" />
+            class="p-10" width="300"/>
         </div>
       </div>
     backgroundColor: Claro
@@ -53,13 +55,13 @@ customSections:
     title: Doble motor en el eje Z
     sectionContent: >-
       <div class="flex flex-col justify-center md:flex-row">
-        <div class="flex flex-col items-center min-w-max"><img src="/img/doble-motor-genius.jpg" class="p-10" width="300"
+        <div class="flex flex-col items-center min-w-max"><img src="/img/doble-motor-genius.jpg" class="p-10" width="280"
             alt="doble motor Genius" />
         </div>
         <div class="flex flex-col p-4 flex-2">
       <p>La Artillery Genius <b>tiene dos motores para el eje Z</b>, acompasados por una correa en la parte superior de la impresora para conseguir que el eje siempre esté bien nivelado con respecto a la cama caliente.</p>
 
-      <p>Sin duda, estos motores otorgan a la impresora una mayor precisión y firmeza en impresiones a altas velocidades.</p>
+      <p>Sin duda, estos motores son una mejora a tener en cuenta ya que otorgan a la impresora una mayor precisión y firmeza en impresiones a altas velocidades.</p>
         </div>
       </div>
   - backgroundColor: Claro
@@ -74,7 +76,7 @@ customSections:
       <p>Además: ¡Adiós micro SD! Si algo hay que agradecerle a Artillery es la <b>mejora de conexión con un puerto USB</b> ya que ahora no te verás obligado a usar siempre una tarjeta micro SD para imprimir tus proyectos.</p>
        </div>
         <div class="flex flex-col items-center min-w-max"><img src="/img/basegenius.jpg" alt="base Genius"
-            class="p-10" />
+            class="p-10" width="300" />
         </div>
       </div>
     title: Excelente electrónica y conectividad.
@@ -84,7 +86,7 @@ customSections:
     sectionContent: >-
       <div class="flex flex-col justify-center md:flex-row">
         <div class="flex flex-col items-center min-w-max"><img src="/img/volumengenius2.jpg" class="p-10"
-            alt="Volumen Genius" />
+            alt="Volumen Genius" width="280"/>
         </div>
         <div class="flex flex-col p-4 flex-2">
       <p><b>El volumen de impresión de la Artillery Genius es de 220x220x250mm</b>, un volumen intermedio e interesante. Ese volumen unido a que puede alcanzar los 150 mm/s de velocidad de impresión, crea una cualidad muy útil para cuando se le exige una importante demanda o intensidad de trabajo.</p>
