@@ -227,7 +227,7 @@ const MaterialPage = ({ data }) => {
     <Layout
       metaTitle={metaTitle}
       metaDescription={metaDescription}
-      featuredimage={splitStaticUrl(featuredimage.absolutePath).slice(1)}
+      featuredimage={splitStaticUrl(featuredimage?.absolutePath)?.slice(1)}
     >
       <MaterialPageTemplate
         content={post.html}

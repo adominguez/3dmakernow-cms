@@ -249,7 +249,7 @@ const PrinterPage = ({ data }) => {
     <Layout
       metaTitle={metaTitle}
       metaDescription={metaDescription}
-      featuredimage={splitStaticUrl(featuredimage.absolutePath).slice(1)}
+      featuredimage={splitStaticUrl(featuredimage?.absolutePath)?.slice(1)}
     >
       <PrinterPageTemplate
         content={post.html}
