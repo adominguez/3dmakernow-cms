@@ -8,28 +8,32 @@ featuredimage: /static/img/impresora-3d-ender-3.png
 featuredPrinter: true
 submenu:
   showSubmenu: false
-pageTitle: Creality Ender 3, calidad precio imbatible.
+pageTitle: Creality Ender 3, calidad a un precio imbatible.
 links:
   amazonLink: https://amzn.to/2WqpRIa
   aliexpressLink: " https://s.click.aliexpress.com/e/_Asndes"
   customLinks:
     - store: Creality
       link: https://www.creality.com/es/goods-detail/ender-3-3d-printer
-initialValuation: >-
-  <p class="my-2 text-center">La impresora 3D Ender 3 es hoy en día, sin ninguna
-  duda, la impresora que más se vende entre los usuarios de todo el mundo. Su
-  facilidad de montaje, la calidad que ofrece a la hora de imprimir piezas en 3D
-  y su fácil manejo y uso, ya sea en la nivelación de la cama o al cambiar de
-  material, convierten a esta impresora en la más vendida en todo el mundo.</p>
+initialValuation: "<p class=\"my-2 text-center\">Aunque cada vez salen a la
+  venta gran variedad de impresoras 3D, la impresora 3D Creality Ender 3 es, sin
+  ninguna duda, <b>una de las impresoras que más se vende entre los usuarios de
+  todo el mundo.</b></p> \r
 
+  <p class=\"my-2 text-center\">¿La clave de su éxito? Es una impresora 3D
+  centrada en brindar una buena experiencia al usuario que consigue imprimir
+  piezas de calidad y con una <b>excelente relación calidad-precio.</b></p> \r
 
-  <p class="my-2 text-center">Si a todo esto, además, añadimos que tiene un precio realmente asequible, podemos estar hablando de que es la impresora perfecta para comenzar en el mundo maker y en la impresión 3D, o incluso para montar un pequeño negocio de impresión 3D.</p>
+  <p class=\"my-2 text-center\">Muchos blogs, canales de Youtube y grandes
+  referencias del mundo de la impresión 3D la recomiendan como <b>la impresora
+  perfecta para comenzar en la impresión 3D</b> o, incluso, para montar un
+  pequeño negocio de impresión 3D. </p> \r
 
+  <p class=\"my-2 text-center\">¿Quieres saber por qué todavía le queda cuerda
+  para rato, aunque sigan saliendo impresoras nuevas? Sigue leyendo y lo
+  descubrirás. \r
 
-  <p class="my-2 text-center">Muchos blogs, canales de Youtube, y grandes referencias del mundo de la impresión 3D le han otorgado el título de ser la mejor impresora 3D calidad-precio a la hora de comprar una primera impresora, por eso la gran mayoría de ellos la recomiendan, llegando incluso a arrebatarle en muy poco tiempo el primer puesto a la Anet A8 una grande que parecía que tenía el mercado ganado a finales de 2018.</p>
-
-
-  <p class="my-2 text-center">Y es que, efectivamente, no es para menos, la Ender 3 es hasta el momento la mejor impresora 3D que podemos encontrar en el mercado por el precio que tiene, y, a pesar de que siguen saliendo impresoras nuevas, parece que todavía le queda cuerda para rato.</p>
+  </p>"
 productsImages:
   - src: /static/img/impresora-3d-ender-3.png
     alt: Impresora 3D Ender 3
@@ -62,12 +66,26 @@ customSections:
 
       <p>Aquí puedes encontrar un set de boquillas apropiadas para esta impresora:</p>
     backgroundColor: Claro
+comparation:
+  showComparation: true
+  sectionContent: "<p>Para que puedas apreciar lo que ofrece la impresora Creality
+    Ender 3, voy a compararla con otra grande del mercado con el mismo volumen
+    de impresión: <b>la impresora 3D Artillery Genius.</b></p>\r
+
+    <p>Ambas impresoras son las grandes favoritas en su rango y no es para
+    menos, ya que ofrecen grandes resultados y son de gran fiabilidad para gran
+    parte de los usuarios.</p>
+
+    \r
+
+    <h3>¡Comparemos!</h3>\r\n"
+  title: "Comparativa: Creality Ender 3 vs Artillery Genius"
 properties:
-  title: Características técnicas de la impresora 3D Longer LK5 Pro
-  sectionContent: Lo cierto es que aunque la marca Longer no es muy conocida, sus
-    productos tienen buena calidad. En la Longer LK5 Pro te encuentras con
-    <b>una buena relación entre diseño, volumen y mecánica</b> para conseguir
-    unos resultados óptimos de impresión.
+  title: Características técnicas de la impresora 3D Creality Ender 3
+  sectionContent: Lo cierto es que la impresora 3D Creality Ender 3 ha
+    revolucionado el mercado de la impresión 3D al poseer todas las
+    características para conseguir grandes resultados a un precio realmente
+    bajo.
   feature:
     extrusorTemperature: 250ºC
     filamentDiameter: 1,73
@@ -128,27 +146,36 @@ properties:
 
       </div>
 whereBuy:
-  title: Comprar Longer LK5 pro
-  sectionContent: <b>Si quieres comprar la impresora Longer LK5 pro, podrás
-    hacerlo en la propia web de Longer, Amazon o Aliexpress.</b>
-  whereBuyText: >
-    <p>Puedes adquirir tu Longer LK5 pro en la web de Longer, la opción más
-    asequible de todas y, para España, con gastos de envío gratis.</p>
+  title: Comprar Creality Ender 3
+  sectionContent: "<p><b>Si quieres comprar la impresora Creality Ender 3 podrás
+    hacerlo en Amazon, en Aliexpress o en la propia web de Creality.</b></p>
 
+    \r\n"
+  whereBuyText: "<p>Si eres usuario de Amazon, podrás comprar la impresora
+    directamente a la propia marca Creality. Como siempre con la seguridad de
+    Amazon en devolución, envío y garantía.</p>\r
 
-    <p>Si eres usuario de Amazon, esta impresora también la vende la propia marca Longer. Como siempre con la seguridad que ofrece Amazon en devolución, envío y garantía.</p>
+    <p>Pero también, al ser una marca fundada en China, Creality tiene su
+    tienda en Aliexpress donde la puedes encontrar a un mejor precio.</p>\r
 
+    <p>En cualquiera de los casos, gracias a que tiene varios almacenes es
+    fácil que la recibas en poco tiempo en tu casa.</p>\r
 
-    <p>Pero también, al ser una marca fundada en China, Longer tiene su tienda en Aliexpress donde la puedes encontrar a un precio muy bueno.</p>
-
-
-    <p>En cualquiera de los casos, gracias a que tiene almacenes en Europa (Alemania) es fácil que la recibas en poco tiempo en tu casa (a mí me tardó menos de una semana).</p>
+    \n"
+products:
+  productsList:
+    type: grid
+    productsList: null
 advantagesDisadvantajes:
-  title: Ventajas y desventajas de la Longer LK5 Pro
-  sectionContent: <p>Está claro que Longer LK5 Pro es una impresora 3D robusta y
-    firme a un precio muy competitivo. Te dejo con algunas ventajas y
-    desventajas de esta impresora que seguro que te ayudan a decidir si esta
-    impresora es para ti:</p>
+  title: Ventajas y desventajas de la Creality Ender 3
+  sectionContent: "<p>Es evidente que Creality ha dado en el clavo con esta
+    impresora, ya que ha conseguido ofrecer calidad a un precio accesible para
+    todos los usuarios.</p>\r
+
+    <p>Te dejo con algunas ventajas y desventajas de esta impresora que
+    seguro que te ayudan a decidir si esta impresora es para ti:\r
+
+    </p>"
   advantages:
     - text: La Longer LK5 Pro tiene una gran estabilidad gracias a su diseño y
         consigue impresiones de muy buena calidad.
@@ -204,53 +231,92 @@ prints:
     - src: /static/img/1628717276348.png
       alt: Barco Benchi Longer LK5 Pro
   sectionContent: "¿Quieres comprobar de primera mano su calidad? Te muestro
-    algunas impresiones realizadas con la Longer LK5 Pro:"
-  title: Impresiones de Longer LK5 Pro
+    algunas impresiones realizadas con la Creality Ender 3:"
+  title: Impresiones de Creality Ender 3
 upgradesToPrint:
   title: Mejoras para imprimir
-  sectionContent: >-
-    <p>Como habrás deducido hasta ahora, la Longer LK5 Pro no necesita grandes
-    mejoras, ya que viene bastante bien preparada de serie. De hecho, trae en su
-    kit de montaje una mejora interesante: un <a
-    href="https://www.thingiverse.com/thing:4818795" target="_blank"
-    rel="noreferrer">protector para el cable de la cama</a>. Además, en la
-    tarjeta Micro SD incluye un archivo para imprimir una <a
-    href="https://www.thingiverse.com/thing:4911974" target="_blank"
-    rel="noreferrer">mejora del ventilador de capa</a>.</p>
+  sectionContent: "<p>La Creality Ender 3 no necesita grandes mejoras, ya que
+    imprime muy bien tal y como viene de serie. Pero al ser una de las
+    impresoras más vendidas, <b>es muy fácil encontrar casi cualquier tipo de
+    mejora para esta impresora.</b></p>\r
 
-    <p>Sin embargo, aquí te muestro alguna mejora interesante:</p>
+    <p>Aquí te muestro algunas mejoras interesantes para que puedas llevar
+    esta impresora a un nivel superior:</p>\r"
   upgrades:
-    - image: https://cdn.thingiverse.com/assets/1d/9b/b7/fe/99/featured_preview_Filament_detector_bracket.png
-      text: Soporte para detector de filamento
-      link: https://www.thingiverse.com/thing:4753679
-    - image: https://cdn.thingiverse.com/assets/cf/0e/69/d5/5e/featured_preview_thingholderwire.jpg
-      link: https://www.thingiverse.com/thing:4762842
-      text: Soporte para los cables
+    - image: https://cdn.thingiverse.com/renders/2f/f6/a0/f3/24/7348d5648ca4ad8b976ffa7ce64a8679_preview_featured.jpg
+      text: Cajón para Creality Ender 3
+      link: https://www.thingiverse.com/thing:2989218
+    - image: https://cdn.thingiverse.com/renders/fa/88/97/7e/a8/66be479c4cd3d8de0c3953ded5c24a9b_preview_featured.jpg
+      link: https://www.thingiverse.com/thing:3176144
+      text: Rueda para el extrusor
+    - link: https://www.thingiverse.com/thing:2858209
+      image: https://cdn.thingiverse.com/renders/28/ac/12/ed/c8/5ff179dd3dfb4ca9dfc2c38eeb6e71cd_preview_featured.jpg
+      text: Cubierta para pantalla LCD
+    - text: Soporte para el filamento
+      link: https://www.thingiverse.com/thing:3020026
+      image: https://cdn.thingiverse.com/renders/d3/07/bf/fa/a8/015b4dee5c801fa5f2dacccbb0716b34_preview_featured.jpg
+    - text: Guía para el filamento
+      link: https://www.thingiverse.com/thing:2917932
+      image: https://cdn.thingiverse.com/renders/62/7a/11/6e/46/8ef932217c869642aaedbee53b9be7b9_preview_featured.jpg
+    - link: https://www.thingiverse.com/thing:2935204
+      text: Cubierta para ventilador de placa
+      image: https://cdn.thingiverse.com/renders/70/49/13/30/a4/3133f4ba7b8139a90fc280bf7cf1c387_preview_featured.jpg
+    - link: https://www.thingiverse.com/thing:2986144
+      image: https://cdn.thingiverse.com/renders/85/ce/1c/2f/38/7dc8dc48b0474273b8fb1b7978ec28ae_preview_featured.jpg
+      text: Tensor de correa
+faqs:
+  title: ""
+  asks:
+    - ask: ¿Por qué el filamento no se adhiere a la cama?
+      response: Este es uno de los problemas más comunes en muchas impresoras 3D. No
+        te preocupes, lo puedes resolver fácilmente. Generalmente ocurre porque
+        la distancia entre el <i>nozzle</i> y la cama es incorrecta. Así que
+        vuelve a nivelar la cama ya que nivelarla te ayudará a que se adhiera la
+        primera capa de forma sólida. También puedes utilizar un adhesivo para
+        la base (como laca) para reforzar la adherencia.
+    - ask: ¿Cómo nivelar la Creality Ender 3?
+      response: >-
+        <p>Con el menú de la pantalla LCD, mueve el <i>nozzle</i> hacia la
+        esquina izquierda de la cama. Coloca una hoja de papel entre el
+        <i>nozzle</i> y la cama y ajusta con las ruedas inferiores de la cama
+        hasta que el <i>nozzle</i> frote ligeramente la hoja, pero sin realizar
+        demasiada resistencia, es decir, sin que se quede la hoja atascada
+        debajo.</p> 
+
+        <p>Cuando lo consigas pasa al siguiente punto. Recuerda que con control de la pantalla puedes mover los ejes. Acompaña al movimiento con la hoja de papel y si sientes resistencia, para el movimiento.</p> 
+
+        <p>Tras ajustar cada esquina, vuelve a comprobar las 4 esquinas para asegurarte de que están todas correctas.</p>
 finalValuation:
-  title: Conclusión de la impresora 3D Longer LK5 Pro
-  sectionContent: >-
-    <p>Debo reconocer que solo había oído hablar de la marca Longer en un par de
-    ocasiones, así que en cuanto he podido probar una de sus impresoras no lo he
-    dudado. Con su impresora 3D Longer LK5 Pro me he encontrado con una
-    impresora de la que merece la pena hablar.</p>
+  title: Conclusión de la impresora 3D Creality Ender 3
+  sectionContent: "<p>No te voy a mentir, la impresora 3D Creality Ender 3 es una
+    de nuestras favoritas. Llevamos mucho tiempo imprimiendo con ella y la hemos
+    trasteado mucho realizando numerosas mejoras.</p>\r
+
+    <p>La marca Creality se ha hecho un hueco en la impresión 3D
+    conquistando a los usuarios con esta impresora 3D.</p>\r
+
+    <p>La Creality Ender 3 es una impresora 3D extraordinaria que cuesta
+    menos de 200€.</p>\r
+
+    <p>Es una excelente opción para principiantes o amantes de la impresión
+    3D que no quieren gastar demasiado. No vamos a negar que esta impresora 3D
+    tiene sus defectos, pero su precio hace que merezca la pena.</p>\r
+
+    <p>La Creality Ender 3 está preparada para conseguir impresiones de alta
+    calidad desde el primer momento.</p>
 
 
-    <p>Como habrás podido comprobar, se trata de una impresora 3D con una excelente relación calidad-precio que la convierte en una interesante inversión para cualquier usuario ya sea porque quiera empezar en la impresión 3D o subir de nivel en sus impresiones. Aunque no debemos olvidar que para realizar grandes impresiones requiere de algo de experiencia con todos los parámetros de impresión.</p>
+    <p>Por todo ello, creo que la Creality Ender 3 es una buena impresora 3D
+    tanto si quieres una impresora que te permita grandes impresiones como si
+    quieres aprender a superarte en cada una de tus creaciones, no pases por
+    alto esta opción.</p>
 
 
-    <p>Dado su amplio volumen de impresión, puede que su tamaño intimide y que no sea apta para cualquier escritorio, pero es gracias a ese tamaño, a su diseño y su estructura que consigue la estabilidad idónea para conseguir buenos resultados.</p>
+    <p>Y… poco más puedo decirte de esta estupenda impresora, así que hasta
+    aquí la review.</p>
 
 
-    <p>Tras varias impresiones, puedo decir que es muy silenciosa, lo cual se agradece mucho. Además, es fácil de usar gracias a la accesibilidad de su pantalla táctil en la cual siempre muestra un resumen de impresión bastante interesante. Y, si bien es cierto que la calidad de impresión depende de muchas cosas, el resultado final es bastante decente.</p>
-
-
-    <p>Por todo ello, creo que la Longer LK5 Pro es una buena impresora 3D que no tiene nada que envidiar a impresoras de la misma gama de marcas más conocidas. Tanto si quieres una impresora que te permita grandes impresiones como si quieres aprender a superarte en cada una de tus creaciones, no pases por alto esta opción.</p>
-
-
-    <p>Y… poco más puedo decirte de esta estupenda impresora, así que hasta aquí la review.</p>
-
-
-    <p>¡Ahora es tu turno! ¿Te ha resultado útil la información?</p>
+    <p>¡Ahora es tu turno! ¿Te ha resultado útil la información?</p>"
 callToAction:
   title: Longer LK5 PRO
   actionText: >
@@ -265,10 +331,10 @@ callToAction:
 
     <p>Además, hasta el 22 de agosto, si la compras a través de la web de Longer, con el código FHFB2YMYHBVG conseguirás un 15% de descuento extra.</p>
 date: 2021-08-26T03:57:01.702Z
-metaTitle: Impresora 3D Ender 3, estupenda calidad precio
-metaDescription: Todo lo que debes saber sobre la impresora 3D Ender 3.
-  ventajas, características, montaje y las mejores ofertas para comprar la Ender
-  3.
+metaTitle: Impresora 3D Ender 3, calidad a un precio imbatible.
+metaDescription: Te contamos todo sobre la impresora 3D Creality Ender 3. Conoce
+  sus características y ventajas para impresiones de calidad a un precio
+  imbatible.
 tags:
   - tags
 ---
