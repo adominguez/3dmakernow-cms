@@ -44,7 +44,6 @@ export const MaterialPageTemplate = (props) => {
     callToAction,
     comparation,
     faqs,
-    faqs: { showFaqs, asks } = {},
     products
   } = props
 
@@ -146,14 +145,14 @@ export const MaterialPageTemplate = (props) => {
           ) : null}
         </CustomSection>
       ) : null}
-      {showFaqs ? (
+      {faqs?.showFaqs ? (
         <CustomSection
-          title={faqs.title || 'Preguntas frecuentes'}
-          sectionContent={faqs.sectionContent}
+          title={faqs?.title || 'Preguntas frecuentes'}
+          sectionContent={faqs?.sectionContent}
           backgroundColor="Claro"
           showBorder
         >
-          <Faqs asks={asks} />
+          <Faqs asks={faqs?.asks} />
         </CustomSection>
       ) : null}
       {convertedKeyProperties(finalValuation) &&

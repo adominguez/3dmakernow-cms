@@ -22,7 +22,6 @@ import CompareProducts from '../components/compareProducts'
 import Faqs from '../components/faqs'
 import ProductsList from '../components/productsList'
 import SearcherCombo from '../components/SearcherCombo'
-import TextEditorContent from '../components/TextEditor'
 
 const page = {
   title: '¿No te convence esta impresora 3D?',
@@ -47,15 +46,12 @@ export const PrinterPageTemplate = (props) => {
     callToAction,
     submenu,
     comparation,
-    faqs,
-    faqs: { showFaqs, asks } = {},
-    products,
-    sectionContent
+    faqs = {},
+    products
   } = props
 
   return (
     <>
-      <TextEditorContent sectionContent={sectionContent}  />
       <Submenu submenu={submenu} />
       {pageTitle || initialValuation ? (
         <ProductDetailValoration
@@ -169,14 +165,14 @@ export const PrinterPageTemplate = (props) => {
           ) : null}
         </CustomSection>
       ) : null}
-      {showFaqs ? (
+      {faqs?.showFaqs ? (
         <CustomSection
           title={faqs.title || 'Preguntas frecuentes'}
           sectionContent={faqs.sectionContent}
           backgroundColor="Claro"
           showBorder
         >
-          <Faqs asks={asks} />
+          <Faqs asks={faqs?.asks} />
         </CustomSection>
       ) : null}
       {convertedKeyProperties(finalValuation) &&

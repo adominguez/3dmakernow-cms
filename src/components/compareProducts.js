@@ -3,7 +3,7 @@ import React from 'react'
 import { isOdd, capitalize } from '../utils/utils'
 
 const CompareProducts = ({
-  compareProducts: { properties, products } = {},
+  compareProducts,
   informationButtonText,
 }) => {
   const renderTableAttributes = () => {
@@ -14,9 +14,9 @@ const CompareProducts = ({
         >
           Producto
         </p>
-        {properties &&
-          properties.length &&
-          properties.map((property, index) => (
+        {compareProducts?.properties &&
+          compareProducts?.properties?.length &&
+          compareProducts?.properties?.map((property, index) => (
             <p
               key={`productData-${index}`}
               className={`flex items-center justify-start h-12 px-4 -mt-px text-center text-textColor-500 ${
@@ -39,7 +39,7 @@ const CompareProducts = ({
         }`}
       >
         <span className="block pr-1 font-bold lg:hidden">
-          {properties[dataIndex]}:
+          {compareProducts?.properties[dataIndex]}:
         </span>
         {data}
       </p>
@@ -47,15 +47,15 @@ const CompareProducts = ({
   }
 
   const renderProductInformation = () => {
-    return products.map(({ name, image, link, propertiesValues }, key) => (
+    return compareProducts?.products && compareProducts?.products.map(({ name, image, link, propertiesValues }, key) => (
       <div
         key={`product-${key}`}
-        className={`w-full mb-10 border-2 border-gray-300 rounded-lg lg:w-1/${products.length} lg:mt-px lg:mb-0 lg:border-none lg:rounded-none`}
+        className={`w-full mb-10 border-2 border-gray-300 rounded-lg lg:w-1/${compareProducts?.products && compareProducts?.products.length} lg:mt-px lg:mb-0 lg:border-none lg:rounded-none`}
       >
         <div
           className={`flex flex-col items-center justify-center h-48 px-2 text-center bg-white rounded-t-lg ${
             key === 0 ? 'lg:rounded-tl-lg' : ''
-          } ${key === products.length - 1 ? 'lg:rounded-tr-lg' : ''}`}
+          } ${key === compareProducts?.products && compareProducts?.products.length - 1 ? 'lg:rounded-tr-lg' : ''}`}
         >
           <img
             loading="lazy"
@@ -99,10 +99,10 @@ const CompareProducts = ({
   return (
     <div className="container flex flex-wrap px-4">
       <div className="hidden mt-48 lg:w-1/4 lg:block">
-        {properties && properties.length && renderTableAttributes()}
+        {compareProducts?.properties && compareProducts?.properties.length && renderTableAttributes()}
       </div>
       <div className="flex flex-wrap w-full border-gray-300 rounded-lg lg:w-3/4 lg:border">
-        {products && products.length && renderProductInformation()}
+        {compareProducts?.products && compareProducts?.products.length && renderProductInformation()}
       </div>
     </div>
   )
