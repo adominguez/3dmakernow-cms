@@ -80,6 +80,34 @@ comparation:
 
     <h3>¡Comparemos!</h3>\r\n"
   title: "Comparativa: Creality Ender 3 vs Artillery Genius"
+  compareProducts:
+    products:
+      - id: 0
+        name: Ender 3
+        image: https://m.media-amazon.com/images/I/61rGa6UkhEL._AC_SX679_.jpg
+        link: https://amzn.to/3m1ZrWz
+        propertiesValues:
+          - 220 x 220 x 250mm
+          - LCD
+          - Fleje magnético
+          - no
+          - no
+      - id: 1
+        name: ender 3 v2
+        image: https://m.media-amazon.com/images/I/7162j7w5g1S._AC_SX679_.jpg
+        link: https://amzn.to/39GTnwE
+        propertiesValues:
+          - 220 x 220 x 250 mm
+          - Pantalla tactil
+          - cristal templado
+          - si
+          - si
+    properties:
+      - volumen de impresión
+      - Tipo de pantalla
+      - Tipo de base
+      - Silenciosa
+      - Tensor en los ejes
 properties:
   title: Características técnicas de la impresora 3D Creality Ender 3
   sectionContent: Lo cierto es que la impresora 3D Creality Ender 3 ha
